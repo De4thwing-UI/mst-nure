@@ -1,31 +1,38 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import React from 'react';
+import {graphql} from 'gatsby';
+import Header from '../components/header/header';
+import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import { Button } from '@material-ui/core'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+const IndexPage = () => {
 
-const IndexPage = () => (
-  <Layout>
-    <Seo title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["auto", "webp", "avif"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p>
-  </Layout>
-)
+  const { t } = useTranslation();
 
-export default IndexPage
+  return (
+    <main>
+      <Button variant="contained">Hello World</Button>
+      <h1><Header/></h1>
+      <h1><Trans>Welcome to my Gatsby site!</Trans></h1>
+      <p><Trans>My name is Shanika</Trans></p>
+      <p><Trans>My profession is SSE</Trans></p>
+      <p><Trans>My Birthday is 1990/10/10</Trans></p>
+      <p>{t('message')}</p>
+    </main>
+  )
+};
+
+export default IndexPage;
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
