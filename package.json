@@ -6,6 +6,8 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@emotion/react": "^11.6.0",
+    "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/open-sans": "^4.5.2",
     "gatsby": "^4.2.0",
     "gatsby-plugin-gatsby-cloud": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
