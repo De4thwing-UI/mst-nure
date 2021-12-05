@@ -9,7 +9,7 @@ const Header = ({title}) => {
     <div className="container">
       <div className="header__inner">
         <div className="header__logo">
-          <StaticImage src="../images/Logo1.png" alt="logo_MST" />
+        <Link language="ua" to="/"> <StaticImage src="../images/Logo1.png" alt="logo_MST" /></Link>
         </div>
         <nav className="nav">
           <a href="#" className="nav__link">Про Кафедру</a>
