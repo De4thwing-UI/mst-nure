@@ -73,6 +73,9 @@ const News = ({ title }) => {
             </div>
           </div>
         </div>
+        <Link language="ua" to="/news/news" className="news__link-sm">
+          <Button>Всі новини</Button>
+        </Link>
       </div>
     </div>
   )

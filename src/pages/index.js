@@ -9,12 +9,12 @@ import Button from '../components/button/button';
 import News from "../components/lastnews/lastnews"
 
 const IndexPage = () => {
-
   const { t } = useTranslation();
 
   return (
     <div>
       <Header />
+      
       {/* Intro */}
       <div className="intro">
         <div className="container">
@@ -190,7 +190,6 @@ const IndexPage = () => {
         </div>
       </div>
       <Footer />
-
     </div>
   )
 };
