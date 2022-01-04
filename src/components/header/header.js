@@ -1,45 +1,82 @@
-import React from 'react';
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
-import { StaticImage } from "gatsby-plugin-image";
-import './header.css'
+import React from "react"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { StaticImage } from "gatsby-plugin-image"
+import "./header.css"
 
-const Header = ({title}) => {
+const Header = ({ title }) => {
   return (
     <header className="header">
-    <div className="container">
-      <div className="header__inner">
-        <div className="header__logo">
-        <Link language="ua" to="/"> <StaticImage src="../images/Logo1.png" alt="logo_MST" /></Link>
-        </div>
-        <nav className="nav">
-          <a href="#" className="nav__link">Про Кафедру</a>
-          <a href="#" className="nav__link">Учбовий процес</a>
-          <a href="#" className="nav__link">Наука</a>
-          <a href="#" className="nav__link">Абітурієнтам</a>
-          <a href="#" className="nav__link">Студентам</a>
-          <a href="#" className="nav__link">Партнери</a>
-          <a href="#" className="nav__link">Контакти</a>
-        </nav>
-        <div className="mod-languages">
-          <ul className="lang-inline">
-            <li className="lang-active">
-              <a href="#">
-                Ua</a>
-            </li>
-            <li className="lang-active">
-              <a href="#">
-                Ru</a>
-            </li>
-            <li className="lang-active">
-              <a href="#">
-                En</a>
-            </li>
-          </ul>
+      <div className="container">
+        <div className="header__inner">
+          <div className="header__logo">
+            <Link language="ua" to="/">
+              {" "}
+              <StaticImage src="../images/Logo1.png" alt="logo_MST" />
+            </Link>
+          </div>
+          <nav className="nav">
+            <a href="#" className="nav__link">
+              Про Кафедру
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/teacher/teacher"
+                  className="nav__dropdown__link"
+                >
+                  Склад кафедри
+                </Link>
+                <Link
+                  language="ua"
+                  to="/history/history"
+                  className="nav__dropdown__link"
+                >
+                  Історія кафедри
+                </Link>
+                <Link
+                  language="ua"
+                  to="/graduates/graduates"
+                  className="nav__dropdown__link"
+                >
+                  Наші випускники
+                </Link>
+              </div>
+            </a>
+            <a href="#" className="nav__link">
+              Учбовий процес
+            </a>
+            <a href="#" className="nav__link">
+              Наука
+            </a>
+            <a href="#" className="nav__link">
+              Абітурієнтам
+            </a>
+            <a href="#" className="nav__link">
+              Студентам
+            </a>
+            <a href="#" className="nav__link">
+              Партнери
+            </a>
+            <a href="#" className="nav__link">
+              Контакти
+            </a>
+          </nav>
+          <div className="mod-languages">
+            <ul className="lang-inline">
+              <li className="lang-active">
+                <a href="#">Ua</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">Ru</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">En</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  );
-};
+    </header>
+  )
+}
 
-export default Header;
+export default Header

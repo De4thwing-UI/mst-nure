@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link, useI18next } from 'gatsby-plugin-react-i18next';
-import { StaticImage } from "gatsby-plugin-image";
-import './footer.css'
+import React from "react"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { StaticImage } from "gatsby-plugin-image"
+import "./footer.css"
 
 const Footer = ({ title }) => {
   return (
@@ -10,15 +10,61 @@ const Footer = ({ title }) => {
         <div className="footer__inner">
           <ul className="footer__item">
             <li className="footer__title">Наші контакти</li>
-            <li className="footer__link"><StaticImage src="../images/footer/phone.svg" alt="phone" className="footer__image" /> (057) 702-13-78</li>
-            <li className="footer__link"><StaticImage src="../images/footer/phone.svg" alt="phone" className="footer__image" /> (057) 702-13-78</li>
-            <li className="footer__link"><StaticImage src="../images/footer/email.svg" alt="phone" className="footer__image" /> d_mst@nure.ua</li>
+            <li className="footer__link">
+              <StaticImage
+                src="../images/footer/phone.svg"
+                alt="phone"
+                className="footer__image"
+              />{" "}
+              (057) 702-13-78
+            </li>
+            <li className="footer__link">
+              <StaticImage
+                src="../images/footer/phone.svg"
+                alt="phone"
+                className="footer__image"
+              />{" "}
+              (057) 702-13-78
+            </li>
+            <li className="footer__link">
+              <StaticImage
+                src="../images/footer/email.svg"
+                alt="phone"
+                className="footer__image"
+              />{" "}
+              d_mst@nure.ua
+            </li>
           </ul>
           <ul className="footer__item">
             <li className="footer__title">Про кафедру</li>
-            <li className="footer__link">Склад кафедри</li>
-            <li className="footer__link">Історія кафедри</li>
-            <li className="footer__link">Наші випускники</li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/teacher/teacher"
+                className="footer__link"
+              >
+                Склад кафедри
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/history/history"
+                className="footer__link"
+              >
+                Історія кафедри
+              </Link>
+            </li>
+            <li className="footer__link">
+              {" "}
+              <Link
+                language="ua"
+                to="/graduates/graduates"
+                className="footer__link"
+              >
+                Наші випускники 
+              </Link>
+            </li>
           </ul>
           <ul className="footer__item">
             <li className="footer__title">Учбовий процес</li>
@@ -38,7 +84,6 @@ const Footer = ({ title }) => {
             <li className="footer__link">Роботи студентів</li>
             <li className="footer__link">Кружки кафедри</li>
             <li className="footer__link">Запропонувати тему</li>
-
           </ul>
           <ul className="footer__item">
             <li className="footer__title">Абітурієнтам</li>
@@ -63,13 +108,11 @@ const Footer = ({ title }) => {
       </div>
       <div className="footer__copyright">
         <div className="container">
-          <div className="footer__copyright__inner">
-            © 2021 Кафедра МСТ
-          </div>
+          <div className="footer__copyright__inner">© 2021 Кафедра МСТ</div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
