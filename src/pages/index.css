@@ -104,6 +104,10 @@ a {
     margin-top: 24px;
 }
 
+.intro__image-sm {
+    display: none;
+}
+
 
 /*Features*/
 
@@ -514,4 +518,43 @@ a {
 .employment__button {
     margin: 40px 0 120px 0;
     text-align: center;
+}
+
+@media (max-width:500px) {
+    /*Intro*/
+    .intro__image {
+        display: none;
+    }
+    .intro__image-sm {
+        display: block;
+    }
+    .intro__title {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #7676A7;
+        font-weight: 500;
+        text-align: left;
+    }
+    .intro__subtitle {
+        font-family: 'Montserrat';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #393982;
+        text-align: left;
+        margin-top: 16px;
+    }
+    .intro__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: left;
+        color: #7676A7;
+        margin-top: 16px;
+    }
+    .features {
+        display: none;
+    }
 }

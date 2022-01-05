@@ -19,6 +19,7 @@ const IndexPage = () => {
       <div className="intro">
         <div className="container">
           <div className="intro__inner">
+          <StaticImage src="../images/intro-bg.svg" alt="intro_image-sm" className="intro__image-sm" />
             <h1 className="intro__title"> Харківський національний університет радіоелектроніки</h1>
             <h2 className="intro__subtitle">Кафедра Медіасистеми та технології</h2>
             <h3 className="intro__text">Ми завжди готові допомогти Вам отримати максимум знань і умінь в нашій професійній сфері</h3>
