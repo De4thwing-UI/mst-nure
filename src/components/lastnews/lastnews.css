@@ -96,6 +96,9 @@ a {
 /*Media*/
 
 @media (max-width:500px) {
+    .news__title {
+        margin-bottom: 24px;
+    }
     .news__link {
         display: none
     }
@@ -103,6 +106,7 @@ a {
         display: block;
         margin-top: 24px;
         text-align: center;
+        margin-left: auto;
     }
     .news {
         margin: 0 20px 0 20px;

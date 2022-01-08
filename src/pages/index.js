@@ -19,7 +19,7 @@ const IndexPage = () => {
       <div className="intro">
         <div className="container">
           <div className="intro__inner">
-          <StaticImage src="../images/intro-bg.svg" alt="intro_image-sm" className="intro__image-sm" />
+          <StaticImage src="../images/intro-bg-sm.svg" alt="intro_image-sm" className="intro__image-sm" />
             <h1 className="intro__title"> Харківський національний університет радіоелектроніки</h1>
             <h2 className="intro__subtitle">Кафедра Медіасистеми та технології</h2>
             <h3 className="intro__text">Ми завжди готові допомогти Вам отримати максимум знань і умінь в нашій професійній сфері</h3>
@@ -89,6 +89,8 @@ const IndexPage = () => {
               <StaticImage src="../images/Specialities/video.svg" alt="web" className="specialities__image" />
               <div className="specialities__item__title">Обробка відео-, аудіо інформації</div>
             </div>
+            <a href="#" className="specialties__link-sm"><Button>
+              Дізнатись більше</Button></a>
           </div>
         </div>
       </div>
@@ -146,6 +148,8 @@ const IndexPage = () => {
                 Соціальний плакат
               </div>
             </div>
+            <a href="#" className="works__link-sm"><Button>
+              Дивитись всі</Button></a>
           </div>
           <div className="works__pagination">
             <a href="#">&lt;</a>
