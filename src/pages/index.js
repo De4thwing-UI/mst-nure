@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react"
 import { graphql, Link } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import './index.css';
@@ -7,12 +7,31 @@ import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import Button from '../components/button/button';
 import News from "../components/lastnews/lastnews"
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
 
 const IndexPage = () => {
   const { t } = useTranslation();
+  const [burgerMenu, setBurgerMenu] = useState(false);
 
   return (
     <div>
+      <div className="header-sm">
+        <div className="container">
+          <FontAwesomeIcon icon={faBars} size="lg" onClick={() => setBurgerMenu(true)} />
+        </div>
+      </div>
+
+      <div className={burgerMenu ? 'menu-sm' : 'menu-none'}>
+        <FontAwesomeIcon icon={faTimes} size="lg" onClick={() => setBurgerMenu(false)} />
+
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+      </div>
+
       <Header />
       
       {/* Intro */}
