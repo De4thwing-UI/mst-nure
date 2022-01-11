@@ -1,10 +1,10 @@
 import React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../../components/button/button"
 import "./lastnews.css"
 
-const News = ({ title }) => {
+const News = () => {
   return (
     <div className="news">
       <div className="container">
