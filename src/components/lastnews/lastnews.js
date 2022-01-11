@@ -17,7 +17,7 @@ const News = ({ title }) => {
         <div className="news__inner">
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image1.png"
+              src="../../images/News/news_image1.png"
               alt="News"
               className="news__image"
             />
@@ -36,7 +36,7 @@ const News = ({ title }) => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image2.png"
+              src="../../images/News/news_image2.png"
               alt="News"
               className="news__image"
             />
@@ -55,7 +55,7 @@ const News = ({ title }) => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image3.png"
+              src="../../images/News/news_image3.png"
               alt="News"
               className="news__image"
             />

@@ -11,7 +11,7 @@ const Header = ({ title }) => {
           <div className="header__logo">
             <Link language="ua" to="/">
               {" "}
-              <StaticImage src="../images/Logo1.png" alt="logo_MST" />
+              <StaticImage src="../../images/Logo1.png" alt="logo_MST" />
             </Link>
           </div>
           <nav className="nav">

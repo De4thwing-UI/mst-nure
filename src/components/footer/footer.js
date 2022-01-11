@@ -12,7 +12,7 @@ const Footer = ({ title }) => {
             <li className="footer__title">Наші контакти</li>
             <li className="footer__link">
               <StaticImage
-                src="../images/footer/phone.svg"
+                src="../../images/footer/phone.svg"
                 alt="phone"
                 className="footer__image"
               />{" "}
@@ -20,7 +20,7 @@ const Footer = ({ title }) => {
             </li>
             <li className="footer__link">
               <StaticImage
-                src="../images/footer/phone.svg"
+                src="../../images/footer/phone.svg"
                 alt="phone"
                 className="footer__image"
               />{" "}
@@ -28,7 +28,7 @@ const Footer = ({ title }) => {
             </li>
             <li className="footer__link">
               <StaticImage
-                src="../images/footer/email.svg"
+                src="../../images/footer/email.svg"
                 alt="phone"
                 className="footer__image"
               />{" "}
