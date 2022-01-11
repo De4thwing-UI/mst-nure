@@ -52,12 +52,7 @@
 
 /*Media*/
 
-@media (max-width:500px) {
-    .container {
-        font-family: 'Montserrat';
-        width: 100%;
-        margin: 0 auto;
-    }
+@media (max-width:575.98px) {
     .footer {
         background: #393982;
         background-size: cover;

@@ -95,7 +95,7 @@ a {
 
 /*Media*/
 
-@media (max-width:500px) {
+@media (max-width:575.98px) {
     .news__title {
         margin-bottom: 24px;
     }
