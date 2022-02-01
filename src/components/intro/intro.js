@@ -27,37 +27,37 @@ const Intro = () => {
           />
         </div>
         <div className="directions__intro__features">
-          <div className="features__item">
+          <div className="directions__features__item">
             <StaticImage
-              className="features__icon"
+              className="directions__features__icon"
               src="../../images/features/students.svg"
               alt="Teachers"
             />
-            <div className="features__title">
+            <div className="directions__features__title">
               150
-              <p className="features__text">Наукових робіт</p>
+              <p className="directions__features__text">Наукових робіт</p>
             </div>
           </div>
-          <div className="features__item">
+          <div className="directions__features__item">
             <StaticImage
-              className="features__icon"
-              src="../../images/features/students.svg"
+              className="directions__features__icon"
+              src="../../images/features/docs.svg"
               alt="Teachers"
             />
-            <div className="features__title">
+            <div className="directions__features__title">
               740
-              <p className="features__text">Тез доповідей</p>
+              <p className="directions__features__text">Тез доповідей</p>
             </div>
           </div>
-          <div className="features__item">
+          <div className="directions__features__item">
             <StaticImage
               className="features__icon"
-              src="../../images/features/students.svg"
+              src="../../images/features/image.svg"
               alt="Teachers"
             />
-            <div className="features__title">
+            <div className="directions__features__title">
               300
-              <p className="features__text">Експонатів виставок</p>
+              <p className="directions__features__text">Експонатів виставок</p>
             </div>
           </div>
         </div>

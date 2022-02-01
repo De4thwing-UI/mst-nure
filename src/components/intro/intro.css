@@ -66,3 +66,43 @@ a {
     justify-content: space-between;
     margin-top: 77px;
 }
+
+.directions__features__item {
+    font-family: 'Montserrat';
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
+    background: #fff;
+    width: 413px;
+    margin-left: 20px;
+}
+
+.directions__features__item:first-child {
+    margin-left: 0;
+}
+
+.directions__features__icon {
+    margin: 28px 0;
+    margin-left: 40px;
+    width: 92px;
+    height: 92px;
+}
+
+.directions__features__title {
+    margin-left: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 44px;
+    color: #393982;
+}
+
+.directions__features__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7676A7;
+    margin-right: 10px;
+}
