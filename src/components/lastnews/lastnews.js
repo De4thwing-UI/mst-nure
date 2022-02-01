@@ -9,7 +9,7 @@ const News = () => {
     <div className="news">
       <div className="container">
         <div className="news__title">
-          <h1 className="news__text">Новини</h1>
+          <h1 className="news__text">Новини кафедри</h1>
           <Link language="ua" to="/news/news" className="news__link">
             <Button>Всі новини</Button>
           </Link>

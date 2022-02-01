@@ -46,6 +46,50 @@ const Header = ({ title }) => {
             </a>
             <a href="#" className="nav__link">
               Наука
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/teacher/teacher"
+                  className="nav__dropdown__link"
+                >
+                  Лабараторія
+                </Link>
+                <Link
+                  language="ua"
+                  to="/directions/directions"
+                  className="nav__dropdown__link"
+                >
+                  Наукові напрями
+                </Link>
+                <Link
+                  language="ua"
+                  to="/graduates/graduates"
+                  className="nav__dropdown__link"
+                >
+                  Студентська наука
+                </Link>
+                <Link
+                  language="ua"
+                  to="/works/works"
+                  className="nav__dropdown__link"
+                >
+                  Роботи студентів
+                </Link>
+                <Link
+                  language="ua"
+                  to="/sections/sections"
+                  className="nav__dropdown__link"
+                >
+                  Гуртки кафедри
+                </Link>
+                <Link
+                  language="ua"
+                  to="/graduates/graduates"
+                  className="nav__dropdown__link"
+                >
+                  Запропонувати тему
+                </Link>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Абітурієнтам

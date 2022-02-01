@@ -6,6 +6,7 @@ import "./news.css"
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
 import Title from "../../components/title/title"
+import Pagination from "../../components/pagination/pagination"
 const NewsPage = () => {
   return (
     <div>
@@ -190,20 +191,8 @@ const NewsPage = () => {
               </div>
             </div>
           </div>
-          <div className="pagination">
-            <a href="#">&lt;</a>
-            <a className="pagination__active" href="#">
-              1
-            </a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">&gt;</a>
-          </div>
+          <Pagination />
+
         </div>
       </div>
       <Footer />

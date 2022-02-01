@@ -62,7 +62,7 @@ const Footer = ({ title }) => {
                 to="/graduates/graduates"
                 className="footer__link"
               >
-                Наші випускники 
+                Наші випускники
               </Link>
             </li>
           </ul>
@@ -79,10 +79,22 @@ const Footer = ({ title }) => {
           <ul className="footer__item">
             <li className="footer__title">Наука</li>
             <li className="footer__link">Лабараторія</li>
-            <li className="footer__link">Навчальні направлення</li>
+            <li className="footer__link">
+              <Link language="ua" to="/directions/directions " className="footer__link">
+              Наукові напрями
+              </Link>
+            </li>
             <li className="footer__link">Студентська наука</li>
-            <li className="footer__link">Роботи студентів</li>
-            <li className="footer__link">Кружки кафедри</li>
+            <li className="footer__link">
+              <Link language="ua" to="/works/works" className="footer__link">
+                Роботи студентів
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link language="ua" to="/sections/sections" className="footer__link">
+                Гуртки кафедри
+              </Link>
+            </li>
             <li className="footer__link">Запропонувати тему</li>
           </ul>
           <ul className="footer__item">

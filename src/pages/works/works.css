@@ -17,62 +17,49 @@ a {
 }
 
 
-/*News*/
+/*Works*/
 
-.news__page {
-    margin: 80px 0 100px 0;
-}
-
-.news__page__inner {
+.graduates__works__inner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 20px;
 }
 
-.news__item {
+.graduate__works__item {
     max-width: 413px;
-    align-items: center;
     box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
+    border-radius: 2px;
+    height: 358px;
 }
 
-.news__item__title {
+.graduate__works__image {
     font-family: 'Montserrat';
-    margin-top: 28px;
-    margin-bottom: 16px;
-    margin-left: 24px;
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
     color: #393982;
+    margin: 24px 0 12px 24px;
 }
 
-.news__item__text {
+.graduate__works__item__title {
     font-family: 'Montserrat';
-    margin-left: 24px;
-    max-width: 365px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #393982;
+    margin: 24px 0 12px 24px;
+}
+
+.graduate__works__item__text {
+    font-family: 'Montserrat';
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #7676A7;
+    margin: 0 0 24px 24px;
 }
 
-.news__image {
-    background-size: cover;
-}
-
-.news__border {
-    border-bottom: 2px solid#F4F4F4;
-    margin-top: 24px;
-}
-
-.news__item__link {
-    margin-left: 24px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #393982;
-    margin-top: 16px;
-    margin-bottom: 20px;
+.graduate__works__image {
+    margin: 0;
 }

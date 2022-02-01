@@ -1,11 +1,9 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./teacher.css"
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
-import Button from "../../components/button/button"
 import News from "../../components/lastnews/lastnews"
 import Title from "../../components/title/title"
 import DeynekoImg from "../../images/teachers/janna.png"
@@ -111,7 +109,7 @@ const TeachersPage = () => {
                   className="teachers__item__image"
                   src={teacher.photo}
                   alt="teachers__photo"
-                ></img>
+                />
                 <h1 className="teachers__item__title">{teacher.name}</h1>
                 <p className="teachers__item__text">{teacher.position}</p>
               </div>

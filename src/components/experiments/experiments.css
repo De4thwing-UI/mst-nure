@@ -1,0 +1,37 @@
+/*Experiments*/
+
+.experiments {
+    padding: 80px 0;
+}
+
+.experiments__intro__inner__text {
+    margin-top: 40px;
+}
+
+.experiments__intro__image {
+    margin-right: 128px;
+}
+
+.experiments__intro__inner {
+    display: flex;
+}
+
+.experiments__intro__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    max-width: 630px;
+}
+
+.experiments__intro__subtitle {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+    max-width: 630px;
+}
