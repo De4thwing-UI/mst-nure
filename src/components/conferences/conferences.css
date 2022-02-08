@@ -1,0 +1,40 @@
+.conferences {
+    background: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
+    padding: 80px 0;
+}
+
+.conferences__inner {
+    display: flex;
+}
+
+.conferences__item {
+    padding: 32px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.14);
+    margin-left: 22px;
+}
+
+.conferences__item:first-child {
+    margin-left: 0;
+}
+
+.conferences__item__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: #393982;
+    margin-bottom: 12px;
+    max-width: 565px;
+}
+
+.conferences__item__city {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676a7;
+    max-width: 565px;
+}

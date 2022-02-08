@@ -63,7 +63,7 @@ const Header = ({ title }) => {
                 </Link>
                 <Link
                   language="ua"
-                  to="/graduates/graduates"
+                  to="/studentscience/studentscience"
                   className="nav__dropdown__link"
                 >
                   Студентська наука
@@ -84,7 +84,7 @@ const Header = ({ title }) => {
                 </Link>
                 <Link
                   language="ua"
-                  to="/graduates/graduates"
+                  to="/offer/offer"
                   className="nav__dropdown__link"
                 >
                   Запропонувати тему
