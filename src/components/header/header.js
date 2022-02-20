@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.css"
 
@@ -93,6 +93,29 @@ const Header = ({ title }) => {
             </a>
             <a href="#" className="nav__link">
               Абітурієнтам
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/teacher/teacher"
+                  className="nav__dropdown__link"
+                >
+                  Правила вступу
+                </Link>
+                <Link
+                  language="ua"
+                  to="/admissions/admissions"
+                  className="nav__dropdown__link"
+                >
+                  Спеціальність
+                </Link>
+                <Link
+                  language="ua"
+                  to="/studentscience/studentscience"
+                  className="nav__dropdown__link"
+                >
+                  Наша реклама
+                </Link>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Студентам

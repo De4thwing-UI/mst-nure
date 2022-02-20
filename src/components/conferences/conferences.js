@@ -18,13 +18,29 @@ const Conferences = () => {
   return (
     <div className="conferences">
       <div className="container">
+        <div className="conferences__menu">
+          <div className="conferences__menu__inner">
+            <div className="conferences__menu__item">
+              <button className="conferences__button">Конференції</button>
+            </div>
+            <div className="conferences__menu__item">
+              <button className="conferences__button">Конкурси</button>
+            </div>
+            <div className="conferences__menu__item">
+              <button className="conferences__button">Олімпіади</button>
+            </div>
+            <div className="conferences__menu__item">
+              <button className="conferences__button">Публікації</button>
+            </div>
+          </div>
+        </div>
         <div className="conferences__switch"></div>
         <div className="conferences__inner">
-        {conferences.map((conference, index) => (
-          <div className="conferences__item"  key={index.toString()}>
-            <div className="conferences__item__title">{conference.title}</div>
-            <div className="conferences__item__city">{conference.city}</div>
-          </div>
+          {conferences.map((conference, index) => (
+            <div className="conferences__item" key={index.toString()}>
+              <div className="conferences__item__title">{conference.title}</div>
+              <div className="conferences__item__city">{conference.city}</div>
+            </div>
           ))}
         </div>
         <Pagination />

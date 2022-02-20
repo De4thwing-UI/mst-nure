@@ -1,0 +1,73 @@
+/*Specialty*/
+
+.specialty {
+    padding: 32px 0 80px 0;
+}
+
+.specialty__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.specialty__item {
+    background: #ffffff;
+    padding: 32px;
+    box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
+}
+
+.specialty__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #393982;
+    margin-bottom: 16px;
+}
+
+.specialty__name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #393982;
+    margin-bottom: 12px;
+}
+
+.specialty__specialization {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7676A7;
+}
+
+.specialty__specialization span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #393982;
+}
+
+
+/*Modal*/
+
+.specialty__modal {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    background: rgba(44, 44, 118, 0.3)
+}
+
+.modal__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
