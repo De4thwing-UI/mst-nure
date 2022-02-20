@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.css"
-
+А
 const Header = ({ title }) => {
   return (
     <header className="header">
