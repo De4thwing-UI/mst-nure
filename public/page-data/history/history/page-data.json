@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-history-history-js",
+    "path": "/history/history/",
+    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"Bienvenue sur mon site Gatsby !\",\"My name is Shanika\":\"Je m'appelle Shanika\",\"My profession is SSE\":\"Ma profession est ESS\",\"message\":\"test\"}","language":"ru"}}]}},"pageContext":{"language":"ru","i18n":{"language":"ru","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":false,"originalPath":"/history/history/","path":"/history/history/"}}},
+    "staticQueryHashes": []}
