@@ -1,15 +1,15 @@
 import React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "../../components/button/button"
 import "./lastnews.css"
 
-const News = ({ title }) => {
+const News = () => {
   return (
     <div className="news">
       <div className="container">
         <div className="news__title">
-          <h1 className="news__text">Новини</h1>
+          <h1 className="news__text">Новини кафедри</h1>
           <Link language="ua" to="/news/news" className="news__link">
             <Button>Всі новини</Button>
           </Link>
@@ -17,7 +17,7 @@ const News = ({ title }) => {
         <div className="news__inner">
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image1.png"
+              src="../../images/News/news_image1.png"
               alt="News"
               className="news__image"
             />
@@ -36,7 +36,7 @@ const News = ({ title }) => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image2.png"
+              src="../../images/News/news_image2.png"
               alt="News"
               className="news__image"
             />
@@ -55,7 +55,7 @@ const News = ({ title }) => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../images/News/news_image3.png"
+              src="../../images/News/news_image3.png"
               alt="News"
               className="news__image"
             />

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.css"
 
@@ -11,7 +11,7 @@ const Header = ({ title }) => {
           <div className="header__logo">
             <Link language="ua" to="/">
               {" "}
-              <StaticImage src="../images/Logo1.png" alt="logo_MST" />
+              <StaticImage src="../../images/Logo1.png" alt="logo_MST" />
             </Link>
           </div>
           <nav className="nav">
@@ -46,9 +46,76 @@ const Header = ({ title }) => {
             </a>
             <a href="#" className="nav__link">
               Наука
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/teacher/teacher"
+                  className="nav__dropdown__link"
+                >
+                  Лабараторія
+                </Link>
+                <Link
+                  language="ua"
+                  to="/directions/directions"
+                  className="nav__dropdown__link"
+                >
+                  Наукові напрями
+                </Link>
+                <Link
+                  language="ua"
+                  to="/studentscience/studentscience"
+                  className="nav__dropdown__link"
+                >
+                  Студентська наука
+                </Link>
+                <Link
+                  language="ua"
+                  to="/works/works"
+                  className="nav__dropdown__link"
+                >
+                  Роботи студентів
+                </Link>
+                <Link
+                  language="ua"
+                  to="/sections/sections"
+                  className="nav__dropdown__link"
+                >
+                  Гуртки кафедри
+                </Link>
+                <Link
+                  language="ua"
+                  to="/offer/offer"
+                  className="nav__dropdown__link"
+                >
+                  Запропонувати тему
+                </Link>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Абітурієнтам
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/teacher/teacher"
+                  className="nav__dropdown__link"
+                >
+                  Правила вступу
+                </Link>
+                <Link
+                  language="ua"
+                  to="/admissions/admissions"
+                  className="nav__dropdown__link"
+                >
+                  Спеціальність
+                </Link>
+                <Link
+                  language="ua"
+                  to="/studentscience/studentscience"
+                  className="nav__dropdown__link"
+                >
+                  Наша реклама
+                </Link>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Студентам

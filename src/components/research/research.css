@@ -1,0 +1,31 @@
+/*Science work*/
+
+.research {
+    padding: 80px 0 120px 0;
+    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+}
+
+.research__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #393982;
+    margin-bottom: 60px;
+    margin: 0 auto 60px auto;
+    max-width: 846px;
+}
+
+.research__inner {
+    display: flex;
+}
+
+.research__list li {
+    color: #d772c1;
+}
+
+.research__item__text {
+    color: #7676a7;
+}

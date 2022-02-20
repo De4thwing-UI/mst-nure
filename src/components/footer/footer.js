@@ -2,6 +2,9 @@ import React from "react"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./footer.css"
+import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons/faPhoneAlt"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Footer = ({ title }) => {
   return (
@@ -11,25 +14,25 @@ const Footer = ({ title }) => {
           <ul className="footer__item">
             <li className="footer__title">Наші контакти</li>
             <li className="footer__link">
-              <StaticImage
-                src="../images/footer/phone.svg"
-                alt="phone"
+              <FontAwesomeIcon
+                icon={faPhoneAlt}
+                size="lg"
                 className="footer__image"
               />{" "}
               (057) 702-13-78
             </li>
             <li className="footer__link">
-              <StaticImage
-                src="../images/footer/phone.svg"
-                alt="phone"
+              <FontAwesomeIcon
+                icon={faPhoneAlt}
+                size="lg"
                 className="footer__image"
               />{" "}
               (057) 702-13-78
             </li>
             <li className="footer__link">
-              <StaticImage
-                src="../images/footer/email.svg"
-                alt="phone"
+            <FontAwesomeIcon
+                icon={faEnvelope}
+                size="lg"
                 className="footer__image"
               />{" "}
               d_mst@nure.ua
@@ -62,7 +65,7 @@ const Footer = ({ title }) => {
                 to="/graduates/graduates"
                 className="footer__link"
               >
-                Наші випускники 
+                Наші випускники
               </Link>
             </li>
           </ul>
@@ -79,10 +82,39 @@ const Footer = ({ title }) => {
           <ul className="footer__item">
             <li className="footer__title">Наука</li>
             <li className="footer__link">Лабараторія</li>
-            <li className="footer__link">Навчальні направлення</li>
-            <li className="footer__link">Студентська наука</li>
-            <li className="footer__link">Роботи студентів</li>
-            <li className="footer__link">Кружки кафедри</li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/directions/directions "
+                className="footer__link"
+              >
+                Наукові напрями
+              </Link>
+            </li>
+            <li className="footer__link">
+              {" "}
+              <Link
+                language="ua"
+                to="/studentscience/studentscience"
+                className="footer__link"
+              >
+                Студентська наука
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link language="ua" to="/works/works" className="footer__link">
+                Роботи студентів
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/sections/sections"
+                className="footer__link"
+              >
+                Гуртки кафедри
+              </Link>
+            </li>
             <li className="footer__link">Запропонувати тему</li>
           </ul>
           <ul className="footer__item">

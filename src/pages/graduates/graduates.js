@@ -6,6 +6,7 @@ import "./graduates.css"
 import Header from "../../components/header/header"
 import Footer from "../../components/footer/footer"
 import Button from "../../components/button/button"
+import Pagination from "../../components/pagination/pagination"
 import News from "../../components/lastnews/lastnews"
 import Title from "../../components/title/title"
 import GapichImg from "../../images/graduates/gapich.png"
@@ -136,28 +137,13 @@ const GraduatePage = () => {
             ))}
           </div>
         </div>
-        <div className="works__pagination">
-          <a href="#">&lt;</a>
-          <a className="works__pagination__active" href="#">
-            1
-          </a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">7</a>
-          <a href="#">8</a>
-          <a href="#">9</a>
-          <a href="#">&gt;</a>
-        </div>
+        <Pagination />
       </div>
       <div className="works">
         <div className="container">
           <div className="works__title">
             <h1 className="works__text">Роботи студентів</h1>
-            <a href="#" className="works__link">
-              <Button>Дивитись всі</Button>
-            </a>
+
           </div>
         </div>
         <div className="graduates__works">
@@ -179,20 +165,7 @@ const GraduatePage = () => {
             </div>
           </div>
         </div>
-        <div className="works__pagination">
-          <a href="#">&lt;</a>
-          <a className="works__pagination__active" href="#">
-            1
-          </a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">7</a>
-          <a href="#">8</a>
-          <a href="#">9</a>
-          <a href="#">&gt;</a>
-        </div>
+        <Pagination />
       </div>
       <News />
       <Footer />

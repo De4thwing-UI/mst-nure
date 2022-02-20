@@ -17,16 +17,6 @@ a {
 }
 
 
-/*Container*/
-
-.container {
-    font-family: 'Montserrat';
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-
 /*Graduates*/
 
 .graduates__inner {
@@ -59,52 +49,4 @@ a {
     line-height: 24px;
     color: #7676A7;
     margin-top: 8px;
-}
-
-
-/*Works*/
-
-.graduates__works__inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-
-.graduate__works__item {
-    max-width: 413px;
-    box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
-    border-radius: 2px;
-    height: 358px;
-}
-
-.graduate__works__image {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #393982;
-    margin: 24px 0 12px 24px;
-}
-
-.graduate__works__item__title {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-    color: #393982;
-    margin: 24px 0 12px 24px;
-}
-
-.graduate__works__item__text {
-    font-family: 'Montserrat';
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7676A7;
-    margin: 0 0 24px 24px;
-}
-
-.graduate__works__image {
-    margin: 0;
 }
