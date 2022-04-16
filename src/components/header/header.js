@@ -122,8 +122,9 @@ const Header = ({ title }) => {
               <div className="nav__dropdown">
                 <Link
                   language="ua"
-                  to="/rules/rules"
+                  to="http://cist.kture.kharkov.ua/"
                   className="nav__dropdown__link"
+                  target="_blank"
                 >
                   Розклад
                 </Link>

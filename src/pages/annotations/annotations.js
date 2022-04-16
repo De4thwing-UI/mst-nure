@@ -167,7 +167,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технології проектування комп’ютерних ігор.{" "}
+                  Технології проєктування комп’ютерних ігор.{" "}
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -232,7 +232,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проектування і розрахунки технологічних процесів підготовки та
+                  Проєктування і розрахунки технологічних процесів підготовки та
                   виготовлення видань.
                 </a>
               </li>
@@ -260,7 +260,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Художні основи проектування видань.{" "}
+                  Художні основи проєктування видань.{" "}
                 </a>
               </li>
             </ul>
@@ -469,7 +469,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проектування комп’ютерних видавничих систем та компонентів.
+                  Проєктування комп’ютерних видавничих систем та компонентів.
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -496,7 +496,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проектування та розробка кросмедійних продуктів.{" "}
+                  Проєктування та розробка кросмедійних продуктів.{" "}
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -532,15 +532,6 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оцінка якості поліграфічної продукції.{" "}
-                </a>
-              </li>
-              <li className="annotations__list__item">
-                <a
-                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F09.pdf&clen=399545&chunk=true"
-                  target="_blank"
-                  className="annotations__link"
-                >
                   Розробка та моделювання бізнес-процесів поліграфічного
                   виробництва.{" "}
                 </a>
@@ -561,7 +552,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проектування та розробка інтерфейсів інтерактивних видань.{" "}
+                  Проєктування та розробка інтерфейсів інтерактивних видань.{" "}
                 </a>
               </li>
             </ul>
@@ -572,16 +563,431 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Управління проектами. 
+                  Управління проєкт єктами.
                 </a>
               </li>
               <li className="annotations__list__item">
                 <a
-                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-bakalavr%2Ftekhnologiya-pidgotovki-elektronnikh-vidan.pdf&clen=79404&chunk=true"
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F2.pdf&clen=58622&chunk=true"
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технологія підготовки електронних видань.{" "}
+                  Анімація в мобільних додатках.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F13.pdf&clen=92563&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Технології розробки мультимедійних інформаційних продуктів.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F8.pdf&clen=88047&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Тестування та забезпечення якості мобільних додатків.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F1.pdf&clen=75558&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка мобільних додатків.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F1.pdf&clen=75558&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Новітні технології та матеріали.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F3.pdf&clen=135997&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Internet-маркетинг.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a href="#" target="_blank" className="annotations__link">
+                  Організація та управління поліграфічним виробництвом.{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="annotations">
+        <div className="container">
+          <div className="annotations__title">ТДВ бакалавр.</div>
+          <div className="annotations__inner">
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-bakalavr%2Fekspluatatcia-poligrafichnogo-obladnannya.pdf&clen=97818&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Експлуатація поліграфічного обладнання.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-bakalavr%2Fosnovi-proektuvannya-elektronnikh-vidan.pdf&clen=85885&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Основи проєктування електронних видань.
+                </a>
+              </li>
+            </ul>
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-bakalavr%2Fproektuvannya-poligrafichnogo-virobnitstva.pdf&clen=84765&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування поліграфічного виробництва.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-bakalavr%2Ftekhnologiya-ta-obladnannya-drukar-ta-pislyadruk-protsesiv.pdf&clen=85564&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Технологія та обладнання друкарських та післядрукарських
+                  процесів.{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="annotations">
+        <div className="container">
+          <div className="annotations__title">ТДВ магістр.</div>
+          <div className="annotations__inner">
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F01.pdf&clen=143694&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Технології захисту друкованої продукції.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F14.pdf&clen=114535&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Управління проєктами.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F2.pdf&clen=77375&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Оперативні та спеціальні види друку.
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F3.pdf&clen=97506&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Організація та управління видавничо-поліграфічним
+                  виробництвом.
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F4.pdf&clen=86264&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Оцінка якості поліграфічної продукції.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F5.pdf&clen=396901&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Системи автоматизованого управління процесами поліграфічного
+                  виробництва.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F6.pdf&clen=85903&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Технології проєктування та виготовлення пакувань.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F03.pdf&clen=88992&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Просування кросмедійних продуктів.{" "}
+                </a>
+              </li>
+            </ul>
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F7.pdf&clen=398431&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Розробка та моделювання видавничих технологічних процесів.{" "}
+                </a>
+              </li>
+
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F01.pdf&clen=143694&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка кросмедійних продуктів.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F01.pdf&clen=143694&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка кросмедійних продуктів.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F8.pdf&clen=88047&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Тестування та забезпечення якості мобільних додатків.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F8.pdf&clen=90310&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка інтерфейсів інтерактивних видань.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F15.pdf&clen=108679&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Новітні технології та матеріали.{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="annotations">
+        <div className="container">
+          <div className="annotations__title">ТЕМВ бакалавр.</div>
+          <div className="annotations__inner">
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-bakalavr%2Fweb-tekhnologiii.pdf&clen=52668&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  WEB-технології.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-bakalavr%2Fosnovi-proektuvannya-elektronnikh-vidan.pdf&clen=85885&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Комп'ютерні технології виготовлення реклами для друкованих та
+                  електронних ЗМІ.
+                </a>
+              </li>
+            </ul>
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-bakalavr%2Fproektuvannya-elektronnikh-multimedijnikh-vidan.pdf&clen=80746&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування електронних мультимедійних видань.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-bakalavr%2Ftexnichni-zasoby-mediatechnologij.pdf&clen=78426&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Технічні засоби медіатехнологій.{" "}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="annotations">
+        <div className="container">
+          <div className="annotations__title">ТЕМВ магістр.</div>
+          <div className="annotations__inner">
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F1.pdf&clen=75558&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка мобільних додатків.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F2.pdf&clen=58622&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Анімація в мобільних додатках.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F3.pdf&clen=135997&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Internet-маркетинг.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F4.pdf&clen=50821&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка WEB-систем.
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F5.pdf&clen=47226&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  WEB-аналітика та пошукова оптимізація.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F6.pdf&clen=92938&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Бази даних в мультимедійних системах.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F7.pdf&clen=179416&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  UI/UX мультимедійних продуктів.{" "}
+                </a>
+              </li>
+            </ul>
+            <ul className="annotations__list">
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftemv-magistr%2F8.pdf&clen=88047&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Тестування та забезпечення якості мобільних додатків.{" "}
+                </a>
+              </li>
+
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F14.pdf&clen=114535&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Управління проєктами.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F8.pdf&clen=90310&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Проєктування та розробка інтерфейсів інтерактивних видань.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Ftdv-magistr%2F4.pdf&clen=86264&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Оцінка якості поліграфічної продукції.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F15.pdf&clen=108679&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Новітні технології та матеріали.{" "}
+                </a>
+              </li>
+              <li className="annotations__list__item">
+                <a
+                  href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/viewer.html?pdfurl=http%3A%2F%2Fmst.nure.ua%2Fimages%2Fanotatsiyi-distsiplin-2019%2Fktsvpv-magistr%2F03.pdf&clen=88992&chunk=true"
+                  target="_blank"
+                  className="annotations__link"
+                >
+                  Просування кросмедійних продуктів.{" "}
                 </a>
               </li>
             </ul>
