@@ -1,0 +1,285 @@
+.competition {
+    margin: 120px 0 120px 0;
+}
+
+.competition__inner {
+    display: flex;
+}
+
+.competition__title {
+    max-width: 522px;
+    margin-right: 128px;
+    padding-top: 40px;
+}
+
+.competition__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+}
+
+.competition__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676A7;
+}
+
+
+/*coefficient*/
+
+.coefficient {
+    padding: 120px 0;
+}
+
+.coefficient__inner {
+    display: flex;
+}
+
+.coefficient__rating {
+    padding-right: 80px;
+}
+
+
+/*rating*/
+
+.rating__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #393982;
+    max-width: 521px;
+    padding-right: 120px;
+}
+
+.rating__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676A7;
+    width: 522px;
+}
+
+.rating__link {
+    color: #393982;
+    font-weight: 600;
+}
+
+
+/*storage*/
+
+.storage__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #393982;
+    max-width: 522px;
+}
+
+.storage__list li {
+    color: #d772c1;
+}
+
+.storage__list__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7676A7;
+    max-width: 522px;
+}
+
+.storage__list__item__text {
+    color: #7676A7;
+    max-width: 522px;
+}
+
+
+/*olimpics*/
+
+.olimpics {
+    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+    padding: 80px 0;
+}
+
+.olimpics__inner {
+    display: flex;
+}
+
+.olimpics__image {
+    width: 522px;
+    height: 354px;
+}
+
+.olimpics__title {
+    margin-left: 126px;
+}
+
+.olimpics__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #393982;
+    max-width: 521px;
+}
+
+.olimpics__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676A7;
+    max-width: 576px;
+}
+
+
+/*abiturient*/
+
+.abiturient {
+    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+    padding: 80px 0;
+}
+
+.abiturient__list {
+    margin-left: 20px;
+}
+
+.abiturient__list:first-child {
+    margin-left: 0;
+}
+
+.abiturient__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #393982;
+    max-width: 846px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.abiturient__inner {
+    display: flex;
+    justify-content: center
+}
+
+.abiturient__list li {
+    color: #d772c1;
+    margin-left: 20px;
+}
+
+.abiturient__list:first-child li {
+    margin-left: 0;
+}
+
+.abiturient__list__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+    max-width: 484px;
+}
+
+.abiturient__list__item__text {
+    color: #7676A7;
+    max-width: 522px;
+}
+
+
+/*bakalavr*/
+
+.bakalavr {
+    padding: 80px 0;
+}
+
+.bakalavr__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #393982;
+    max-width: 846px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.bakalavr__inner {
+    display: flex;
+    justify-content: center
+}
+
+.bakalavr__list li {
+    color: #d772c1;
+    margin-left: 20px;
+}
+
+.bakalavr__list:first-child li {
+    margin-left: 0;
+}
+
+.bakalavr__list__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+    max-width: 484px;
+}
+
+.bakalavr__list__item__text {
+    color: #7676A7;
+    max-width: 522px;
+}
+
+
+/*ask*/
+
+.ask {
+    padding: 100px 0;
+}
+
+.ask__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    text-align: center;
+    margin: 0 auto 20px auto;
+}
+
+.ask__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #7676A7;
+    max-width: 846px;
+    margin: 0 auto;
+}

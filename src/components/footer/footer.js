@@ -30,7 +30,7 @@ const Footer = ({ title }) => {
               (057) 702-13-78
             </li>
             <li className="footer__link">
-            <FontAwesomeIcon
+              <FontAwesomeIcon
                 icon={faEnvelope}
                 size="lg"
                 className="footer__image"
@@ -115,12 +115,27 @@ const Footer = ({ title }) => {
                 Гуртки кафедри
               </Link>
             </li>
-            <li className="footer__link">Запропонувати тему</li>
+            <li className="footer__link">
+              {" "}
+              <Link language="ua" to="/offer/offer" className="footer__link">
+                Запропонувати тему
+              </Link>
+            </li>
           </ul>
           <ul className="footer__item">
             <li className="footer__title">Абітурієнтам</li>
-            <li className="footer__link">Правила вступу</li>
-            <li className="footer__link">Спеціальності</li>
+            <li className="footer__link">
+              <Link language="ua" to="/rules/rules" className="footer__link">
+                Правила вступу
+              </Link>
+            </li>
+            <Link
+              language="ua"
+              to="/admissions/admissions"
+              className="footer__link"
+            >
+              Спеціальність
+            </Link>
             <li className="footer__link">Питання-відповідь</li>
             <li className="footer__link">Наша реклама</li>
           </ul>

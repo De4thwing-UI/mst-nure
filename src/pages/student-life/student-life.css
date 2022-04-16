@@ -1,0 +1,233 @@
+.student-life {
+    margin: 80px 0;
+}
+
+.student-life__inner {
+    display: flex;
+}
+
+.student-life__title {
+    max-width: 522px;
+    margin-right: 128px;
+    padding-top: 80px;
+}
+
+.student-life__suptitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    margin-bottom: 24px;
+}
+
+.student-life__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676a7;
+}
+
+
+/*quest*/
+
+.quest {
+    padding: 80px 0;
+    background: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
+}
+
+.quest__inner {
+    display: flex;
+}
+
+.quest__title {
+    padding-top: 30px;
+    max-width: 630px;
+    margin-left: 70px;
+}
+
+.quest__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+}
+
+.quest__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+}
+
+
+/*miss-nure*/
+
+.miss-nure {
+    padding: 120px 0;
+}
+
+.miss__nure__title {
+    max-width: 846px;
+    margin: 0 auto 60px auto;
+}
+
+.miss__nure__suptitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #393982;
+}
+
+.miss__nure__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #7676A7;
+}
+
+.miss-nure__inner {
+    display: flex;
+}
+
+.miss-nure__image {
+    margin-left: 20px;
+}
+
+.miss-nure__image:first-child {
+    margin-left: 0;
+}
+
+
+/*mrs__nure*/
+
+.mrs__nure__inner {
+    display: flex;
+    margin: 0 80px;
+}
+
+.mrs__nure__result {
+    margin-right: 108px;
+}
+
+.mrs__nure__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+}
+
+.mrs__nure__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7676A7;
+    max-width: 542px;
+}
+
+.mrs__nure__trio__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #393982;
+}
+
+.mrs__nure__trio__list {
+    text-decoration: none;
+}
+
+.mrs__nure__trio__item {
+    color: #D772C1;
+}
+
+.mrs__nure__trio__item span {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7676A7;
+}
+
+.molod-life {
+    padding: 80px 0;
+    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+}
+
+.molod-life__inner {
+    display: flex;
+}
+
+.molod-life__title {
+    max-width: 522px;
+    margin-right: 128px;
+    padding-top: 80px;
+}
+
+.molod-life__suptitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    margin-bottom: 24px;
+}
+
+.molod-life__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676a7;
+}
+
+
+/*exhibition*/
+
+.exhibition {
+    padding: 80px 0;
+}
+
+.exhibition__inner {
+    max-width: 846px;
+    margin: 0 auto;
+}
+
+.exhibition__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+}
+
+.exhibition__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676A7;
+}

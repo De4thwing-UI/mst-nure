@@ -96,7 +96,7 @@ const Header = ({ title }) => {
               <div className="nav__dropdown">
                 <Link
                   language="ua"
-                  to="/teacher/teacher"
+                  to="/rules/rules"
                   className="nav__dropdown__link"
                 >
                   Правила вступу
@@ -110,7 +110,7 @@ const Header = ({ title }) => {
                 </Link>
                 <Link
                   language="ua"
-                  to="/studentscience/studentscience"
+                  to="/advertising/advertising"
                   className="nav__dropdown__link"
                 >
                   Наша реклама
@@ -119,6 +119,64 @@ const Header = ({ title }) => {
             </a>
             <a href="#" className="nav__link">
               Студентам
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/rules/rules"
+                  className="nav__dropdown__link"
+                >
+                  Розклад
+                </Link>
+                <Link
+                  language="ua"
+                  to="/resources/resources"
+                  className="nav__dropdown__link"
+                >
+                  Ресурси
+                </Link>
+                <Link
+                  language="ua"
+                  to="/student-life/student-life"
+                  className="nav__dropdown__link"
+                >
+                  Студентське життя
+                </Link>
+                <Link
+                  language="ua"
+                  to="/annotations/annotations"
+                  className="nav__dropdown__link"
+                >
+                  Анотації дисциплін
+                </Link>
+                <Link
+                  language="ua"
+                  to="/advertising/advertising"
+                  className="nav__dropdown__link"
+                >
+                  Науково-дослід. робота
+                </Link>
+                <Link
+                  language="ua"
+                  to="/advertising/advertising"
+                  className="nav__dropdown__link"
+                >
+                  Вибір студента
+                </Link>
+                <Link
+                  language="ua"
+                  to="/advertising/advertising"
+                  className="nav__dropdown__link"
+                >
+                  Дипломування
+                </Link>
+                <Link
+                  language="ua"
+                  to="/advertising/advertising"
+                  className="nav__dropdown__link"
+                >
+                  Обговорення ОП
+                </Link>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Партнери

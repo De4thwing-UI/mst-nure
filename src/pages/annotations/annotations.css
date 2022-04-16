@@ -1,0 +1,41 @@
+.annotations {
+    margin: 80px 0;
+}
+
+.annotations__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    max-width: 846px;
+    margin: 0 auto 40px auto;
+}
+
+.annotations__inner {
+    display: flex;
+}
+
+.annotations__list {
+    margin-left: 240px;
+}
+
+.annotations__list:last-child {
+    margin-left: 20px;
+}
+
+.annotations__list__item {
+    color: #D772C1;
+    max-width: 387px;
+}
+
+.annotations__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #D772C1;
+}
