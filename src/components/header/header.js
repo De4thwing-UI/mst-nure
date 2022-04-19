@@ -151,28 +151,28 @@ const Header = ({ title }) => {
                 </Link>
                 <Link
                   language="ua"
-                  to="/advertising/advertising"
+                  to="/science-work/science-work"
                   className="nav__dropdown__link"
                 >
                   Науково-дослід. робота
                 </Link>
                 <Link
                   language="ua"
-                  to="/advertising/advertising"
+                  to="/student-choise/student-choise"
                   className="nav__dropdown__link"
                 >
                   Вибір студента
                 </Link>
                 <Link
                   language="ua"
-                  to="/advertising/advertising"
+                  to="/diploma/diploma"
                   className="nav__dropdown__link"
                 >
                   Дипломування
                 </Link>
                 <Link
                   language="ua"
-                  to="/advertising/advertising"
+                  to="/discuss/discuss"
                   className="nav__dropdown__link"
                 >
                   Обговорення ОП

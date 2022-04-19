@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
-import { StaticImage } from "gatsby-plugin-image"
 import "./footer.css"
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons/faPhoneAlt"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
@@ -137,15 +136,82 @@ const Footer = ({ title }) => {
               Спеціальність
             </Link>
             <li className="footer__link">Питання-відповідь</li>
-            <li className="footer__link">Наша реклама</li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/advertising/advertising"
+                className="footer__link"
+              >
+                Наша реклама
+              </Link>
+            </li>
           </ul>
           <ul className="footer__item">
             <li className="footer__title">Студентам</li>
-            <li className="footer__link">Розклад</li>
-            <li className="footer__link">Ресурси</li>
-            <li className="footer__link">Науково дослідна робота</li>
-            <li className="footer__link">Вибір студента</li>
-            <li className="footer__link">Дипломування</li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="http://cist.kture.kharkov.ua/"
+                className="footer__link"
+              >
+                Розклад
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/resources/resources"
+                className="footer__link"
+              >
+                Ресурси
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/student-life/student-life"
+                className="footer__link"
+              >
+                Студентське життя
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/annotations/annotations"
+                className="footer__link"
+              >
+                Анотації дисциплін{" "}
+              </Link>
+            </li>
+            <li className="footer__link">
+              {" "}
+              <Link
+                language="ua"
+                to="/science-work/science-work"
+                className="footer__link"
+              >
+                Науково дослідна робота
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/student-choise/student-choise"
+                className="footer__link"
+              >
+                Вибір студента
+              </Link>
+            </li>
+            <li className="footer__link">
+              <Link
+                language="ua"
+                to="/diploma/diploma"
+                className="footer__link"
+              >
+                Дипломування{" "}
+              </Link>
+            </li>
             <li className="footer__link">Практика</li>
           </ul>
           <ul className="footer__item">
