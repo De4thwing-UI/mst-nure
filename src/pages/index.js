@@ -16,32 +16,99 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
 
 const IndexPage = () => {
+  const menuItems = [
+    {displayName: 'Про кафедру', open: false, hide: false, subItems: ['Склад кафедри', 'Історія кафедри', 'Наші випускники']},
+    {displayName: 'Учбовий процес', open: false, hide: false, subItems: []},
+    {displayName: 'Наука', open: false, hide: false, subItems: []},
+    {displayName: 'Абітурієнтам', open: false, hide: false, subItems: []},
+    {displayName: 'Студентам', open: false, hide: false, subItems: []},
+    {displayName: 'Партнери', open: false, hide: false, subItems: []},
+    {displayName: 'Контакты', open: false, hide: false, subItems: []}
+  ]
+
   const { t } = useTranslation()
   const [burgerMenu, setBurgerMenu] = useState(false)
+  const [menuItemsState, setMenuItemsState] = useState(menuItems);
 
   return (
     <div>
       <div className="header-sm">
         <div className="container">
-          <FontAwesomeIcon
-            icon={faBars}
-            size="lg"
-            onClick={() => setBurgerMenu(true)}
-          />
+          <div className="header-sm_menu">
+            <FontAwesomeIcon
+              icon={faBars}
+              size="2x"
+              color="#393982"
+              onClick={() => setBurgerMenu(true)}
+            />
+            <span className="line">
+            </span>
+
+            <StaticImage className="header-sm_logo" src="../images/Logo1.png" alt="logo_MST" />
+          </div>
+          <div className="mod-languages">
+            <ul className="lang-inline">
+              <li className="lang-active">
+                <a href="#">Ua</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">Ru</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">En</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div className={burgerMenu ? "menu-sm" : "menu-none"}>
-        <FontAwesomeIcon
-          icon={faTimes}
-          size="lg"
-          onClick={() => setBurgerMenu(false)}
-        />
+        <div className={burgerMenu ? "header-open-sm" : "menu-none"}>
+          <div className="header-menu-sm">
+            <FontAwesomeIcon
+              icon={faTimes}
+              size="2x"
+              color="#393982"
+              onClick={() => setBurgerMenu(false)}
+            />
+            <span className="line">
+            </span>
+            <StaticImage className="header-sm_logo" src="../images/Logo1.png" alt="logo_MST" />
+          </div>
 
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+          <ul className="link-list-sm">
+            { menuItems
+              .map((item, key) => (
+                <li
+                  className={
+                    menuItemsState[key].open ? 'list-item-sm' :
+                    menuItemsState[key].hide ? 'list-item-sm_none' : 'list-item-sm'
+                  }
+                  onClick={() =>
+                    setMenuItemsState(menuItemsState.map((item, index) => {
+                      if (index === key) {
+                        item.open = !item.open
+                      } else {
+                        item.hide = !item.hide
+                      }
+
+                      return item
+                    }))}
+                  key={item.displayName + key.toString()}
+                >
+
+                  {
+                    menuItemsState[key].open ? (
+                    <ul className='list-sub-menu-sm'>
+                      <li className="list-item-sm_active list-item-sm">{item.displayName}</li>
+                      {item.subItems.map((subItem, subItemIndex) => (
+                        <li className="list-item-sm" key={subItem + subItemIndex.toString()}>{subItem}</li>
+                      ))}
+                    </ul>
+                  ) : item.displayName
+                  }
+                </li>
+              ))}
+          </ul>
+        </div>
       </div>
 
       <Header />

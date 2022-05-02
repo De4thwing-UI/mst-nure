@@ -10,7 +10,6 @@ const Header = ({ title }) => {
         <div className="header__inner">
           <div className="header__logo">
             <Link language="ua" to="/">
-              {" "}
               <StaticImage src="../../images/Logo1.png" alt="logo_MST" />
             </Link>
           </div>
