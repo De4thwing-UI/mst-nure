@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-news-news-js",
+    "path": "/ua/news/news/",
+    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"مرحبًا بكم في موقع Gatsby الخاص بي!\",\"My name is Shanika\":\"اسمي شانيكا\",\"My profession is SSE\":\"مهنتي هي SSE\",\"message\":\"root\"}","language":"ua"}}]}},"pageContext":{"language":"ua","i18n":{"language":"ua","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":true,"originalPath":"/news/news/","path":"ua/news/news/"}}},
+    "staticQueryHashes": []}

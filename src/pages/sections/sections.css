@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*Sections*/
+
+.sections {
+    margin-top: 60px;
+}
+
+.sections__item {
+    display: flex;
+    border: dotted 2px #FFFFFF;
+    border-bottom: solid #CBCBEA;
+    border-radius: 0px 0px 2px 2px;
+    margin-bottom: 40px;
+}
+
+.sections__image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.section__item__text {
+    margin: 0 0 40px 40px;
+}
+
+.section__item__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    width: 815px;
+}
+
+.section__item__teacher {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+}
+
+.section__item__place {
+    padding: 16px;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(196, 196, 196, 0.14);
+    margin-left: 128px;
+    width: 197px;
+}
+
+.section__item__day {
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #393982;
+}
+
+.section__item__audition {
+    margin-bottom: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7676A7;
+}

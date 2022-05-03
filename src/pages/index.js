@@ -1,29 +1,206 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import Header from '../components/header/header';
-import {Trans, useTranslation} from 'gatsby-plugin-react-i18next';
+import React, { useState } from "react"
+import { graphql, Link } from "gatsby"
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
+import "./index.css"
+import { StaticImage } from "gatsby-plugin-image"
+import Header from "../components/header/header"
+import Footer from "../components/footer/footer"
+import Button from "../components/button/button"
+import News from "../components/lastnews/lastnews"
+import Works from "../components/works/works"
+import Specialities from "../components/specialities/specialities"
+import Magistracy from "../components/magistracy/magistracy"
+import Employment from "../components/employment/employments"
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
 
 const IndexPage = () => {
+  const menuItems = [
+    {displayName: 'Про кафедру', open: false, hide: false, subItems: ['Склад кафедри', 'Історія кафедри', 'Наші випускники']},
+    {displayName: 'Учбовий процес', open: false, hide: false, subItems: []},
+    {displayName: 'Наука', open: false, hide: false, subItems: []},
+    {displayName: 'Абітурієнтам', open: false, hide: false, subItems: []},
+    {displayName: 'Студентам', open: false, hide: false, subItems: []},
+    {displayName: 'Партнери', open: false, hide: false, subItems: []},
+    {displayName: 'Контакты', open: false, hide: false, subItems: []}
+  ]
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
+  const [burgerMenu, setBurgerMenu] = useState(false)
+  const [menuItemsState, setMenuItemsState] = useState(menuItems);
 
   return (
-    <main>
-      <h1><Header/></h1>
-      <h1><Trans>Welcome to my Gatsby site!</Trans></h1>
-      <p><Trans>My name is Shanika</Trans></p>
-      <p><Trans>My profession is SSE</Trans></p>
-      <p><Trans>My Birthday is 1990/10/10</Trans></p>
-      <p>{t('message')}</p>
-    </main>
-  )
-};
+    <div>
+      <div className="header-sm">
+        <div className="container">
+          <div className="header-sm_menu">
+            <FontAwesomeIcon
+              icon={faBars}
+              size="2x"
+              color="#393982"
+              onClick={() => setBurgerMenu(true)}
+            />
+            <span className="line">
+            </span>
 
-export default IndexPage;
+            <StaticImage className="header-sm_logo" src="../images/Logo1.png" alt="logo_MST" />
+          </div>
+          <div className="mod-languages">
+            <ul className="lang-inline">
+              <li className="lang-active">
+                <a href="#">Ua</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">Ru</a>
+              </li>
+              <li className="lang-active">
+                <a href="#">En</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={burgerMenu ? "header-open-sm" : "menu-none"}>
+          <div className="header-menu-sm">
+            <FontAwesomeIcon
+              icon={faTimes}
+              size="2x"
+              color="#393982"
+              onClick={() => setBurgerMenu(false)}
+            />
+            <span className="line">
+            </span>
+            <StaticImage className="header-sm_logo" src="../images/Logo1.png" alt="logo_MST" />
+          </div>
+
+          <ul className="link-list-sm">
+            { menuItems
+              .map((item, key) => (
+                <li
+                  className={
+                    menuItemsState[key].open ? 'list-item-sm' :
+                    menuItemsState[key].hide ? 'list-item-sm_none' : 'list-item-sm'
+                  }
+                  onClick={() =>
+                    setMenuItemsState(menuItemsState.map((item, index) => {
+                      if (index === key) {
+                        item.open = !item.open
+                      } else {
+                        item.hide = !item.hide
+                      }
+
+                      return item
+                    }))}
+                  key={item.displayName + key.toString()}
+                >
+
+                  {
+                    menuItemsState[key].open ? (
+                    <ul className='list-sub-menu-sm'>
+                      <li className="list-item-sm_active list-item-sm">{item.displayName}</li>
+                      {item.subItems.map((subItem, subItemIndex) => (
+                        <li className="list-item-sm" key={subItem + subItemIndex.toString()}>{subItem}</li>
+                      ))}
+                    </ul>
+                  ) : item.displayName
+                  }
+                </li>
+              ))}
+          </ul>
+        </div>
+      </div>
+
+      <Header />
+
+      {/* Intro */}
+      <div className="intro">
+        <div className="container">
+          <div className="intro__inner">
+            <StaticImage
+              src="../images/intro-bg-sm.svg"
+              alt="intro_image-sm"
+              className="intro__image-sm"
+            />
+            <h1 className="intro__title">
+              {" "}
+              Харківський національний університет радіоелектроніки
+            </h1>
+            <h2 className="intro__subtitle">
+              Кафедра Медіасистеми та технології
+            </h2>
+            <h3 className="intro__text">
+              Ми завжди готові допомогти Вам отримати максимум знань і умінь в
+              нашій професійній сфері
+            </h3>
+          </div>
+          <StaticImage
+            src="../images/intro-bg.svg"
+            alt="intro_image"
+            className="intro__image"
+          />
+        </div>
+      </div>
+      {/* Features */}
+      <div className="features">
+        <div className="container">
+          <div className="features__inner">
+            <div className="features__item">
+              <StaticImage
+                className="features__icon"
+                src="../images/features/people.svg"
+                alt="Teachers"
+              />
+              <div className="features__title">
+                24
+                <p className="features__text">Викладача</p>
+              </div>
+            </div>
+            <div className="features__item">
+              <StaticImage
+                className="features__icon"
+                src="../images/features/work.svg"
+                alt="Teachers"
+              />
+              <div className="features__title">
+                100%
+                <p className="features__text">Працевлаштування</p>
+              </div>
+            </div>
+            <div className="features__item">
+              <StaticImage
+                className="features__icon"
+                src="../images/features/students.svg"
+                alt="Teachers"
+              />
+              <div className="features__title">
+                3000+
+                <p className="features__text">Випускників</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* News */}
+      <News />
+      {/* Specification */}
+      <Specialities />
+      {/* Magistracy */}
+      <Magistracy />
+      {/* Works */}
+      <Works />
+      {/* Employment */}
+      <Employment />
+      <Footer />
+    </div>
+  )
+}
+
+export default IndexPage
 
 export const query = graphql`
-  query($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
           ns
@@ -33,4 +210,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

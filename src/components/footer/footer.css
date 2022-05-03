@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Footer*/
+
+.footer {
+    background: #393982;
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    font-family: 'Montserrat';
+}
+
+.footer__inner {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+
+.footer__link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #F4F4F4;
+    margin-bottom: 6px;
+}
+
+.footer__copyright {
+    background: #2C2C76;
+}
+
+.footer__copyright__inner {
+    padding: 15px 0 15px 0;
+    line-height: 20px;
+    color: #F4F4F4;
+}
+
+
+/*Media*/
+
+@media (max-width:1199.98px) {
+    .footer__inner {
+        max-width: 1120px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .footer__item {
+        margin-left: 20px;
+        list-style-type: none;
+        margin-bottom: 32px;
+    }
+    .footer__it:first-child {
+        margin-left: 0;
+    }
+    .footer__link {
+        max-width: 136px;
+    }
+    .footer__copyright__inner {
+        padding: 15px 0 15px 0;
+        line-height: 20px;
+        color: #F4F4F4;
+        margin: 0 60px;
+    }
+}
+
+@media (max-width:575.98px) {
+    .footer {
+        background: #393982;
+        background-size: cover;
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        font-family: 'Montserrat';
+        margin-top: 0;
+    }
+    .footer__inner {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .footer__item {
+        margin-left: 0;
+        list-style-type: none;
+        margin-bottom: 32px;
+    }
+    .footer__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+    .footer__link {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 20px;
+        color: #F4F4F4;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    .footer__copyright__inner {
+        padding: 16px 0;
+        line-height: 20px;
+        color: #F4F4F4;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+.works__pagination {
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.works__pagination a {
+    font-family: 'Montserrat';
+    margin-left: 14px;
+    height: 20px;
+    width: 20px;
+    color: #7676A7;
+    padding: 3px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.works__paginations-arrow {
+    background-color: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
+    border-radius: 2px;
+}
+
+.works__pagination a :hover {
+    background: #393982;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.works__pagination .works__pagination__active {
+    background-color: #393982;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.works__pagination a:hover:not(.works__pagination__active) {
+    background-color: #393982;
+    border-radius: 2px;
+    color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .works__pagination a {
+        margin-left: 10px;
+        font-size: 14px;
+        height: 20px;
+        width: 20px;
+        color: black;
+        padding: 2px 6px;
+        text-decoration: none;
+    }
+    .works__pagination a :first-child {
+        background-color: #393982;
+        border-radius: 2px;
+        color: #ffffff;
+        margin-left: 0;
+    }
+    .works__pagination a :hover {
+        background: #393982;
+        border-radius: 2px;
+        color: #fff;
+    }
+    .works__pagination .works__pagination__active {
+        background-color: #393982;
+        color: #fff;
+        border-radius: 1px;
+    }
+    .works__pagination a:hover:not(.works__pagination__active) {
+        background-color: #393982;
+        border-radius: 2px;
+        color: #fff;
+    }
+}

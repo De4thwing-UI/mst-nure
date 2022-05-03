@@ -1,0 +1,98 @@
+.student-choise {
+    padding: 60px;
+}
+
+.student-choise__inner {
+    display: flex;
+    margin-left: 108px;
+}
+
+.student-choise__item {
+    background: #ffffff;
+    box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
+    padding: 20px;
+    width: 522px;
+    margin-left: 20px;
+}
+
+.student-choise__item:first-child {
+    margin-left: 0;
+}
+
+.student-choise__item__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #393982;
+    margin-bottom: 4px;
+}
+
+.student-choise__item__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7676a7;
+    margin-bottom: 0;
+}
+
+.student-choise__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    margin: 80px 0 32px 108px;
+}
+
+.student-choise__course {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #d772c1;
+    margin-left: 108px;
+    padding-bottom: 20px;
+    border-bottom: solid #cbcbea;
+    border-radius: 0px 0px 2px 2px;
+    margin-right: 108px;
+    margin-top: 60px;
+}
+
+.student-choise__course__inner {
+    margin: 24px 108px;
+}
+
+.student-choise__course__tems {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676A7;
+    margin-bottom: 32px;
+}
+
+.student-choise__course__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #393982;
+}
+
+.student-choise__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #393982;
+    text-decoration: underline;
+}

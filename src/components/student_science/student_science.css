@@ -1,0 +1,38 @@
+/*Intro*/
+
+.studentscience__intro {
+    padding-top: 90px;
+    margin-bottom: 120px;
+}
+
+.studentscience__intro__inner {
+    display: flex;
+}
+
+.studentscience__intro__text {
+    padding: 70px 0;
+}
+
+.studentscience__intro__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    max-width: 522px;
+}
+
+.studentscience__intro__subtitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #7676a7;
+    max-width: 522px;
+}
+
+.studentscience__intro__image {
+    margin-left: 128px;
+}

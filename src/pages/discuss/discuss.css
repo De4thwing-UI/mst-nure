@@ -1,0 +1,56 @@
+.discuss {
+    padding: 80px 0 60px 0;
+}
+
+.discuss__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #393982;
+    margin: 0 auto;
+    max-width: 846px;
+    margin-bottom: 24px;
+}
+
+.discuss__text__item {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676a7;
+    margin: 0 auto;
+    max-width: 846px;
+    margin-bottom: 20px;
+}
+
+.discuss__text {
+    margin-bottom: 60px;
+}
+
+.discuss__text__item span {
+    color: #393982;
+    text-decoration: underline;
+}
+
+.discuss__list {
+    margin: 0 auto;
+    max-width: 846px;
+}
+
+.discuss__list__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #D772C1;
+    margin-bottom: 12px;
+}
+
+.discuss__list__link {
+    color: #D772C1;
+}

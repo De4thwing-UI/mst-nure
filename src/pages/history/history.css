@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*History*/
+
+.history {
+    margin: 84px 0 0 0;
+}
+
+
+/*Timeline*/
+
+.history__timeline {
+    margin: 0;
+}
+
+.history__timeline__item {
+    display: flex;
+    margin: 60px 0 0 84px;
+}
+
+.history__timeline__item:first-child {
+    margin-top: 0;
+}
+
+.history__item__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7676A7;
+    max-width: 481px;
+}
+
+.history__item__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2C2C76;
+}
+
+.history__item__text {
+    margin: 20px 0 0 60px;
+}
+
+.history__timeline>.history__timeline__item:before {
+    content: ' ';
+    background: #D772C1;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: 131px;
+    margin-left: -94px;
+}
+
+.history__timeline:before {
+    content: ' ';
+    border: 2px solid rgba(215, 114, 193, 0.2);
+    display: inline-block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    margin-top: 144px;
+    min-height: 2980px;
+}
