@@ -178,10 +178,10 @@ const Header = ({ title }) => {
                 </Link>
               </div>
             </a>
-            <a href="#" className="nav__link">
+            <a href="/partners/partners" className="nav__link">
               Партнери
             </a>
-            <a href="#" className="nav__link">
+            <a href="/contact/contact" className="nav__link">
               Контакти
             </a>
           </nav>
