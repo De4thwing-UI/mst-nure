@@ -31,6 +31,7 @@
         "react-i18next": "^11.14.2"
     },
     "devDependencies": {
+        "gatsby-plugin-root-import": "^2.0.8",
         "prettier": "^2.4.1"
     },
     "keywords": [

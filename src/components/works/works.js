@@ -1,6 +1,6 @@
 import React from "react"
 import Button from "../button/button"
-import Pagination from "../Pagination/Pagination"
+import Pagination from "src/components/pagination/pagination"
 import "./works.css"
 import FirstImg from "../../images/works/1.png"
 import SecondImg from "../../images/works/2.png"
