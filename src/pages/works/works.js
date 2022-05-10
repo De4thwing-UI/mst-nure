@@ -5,61 +5,62 @@ import Footer from "../../components/footer/footer"
 import News from "../../components/lastnews/lastnews"
 import Pagination from "../../components/pagination/pagination"
 import Title from "../../components/title/title"
-import FirstImg from "../../images/works/1.png"
-import SecondImg from "../../images/works/2.png"
-import ThirdImg from "../../images/works/3.png"
-import FourthImg from "../../images/works/4.png"
-import FiveImg from "../../images/works/5.png"
-import SixImg from "../../images/works/6.png"
-import SevenImg from "../../images/works/7.png"
-import EightImg from "../../images/works/8.png"
-import NineImg from "../../images/works/9.png"
+// import FirstImg from "../../images/works/1.png"
+// import SecondImg from "../../images/works/2.png"
+// import ThirdImg from "../../images/works/3.png"
+// import FourthImg from "../../images/works/4.png"
+// import FiveImg from "../../images/works/5.png"
+// import SixImg from "../../images/works/6.png"
+// import SevenImg from "../../images/works/7.png"
+// import EightImg from "../../images/works/8.png"
+// import NineImg from "../../images/works/9.png"
 import "./works.css"
+import { StaticImage } from "gatsby-plugin-image"
 const WorksPage = () => {
   const works = [
     {
       name: "Гапіч Антон",
-      photo: FirstImg,
+      // photo: FirstImg,
       position: "Ілюстрація",
     },
     {
       name: "Ісаєнко Тетяна",
-      photo: SecondImg,
+      // photo: SecondImg,
       position: "Ілюстрація",
     },
     {
       name: "Музичук Анна",
-      photo: ThirdImg,
+      // photo: ThirdImg,
       position: "Соціальний плакат",
     },
     {
       name: "Гапіч Антон",
-      photo: FourthImg,
+      // photo: FourthImg,
       position: "Мобільний додаток",
     },
     {
       name: "Тарас Степаненко",
-      photo: FiveImg,
+      // photo: FiveImg,
       position: "Веб сайт",
     },
     {
       name: "Олександр Зінченко",
-      photo: SixImg,
+      // photo: SixImg,
       position: "Веб сайт",
     },
     {
       name: "Георгій Бущан",
-      photo: SevenImg,
+      // photo: SevenImg,
       position: "Веб сайт",
     },
     {
       name: "Андрій Ярмоленко",
-      photo: EightImg,
+      // photo: EightImg,
       position: "Ілюстрація",
     },
     {
       name: "Дмитро Мельніченко",
-      photo: NineImg,
+      // photo: NineImg,
       position: "3D Ілюстрація",
     },
   ]
@@ -75,8 +76,8 @@ const WorksPage = () => {
             <div className="graduates__works__inner">
               {works.map((work, index) => (
                 <div className="graduate__works__item" key={index.toString()}>
-                  <img
-                    src={work.photo}
+                  <StaticImage
+                    src="../../images/works/1.png"
                     alt="1"
                     className="graduate__works__image"
                   />

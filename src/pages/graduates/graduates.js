@@ -126,11 +126,11 @@ const GraduatePage = () => {
           <div className="graduates__inner">
             {graduates.map((graduate, index) => (
               <div className="graduates__inner__item" key={index.toString()}>
-                <img
+                <StaticImage
                   className="graduates__item__image"
-                  src={graduate.photo}
+                  src="../../images/graduates/gapich.png"
                   alt="teachers__photo"
-                ></img>
+                ></StaticImage>
                 <h1 className="graduates__item__title">{graduate.name}</h1>
                 <p className="graduates__item__text">{graduate.position}</p>
               </div>

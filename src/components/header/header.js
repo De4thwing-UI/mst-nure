@@ -8,7 +8,6 @@ const Header = ({ title }) => {
   return (
     <header className="header">
       <HeaderSm />
-
       <div className="container">
         <div className="header__inner">
           <div className="header__logo">
