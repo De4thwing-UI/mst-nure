@@ -3,29 +3,29 @@ import { graphql, Link } from "gatsby"
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./graduates.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import Button from "../../components/button/button"
-import Pagination from "../../components/pagination/pagination"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
-import GapichImg from "../../images/graduates/gapich.png"
-import LeviImg from "../../images/graduates/levi.png"
-import YarmolaImg from "../../images/graduates/yarmola.png"
-import YaremchukImg from "../../images/graduates/yaremchuk.png"
-import IbraImg from "../../images/graduates/ibra.png"
-import RomanukImg from "../../images/graduates/romanuk.png"
-import KudzoImg from "../../images/graduates/kudzo.png"
-import ZinaImg from "../../images/graduates/zina.png"
-import FirstImg from "../../images/works/1.png"
-import SecondImg from "../../images/works/2.png"
-import ThirdImg from "../../images/works/3.png"
-import FourthImg from "../../images/works/4.png"
-import FiveImg from "../../images/works/5.png"
-import SixImg from "../../images/works/6.png"
-import SevenImg from "../../images/works/7.png"
-import EightImg from "../../images/works/8.png"
-import NineImg from "../../images/works/9.png"
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import Button from "src/components/button/button"
+import Pagination from "src/components/pagination/pagination"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
+import GapichImg from "src/images/graduates/gapich.png"
+import LeviImg from "src/images/graduates/levi.png"
+import YarmolaImg from "src/images/graduates/yarmola.png"
+import YaremchukImg from "src/images/graduates/yaremchuk.png"
+import IbraImg from "src/images/graduates/ibra.png"
+import RomanukImg from "src/images/graduates/romanuk.png"
+import KudzoImg from "src/images/graduates/kudzo.png"
+import ZinaImg from "src/images/graduates/zina.png"
+import FirstImg from "src/images/works/1.png"
+import SecondImg from "src/images/works/2.png"
+import ThirdImg from "src/images/works/3.png"
+import FourthImg from "src/images/works/4.png"
+import FiveImg from "src/images/works/5.png"
+import SixImg from "src/images/works/6.png"
+import SevenImg from "src/images/works/7.png"
+import EightImg from "src/images/works/8.png"
+import NineImg from "src/images/works/9.png"
 
 const GraduatePage = () => {
   const graduates = [
@@ -115,40 +115,41 @@ const GraduatePage = () => {
       name: "Дмитро Мельніченко",
       photo: NineImg,
       position: "3D Ілюстрація",
-    },  
+    },
   ]
   return (
     <div>
       <Header />
-      <Title>Наші випускники</Title>
+      <Title> Наші випускники </Title>{" "}
       <div className="graduates__page">
         <div className="container">
           <div className="graduates__inner">
+            {" "}
             {graduates.map((graduate, index) => (
               <div className="graduates__inner__item" key={index.toString()}>
-                <StaticImage
+                <img
+                  src={graduate.photo}
+                  alt="1"
                   className="graduates__item__image"
-                  src="../../images/graduates/gapich.png"
-                  alt="teachers__photo"
-                ></StaticImage>
-                <h1 className="graduates__item__title">{graduate.name}</h1>
-                <p className="graduates__item__text">{graduate.position}</p>
+                />
+                <h1 className="graduates__item__title"> {graduate.name} </h1>{" "}
+                <p className="graduates__item__text"> {graduate.position} </p>{" "}
               </div>
-            ))}
-          </div>
-        </div>
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
         <Pagination />
-      </div>
+      </div>{" "}
       <div className="works">
         <div className="container">
           <div className="works__title">
-            <h1 className="works__text">Роботи студентів</h1>
-
-          </div>
-        </div>
+            <h1 className="works__text"> Роботи студентів </h1>
+          </div>{" "}
+        </div>{" "}
         <div className="graduates__works">
           <div className="container">
             <div className="graduates__works__inner">
+              {" "}
               {works.map((work, index) => (
                 <div className="graduate__works__item" key={index.toString()}>
                   <img
@@ -156,17 +157,21 @@ const GraduatePage = () => {
                     alt="1"
                     className="graduate__works__image"
                   />
-                  <h1 className="graduate__works__item__title">{work.name}</h1>
+                  <h1 className="graduate__works__item__title">
+                    {" "}
+                    {work.name}{" "}
+                  </h1>{" "}
                   <div className="graduate__works__item__text">
-                    {work.position}
-                  </div>
+                    {" "}
+                    {work.position}{" "}
+                  </div>{" "}
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
+              ))}{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
         <Pagination />
-      </div>
+      </div>{" "}
       <News />
       <Footer />
     </div>

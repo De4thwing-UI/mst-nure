@@ -1,20 +1,20 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./studentscience.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
-import Studentscience from "../../components/student_science/student_science"
-import Research from "../../components/research/research"
-import Conferences from "../../components/conferences/conferences"
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
+import Studentscience from "src/components/student_science/student_science"
+import Research from "src/components/research/research"
+import Conferences from "src/components/conferences/conferences"
 
 const StudentsciencePage = () => {
   return (
     <div>
       <Header />
-      <Title>Студентська наука</Title>
+      <Title> Студентська наука </Title>{" "}
       <div className="sudentscience">
         <Studentscience />
         <Research />
@@ -29,13 +29,13 @@ const StudentsciencePage = () => {
               <div className="measures__title">
                 <h1 className="measures__text">
                   Наші студенти щорічно беруть участь в таких студентських
-                  науково-практичних заходах
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                  науково - практичних заходах{" "}
+                </h1>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <Conferences />
       <News />
       <Footer />

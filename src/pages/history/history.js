@@ -1,22 +1,20 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
-import { StaticImage } from "gatsby-plugin-image"
 import "./history.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import Button from "../../components/button/button"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
-import FirstImg from "../../images/History/1944.png"
-import SecondImg from "../../images/History/1977.png"
-import ThirdImg from "../../images/History/1988.png"
-import FourImg from "../../images/History/1989.png"
-import FifthImg from "../../images/History/1997.png"
-import SixthImg from "../../images/History/2004.png"
-import SeventhImg from "../../images/History/2011.png"
-import EightImg from "../../images/History/2015.png"
-import NineImg from "../../images/History/2020.png"
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
+import FirstImg from "src/images/History/1944.png"
+import SecondImg from "src/images/History/1977.png"
+import ThirdImg from "src/images/History/1988.png"
+import FourImg from "src/images/History/1989.png"
+import FifthImg from "src/images/History/1997.png"
+import SixthImg from "src/images/History/2004.png"
+import SeventhImg from "src/images/History/2011.png"
+import EightImg from "src/images/History/2015.png"
+import NineImg from "src/images/History/2020.png"
 
 const HistoryPage = () => {
   const histories = [
@@ -69,11 +67,12 @@ const HistoryPage = () => {
   return (
     <div>
       <Header />
-      <Title>Історія кафедри</Title>
+      <Title> Історія кафедри </Title>{" "}
       <div className="history">
         <div className="container">
           <div className="history__inner">
             <ul className="history__timeline">
+              {" "}
               {histories.map((history, index) => (
                 <li className="history__timeline__item" key={index.toString()}>
                   <img
@@ -82,15 +81,15 @@ const HistoryPage = () => {
                     alt="History"
                   />
                   <div className="history__item__text">
-                    <h1 className="history__item__title">{history.year}</h1>
-                    <p className="history__item__suptitle">{history.text}</p>
-                  </div>
+                    <h1 className="history__item__title"> {history.year} </h1>{" "}
+                    <p className="history__item__suptitle"> {history.text} </p>{" "}
+                  </div>{" "}
                 </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
+              ))}{" "}
+            </ul>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <News />
       <Footer />
     </div>

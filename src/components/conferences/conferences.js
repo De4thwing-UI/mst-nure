@@ -1,6 +1,6 @@
 import React from "react"
 import "./conferences.css"
-import Pagination from "../../components/pagination/pagination"
+import Pagination from "src/components/pagination/pagination"
 
 const Conferences = () => {
   const conferences = [

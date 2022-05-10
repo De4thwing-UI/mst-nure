@@ -1,20 +1,18 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import "./admissions.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
-import Specialty from "../../components/specialty/specialty"
-import Faq from "../../components/faq/faq"
-
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
+import Specialty from "src/components/specialty/specialty"
+import Faq from "src/components/faq/faq"
 
 const AdmissionsPage = () => {
   return (
     <div>
       <Header />
-      <Title>Спеціальність</Title>
-      <Specialty />
+      <Title> Спеціальність </Title> <Specialty />
       <Faq />
       <News />
       <Footer />
@@ -36,4 +34,4 @@ export const query = graphql`
       }
     }
   }
-  `
+`

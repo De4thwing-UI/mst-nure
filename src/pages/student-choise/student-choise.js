@@ -1,45 +1,45 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import "./student-choise.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
 
 const StudentchoisePage = () => {
   return (
     <div>
       <Header />
-      <Title>Вибір студента</Title>
+      <Title> Вибір студента </Title>{" "}
       <div className="student-choise">
         <div className="container">
           <div className="student-choise__inner">
             <div className="student-choise__item">
               <h1 className="student-choise__item__title">
-                Вступ до спеціальності
-              </h1>
-              <p className="student-choise__item__text">теми рефератів</p>
-            </div>
+                Вступ до спеціальності{" "}
+              </h1>{" "}
+              <p className="student-choise__item__text"> теми рефератів </p>{" "}
+            </div>{" "}
             <div className="student-choise__item">
               <h1 className="student-choise__item__title">
-                Вступ до спеціальності
-              </h1>
+                Вступ до спеціальності{" "}
+              </h1>{" "}
               <p className="student-choise__item__text">
                 <a
                   href="https://drive.google.com/file/d/1DwZHlyR2IflsjCRXEyqzCYws4B0J2nKc/view"
                   target="_blank"
                 >
-                  питання до Тесту1
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="student-choise__title">Курсове проектування</div>
-          <div className="student-choise__course">2 курс</div>
+                  питання до Тесту1{" "}
+                </a>{" "}
+              </p>{" "}
+            </div>{" "}
+          </div>{" "}
+          <div className="student-choise__title"> Курсове проектування </div>{" "}
+          <div className="student-choise__course"> 2 курс </div>{" "}
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Художні основи проектування видань
-            </h1>
+              Художні основи проектування видань{" "}
+            </h1>{" "}
             <p className="student-choise__course__tems">
               Вибір теми:{" "}
               <a
@@ -47,10 +47,13 @@ const StudentchoisePage = () => {
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально-методичне забезпечення
+                Навчально - методичне забезпечення{" "}
               </a>{" "}
-            </p>
-            <h1 className="student-choise__course__title">Технічна механіка</h1>
+            </p>{" "}
+            <h1 className="student-choise__course__title">
+              {" "}
+              Технічна механіка{" "}
+            </h1>{" "}
             <p className="student-choise__course__tems">
               Вибір теми:{" "}
               <a
@@ -58,15 +61,15 @@ const StudentchoisePage = () => {
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально-методичне забезпечення
+                Навчально - методичне забезпечення{" "}
               </a>{" "}
-            </p>
-          </div>
-          <div className="student-choise__course">3 курс</div>
+            </p>{" "}
+          </div>{" "}
+          <div className="student-choise__course"> 3 курс </div>{" "}
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проектів
-            </h1>
+              Технологія та обладнання друкарських та післядрукарських проектів{" "}
+            </h1>{" "}
             <p className="student-choise__course__tems">
               Вибір теми:{" "}
               <a
@@ -74,23 +77,13 @@ const StudentchoisePage = () => {
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально-методичне забезпечення
+                Навчально - методичне забезпечення{" "}
               </a>{" "}
-            </p>
-            <h1 className="student-choise__course__title">Web-технології</h1>
-            <p className="student-choise__course__tems">
-              Вибір теми:{" "}
-              <a
-                href="https://catalogue.nure.ua/login"
-                target="_blank"
-                className="student-choise__link"
-              >
-                Навчально-методичне забезпечення
-              </a>{" "}
-            </p>
+            </p>{" "}
             <h1 className="student-choise__course__title">
-              Технологія підготовки електронних видань
-            </h1>
+              {" "}
+              Web - технології{" "}
+            </h1>{" "}
             <p className="student-choise__course__tems">
               Вибір теми:{" "}
               <a
@@ -98,15 +91,28 @@ const StudentchoisePage = () => {
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально-методичне забезпечення
+                Навчально - методичне забезпечення{" "}
               </a>{" "}
-            </p>
-          </div>
-          <div className="student-choise__course">4 курс</div>
+            </p>{" "}
+            <h1 className="student-choise__course__title">
+              Технологія підготовки електронних видань{" "}
+            </h1>{" "}
+            <p className="student-choise__course__tems">
+              Вибір теми:{" "}
+              <a
+                href="https://catalogue.nure.ua/login"
+                target="_blank"
+                className="student-choise__link"
+              >
+                Навчально - методичне забезпечення{" "}
+              </a>{" "}
+            </p>{" "}
+          </div>{" "}
+          <div className="student-choise__course"> 4 курс </div>{" "}
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проектів
-            </h1>
+              Технологія та обладнання друкарських та післядрукарських проектів{" "}
+            </h1>{" "}
             <p className="student-choise__course__tems">
               Вибір теми:{" "}
               <a
@@ -114,12 +120,12 @@ const StudentchoisePage = () => {
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально-методичне забезпечення
+                Навчально - методичне забезпечення{" "}
               </a>{" "}
-            </p>
-          </div>
-        </div>
-      </div>
+            </p>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <News />
       <Footer />
     </div>

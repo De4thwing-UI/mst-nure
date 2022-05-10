@@ -1,19 +1,19 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import "./teacher.css"
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import News from "../../components/lastnews/lastnews"
-import Title from "../../components/title/title"
-import DeynekoImg from "../../images/teachers/janna.png"
-import EgorovaImg from "../../images/teachers/egorova.png"
-import KulishovaImg from "../../images/teachers/kulishova.png"
-import LevikinImg from "../../images/teachers/levikin.png"
-import ManakovImg from "../../images/teachers/manakov.png"
-import TkachenkoImg from "../../images/teachers/tkachenko.png"
-import BizukImg from "../../images/teachers/bizuk.png"
-import VovkImg from "../../images/teachers/vovk.png"
+import Header from "src/components/header/header"
+import Footer from "src/components/footer/footer"
+import News from "src/components/lastnews/lastnews"
+import Title from "src/components/title/title"
+import DeynekoImg from "src/images/teachers/janna.png"
+import EgorovaImg from "src/images/teachers/egorova.png"
+import KulishovaImg from "src/images/teachers/kulishova.png"
+import LevikinImg from "src/images/teachers/levikin.png"
+import ManakovImg from "src/images/teachers/manakov.png"
+import TkachenkoImg from "src/images/teachers/tkachenko.png"
+import BizukImg from "src/images/teachers/bizuk.png"
+import VovkImg from "src/images/teachers/vovk.png"
 
 const TeachersPage = () => {
   const teachers = [
@@ -61,7 +61,7 @@ const TeachersPage = () => {
   return (
     <div>
       <Header />
-     <Title>Склад кафедри</Title>
+      <Title> Склад кафедри </Title>{" "}
       <div className="features">
         <div className="container">
           <div className="features__inner">
@@ -72,10 +72,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24
-                <p className="features__text">Викладача</p>
-              </div>
-            </div>
+                24 <p className="features__text"> Викладача </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -83,9 +82,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                4<p className="features__text">Сумісника</p>
-              </div>
-            </div>
+                4 <p className="features__text"> Сумісника </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -93,16 +92,16 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                16
-                <p className="features__text">Кандидатів наук</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                16 <p className="features__text"> Кандидатів наук </p>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="teachers__page">
         <div className="container">
           <div className="teachers__inner">
+            {" "}
             {teachers.map((teacher, index) => (
               <div className="teachers__inner__item" key={index.toString()}>
                 <img
@@ -110,14 +109,14 @@ const TeachersPage = () => {
                   src={teacher.photo}
                   alt="teachers__photo"
                 />
-                <h1 className="teachers__item__title">{teacher.name}</h1>
-                <p className="teachers__item__text">{teacher.position}</p>
+                <h1 className="teachers__item__title"> {teacher.name} </h1>{" "}
+                <p className="teachers__item__text"> {teacher.position} </p>{" "}
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
-        <News />
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
+      <News />
       <Footer />
     </div>
   )

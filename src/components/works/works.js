@@ -2,9 +2,9 @@ import React from "react"
 import Button from "../button/button"
 import Pagination from "src/components/pagination/pagination"
 import "./works.css"
-import FirstImg from "../../images/works/1.png"
-import SecondImg from "../../images/works/2.png"
-import ThirdImg from "../../images/works/3.png"
+import FirstImg from "src/images/works/1.png"
+import SecondImg from "src/images/works/2.png"
+import ThirdImg from "src/images/works/3.png"
 
 const Works = () => {
   const works = [

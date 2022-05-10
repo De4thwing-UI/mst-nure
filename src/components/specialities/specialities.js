@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import Button from "../../components/button/button"
-import WebImg from "../../images/Specialities/web.svg"
-import VpsImg from "../../images/Specialities/VPS.svg"
-import GraphImg from "../../images/Specialities/graph.svg"
-import ThreedImg from "../../images/Specialities/3d.svg"
-import EbooksImg from "../../images/Specialities/e-books.svg"
-import VideoImg from "../../images/Specialities/video.svg"
+import Button from "src/components/button/button"
+import WebImg from "src/images/Specialities/web.svg"
+import VpsImg from "src/images/Specialities/VPS.svg"
+import GraphImg from "src/images/Specialities/graph.svg"
+import ThreedImg from "src/images/Specialities/3d.svg"
+import EbooksImg from "src/images/Specialities/e-books.svg"
+import VideoImg from "src/images/Specialities/video.svg"
 import "./specialities.css"
 
 const Specialities = () => {
@@ -41,13 +41,14 @@ const Specialities = () => {
       <div className="container">
         <div className="specialties__title">
           <h1 className="specialties__text">
-            Спеціальність 186 Видавництво та поліграфія
-          </h1>
+            Спеціальність 186 Видавництво та поліграфія{" "}
+          </h1>{" "}
           <a href="#" className="specialties__link">
-            <Button>Дізнатись більше</Button>
-          </a>
-        </div>
+            <Button> Дізнатись більше </Button>{" "}
+          </a>{" "}
+        </div>{" "}
         <div className="specialities__inner">
+          {" "}
           {specialities.map((specialitie, index) => (
             <div className="specialities__item" key={index.toString()}>
               <img
@@ -56,16 +57,16 @@ const Specialities = () => {
                 className="specialities__image"
               />
               <div className="specialities__item__title">
-                {specialitie.title}
-              </div>
+                {" "}
+                {specialitie.title}{" "}
+              </div>{" "}
             </div>
-          ))}
+          ))}{" "}
           <a href="#" className="specialties__link-sm">
-            <Button>Дізнатись більше</Button>
-
-          </a>
-        </div>
-      </div>
+            <Button> Дізнатись більше </Button>
+          </a>{" "}
+        </div>{" "}
+      </div>{" "}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import "./faq.css"
-import Pagination from "../../components/pagination/pagination"
+import Pagination from "src/components/pagination/pagination"
 
 const Faq = () => {
   const faqs = [
@@ -44,8 +44,7 @@ const Faq = () => {
     {
       question:
         "Які предмети ЗНО потрібно обрати під час вступу на навчання за спеціальністю «Видавництво та поліграфія»?",
-      answer:
-        "Всі предмети ЗНО та вагові коефіціенти перелічені за ",
+      answer: "Всі предмети ЗНО та вагові коефіціенти перелічені за ",
       link: "",
       text: "цим посиланням",
     },
@@ -60,22 +59,25 @@ const Faq = () => {
   return (
     <div className="faq">
       <div className="container">
-        <div className="faq__title">Питання та відповіді</div>
+        <div className="faq__title"> Питання та відповіді </div>{" "}
         <div className="faq__inner">
+          {" "}
           {faqs.map((faq, index) => (
             <div className="faq__item" key={index.toString()}>
-              <div className="faq__question">{faq.question}</div>
+              <div className="faq__question"> {faq.question} </div>{" "}
               <div className="faq__answer">
+                {" "}
                 {faq.answer}{" "}
                 <a href={faq.link} className="faq__link">
-                  {faq.text}
-                </a>
-              </div>
+                  {" "}
+                  {faq.text}{" "}
+                </a>{" "}
+              </div>{" "}
             </div>
-          ))}
-        </div>
+          ))}{" "}
+        </div>{" "}
         <Pagination />
-      </div>
+      </div>{" "}
     </div>
   )
 }
