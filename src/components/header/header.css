@@ -146,7 +146,7 @@
  }
  
  @media (max-width: 575.98px) {
-     .header {
+     .header .container{
          display: none;
      }
  }

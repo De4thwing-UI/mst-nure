@@ -2,10 +2,13 @@ import React from "react"
 import { Link } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.css"
+import HeaderSm from "../header-sm"
 
 const Header = ({ title }) => {
   return (
     <header className="header">
+      <HeaderSm />
+
       <div className="container">
         <div className="header__inner">
           <div className="header__logo">
