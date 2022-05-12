@@ -81,7 +81,7 @@ const IndexPage = () => {
         </div>{" "}
       </div>{" "}
       {/* News */} <News /> {/* Specification */} <Specialities />{" "}
-      {/* Magistracy */} <Magistracy /> {/* Works */} <Works />{" "}
+      {/* Magistracy */} <Magistracy /> {/* works */} <Works />{" "}
       {/* Employment */} <Employment />
       <Footer />
     </div>

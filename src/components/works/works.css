@@ -1,4 +1,4 @@
- /*Works*/
+ /*works*/
  
  .works {
      font-family: "Montserrat";
@@ -62,7 +62,7 @@
  }
  
  @media (max-width: 1199.98px) {
-     /*Works*/
+     /*works*/
      .works__inner {
          max-width: 100%;
          margin: 0 40px;
@@ -88,7 +88,7 @@
  }
  
  @media (max-width: 575.98px) {
-     /*Works*/
+     /*works*/
      .works {
          font-family: "Montserrat";
          margin-top: 60px;
