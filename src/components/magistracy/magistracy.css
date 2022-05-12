@@ -15,17 +15,17 @@
 }
 
 .magistracy__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .magistracy__item {
     padding: 32px;
     align-items: center;
-    width: 413px;
-    height: 244px;
-    margin: 0 0 80px 20px;
+    max-width: 413px;
+    height: 325px;
+    margin: 0 0 80px 0;
     background: #FFFFFF;
     box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
 }
@@ -76,6 +76,21 @@
     .magistracy__title {
         max-width: 100%;
         margin: 60px 40px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .magistracy__title {
+        font-size: 42px;
+    }
+    .magistracy__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 920px;
+        margin: 0 40px;
+    }
+    .magistracy__item {
+        max-width: 290px;
     }
 }
 

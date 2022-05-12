@@ -192,7 +192,6 @@ ul {
         display: flex;
         justify-content: right;
         margin-right: 40px;
-        max-width: 83px;
         max-height: 471px;
     }
     /*Features*/
@@ -236,5 +235,40 @@ ul {
         line-height: 28px;
         color: #7676A7;
         margin-right: 10px;
+    }
+}
+
+@media(max-width:767.98px) {}
+
+@media (max-width: 991.98px) {
+    .intro__inner {
+        max-width: 450px;
+        width: 100%;
+    }
+    .intro__image {
+        margin-top: 20px;
+        width: 550px;
+        height: 411.19px;
+    }
+    .intro .intro__title {
+        font-size: 18px;
+    }
+    .intro__subtitle {
+        font-family: 'Montserrat';
+        font-size: 64px;
+        margin-bottom: 0;
+    }
+    .intro__text {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .features__item {
+        max-width: 500px;
+    }
+    .features__title {
+        font-size: 26px;
+    }
+    .features__text {
+        font-size: 14px;
     }
 }

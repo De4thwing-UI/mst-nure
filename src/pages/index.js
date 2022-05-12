@@ -3,13 +3,13 @@ import { graphql } from "gatsby"
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
-import Header from "../components/header"
-import Footer from "../components/footer"
-import News from "../components/lastnews"
-import Works from "../components/works"
-import Specialities from "../components/specialities"
-import Magistracy from "../components/magistracy"
-import Employment from "../components/employment"
+import Header from "src/components/header"
+import Footer from "src/components/footer"
+import News from "src/components/lastnews"
+import Works from "src/components/works"
+import Specialities from "src/components/specialities"
+import Magistracy from "src/components/magistracy"
+import Employment from "src/components/employment"
 
 const IndexPage = () => {
   const { t } = useTranslation()
@@ -20,8 +20,8 @@ const IndexPage = () => {
       <div className="intro">
         <div className="container">
           <div className="intro__inner">
-            <StaticImage
-              src="../images/intro-bg-sm.svg"
+            <StaticImage              src="../images/intro-bg-sm.svg"
+
               alt="intro_image-sm"
               className="intro__image-sm"
             />

@@ -82,6 +82,15 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    .specialties__text {
+        font-size: 42px;
+    }
+    .specialities__item__title {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 575.98px) {
     /*Specialities*/
     .specialities {

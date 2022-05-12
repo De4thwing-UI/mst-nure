@@ -76,6 +76,16 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    .footer__title {
+        font-size: 12px;
+    }
+    .footer__link {
+        max-width: 175px;
+        font-size: 10px;
+    }
+}
+
 @media (max-width:575.98px) {
     .footer {
         background: #393982;
