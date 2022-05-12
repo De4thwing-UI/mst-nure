@@ -1,23 +1,22 @@
 import React, { useState } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import "./index.css"
 import { StaticImage } from "gatsby-plugin-image"
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
-import News from "../components/lastnews/lastnews"
-import Works from "../components/works/works"
-import Specialities from "../components/specialities/specialities"
-import Magistracy from "../components/magistracy/magistracy"
-import Employment from "../components/employment/employments"
+import Header from "../components/header"
+import Footer from "../components/footer"
+import News from "../components/lastnews"
+import Works from "../components/works"
+import Specialities from "../components/specialities"
+import Magistracy from "../components/magistracy"
+import Employment from "../components/employment"
 
 const IndexPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div>
-      <Header />
-      {/* Intro */}
+      <Header /> {/* Intro */}{" "}
       <div className="intro">
         <div className="container">
           <div className="intro__inner">
@@ -27,24 +26,24 @@ const IndexPage = () => {
               className="intro__image-sm"
             />
             <h1 className="intro__title">
-              Харківський національний університет радіоелектроніки
-            </h1>
+              Харківський національний університет радіоелектроніки{" "}
+            </h1>{" "}
             <h2 className="intro__subtitle">
-              Кафедра Медіасистеми та технології
-            </h2>
+              Кафедра Медіасистеми та технології{" "}
+            </h2>{" "}
             <h3 className="intro__text">
               Ми завжди готові допомогти Вам отримати максимум знань і умінь в
-              нашій професійній сфері
-            </h3>
-          </div>
+              нашій професійній сфері{" "}
+            </h3>{" "}
+          </div>{" "}
           <StaticImage
             src="../images/intro-bg.svg"
             alt="intro_image"
             className="intro__image"
           />
-        </div>
-      </div>
-      {/* Features */}
+        </div>{" "}
+      </div>{" "}
+      {/* Features */}{" "}
       <div className="features">
         <div className="container">
           <div className="features__inner">
@@ -55,10 +54,9 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24
-                <p className="features__text">Викладача</p>
-              </div>
-            </div>
+                24 <p className="features__text"> Викладача </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -66,10 +64,9 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                100%
-                <p className="features__text">Працевлаштування</p>
-              </div>
-            </div>
+                100 % <p className="features__text"> Працевлаштування </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -77,23 +74,15 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                3000+
-                <p className="features__text">Випускників</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* News */}
-      <News />
-      {/* Specification */}
-      <Specialities />
-      {/* Magistracy */}
-      <Magistracy />
-      {/* Works */}
-      <Works />
-      {/* Employment */}
-      <Employment />
+                3000 + <p className="features__text"> Випускників </p>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
+      {/* News */} <News /> {/* Specification */} <Specialities />{" "}
+      {/* Magistracy */} <Magistracy /> {/* Works */} <Works />{" "}
+      {/* Employment */} <Employment />
       <Footer />
     </div>
   )
