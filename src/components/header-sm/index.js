@@ -98,11 +98,12 @@ export const HeaderSm = () => {
             onClick={() => setBurgerMenu(true)}
           />
           <span className="line" />
-          <StaticImage
-            className="header-sm_logo"
-            src="../images/Logo1.png"
-            alt="logo_MST"
-          />
+          <Link language="ua" to="/">
+            <StaticImage
+              className="header-sm_logo"
+              src="../../images/Logo1.png"
+              alt="logo_MST" />
+          </Link>
         </div>
         <div className="mod-languages">
           <ul className="lang-inline">
