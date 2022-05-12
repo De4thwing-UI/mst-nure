@@ -59,25 +59,25 @@ const Faq = () => {
   return (
     <div className="faq">
       <div className="container">
-        <div className="faq__title"> Питання та відповіді </div>{" "}
+        <div className="faq__title"> Питання та відповіді </div>
         <div className="faq__inner">
-          {" "}
+          
           {faqs.map((faq, index) => (
             <div className="faq__item" key={index.toString()}>
-              <div className="faq__question"> {faq.question} </div>{" "}
+              <div className="faq__question"> {faq.question} </div>
               <div className="faq__answer">
-                {" "}
-                {faq.answer}{" "}
+                
+                {faq.answer}
                 <a href={faq.link} className="faq__link">
-                  {" "}
-                  {faq.text}{" "}
-                </a>{" "}
-              </div>{" "}
+                  
+                  {faq.text}
+                </a>
+              </div>
             </div>
-          ))}{" "}
-        </div>{" "}
+          ))}
+        </div>
         <Pagination />
-      </div>{" "}
+      </div>
     </div>
   )
 }

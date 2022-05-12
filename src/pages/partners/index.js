@@ -12,7 +12,7 @@ const PartnersPage = () => {
       <Title>Партнери</Title>
       <div className="partners">
         <div className="container">
-          <div className="partners__title">Середні спеціальні заклади</div>{" "}
+          <div className="partners__title">Середні спеціальні заклади</div>
           <ul className="partners__inner">
             <li className="partners__item">
               <a
@@ -84,7 +84,7 @@ const PartnersPage = () => {
               </a>
             </li>
           </ul>
-          <div className="partners__title">Вищі навчальні заклади</div>{" "}
+          <div className="partners__title">Вищі навчальні заклади</div>
           <ul className="partners__inner">
             <li className="partners__item">
               <a
@@ -92,7 +92,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                НТУУ "КПІ" Видавничо-поліграфічний інститут{" "}
+                НТУУ "КПІ" Видавничо-поліграфічний інститут
               </a>
             </li>
             <li className="partners__item">
@@ -101,7 +101,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Українська академія друкарства{" "}
+                Українська академія друкарства
               </a>
             </li>
             <li className="partners__item">
@@ -110,7 +110,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Національний університет "Львівська політехніка"{" "}
+                Національний університет "Львівська політехніка"
               </a>
             </li>
             <li className="partners__item">
@@ -119,11 +119,11 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Харківський національний економічний університет ім. С. Кузнеця{" "}
+                Харківський національний економічний університет ім. С. Кузнеця
               </a>
             </li>
           </ul>
-          <div className="partners__title">Підприємства</div>{" "}
+          <div className="partners__title">Підприємства</div>
           <div className="partners__text">
             <p className="partners__text__item">
               Початок взаємовідношень студентів з підприємствами починається з 1
@@ -237,7 +237,7 @@ const PartnersPage = () => {
               </a>
             </li>
           </ul>
-          <div className="partners__title">Міжнародне співробітництво</div>{" "}
+          <div className="partners__title">Міжнародне співробітництво</div>
           <div className="partners__text">
             <p className="partners__text__item">
               Одним з основних напрямків роботи кафедри МСТ є міжнародне

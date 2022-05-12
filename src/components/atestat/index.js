@@ -82,7 +82,7 @@ const Atestat = () => {
               <li className="junior__timeline__item">
                 <div className="junior__item__text">
                   <h1 className="junior__item__title">
-                    Крок 1. Подати заяву і документи з 14 по 23 липня.{" "}
+                    Крок 1. Подати заяву і документи з 14 по 23 липня.
                   </h1>
                   <p className="junior__item__text">
                     Документи необхідно подавати в паперовому вигляді.
@@ -94,7 +94,7 @@ const Atestat = () => {
                 <div className="junior__item__text">
                   <h1 className="junior__item__title">
                     Крок 2. Скласти фахові випробування з 24 по 30 липня 2021
-                    року.{" "}
+                    року.
                   </h1>
                   <p className="junior__item__text">
                     Необхідно скласти фахові випробування

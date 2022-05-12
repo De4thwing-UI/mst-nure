@@ -11,7 +11,7 @@ const NewsPage = () => {
   return (
     <div>
       <Header />
-      <Title> Новини </Title>{" "}
+      <Title> Новини </Title>
       <div className="news__page">
         <div className="container">
           <div className="news__page__inner">
@@ -22,18 +22,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                1 березня відбувся день відкритих дверей{" "}
-              </h1>{" "}
+                1 березня відбувся день відкритих дверей
+              </h1>
               <div className="news__item__text">
                 1 березня, перший день весни!Завершальний у цьому навчальному
                 році День відкритих дверей зібрав величезну кількість
-                абітурієнтів та гостей...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                абітурієнтів та гостей...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image2.png"
@@ -41,18 +41,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                Церемонія вручення дипломів магістрам...{" "}
-              </h1>{" "}
+                Церемонія вручення дипломів магістрам...
+              </h1>
               <div className="news__item__text">
                 20 січня відбулася церемонія вручення дипломів магістрам, які
                 завершили навчання за спеціальністю 186« Видавництво та
-                поліграфія»...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                поліграфія»...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image4.png"
@@ -60,18 +60,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                День відкритих дверей 01.03 .2020{" "}
-              </h1>{" "}
+                День відкритих дверей 01.03 .2020
+              </h1>
               <div className="news__item__text">
                 1 березня 2020 р.Харківський національний університет
                 радіоелектроніки та кафедра МСТ запрошує прийняти участь у
-                Дні...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                Дні...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image5.png"
@@ -79,20 +79,20 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                ХНУРЕ проводить всеукраїнську олімпіаду{" "}
-              </h1>{" "}
+                ХНУРЕ проводить всеукраїнську олімпіаду
+              </h1>
               <div className="news__item__text">
                 1 березня, перший день весни!Завершальний у цьому навчальному
                 році День відкритих дверей зібрав величезну кількість
-                абітурієнтів та гостей...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                абітурієнтів та гостей...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
                 <Link language="ua" to="/news_itemА">
-                  Дізнатись більше{" "}
-                </Link>{" "}
-              </div>{" "}
-            </div>{" "}
+                  Дізнатись більше
+                </Link>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image6.png"
@@ -100,20 +100,20 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                Перші результати роботи“ Школи дизайну”{" "}
-              </h1>{" "}
+                Перші результати роботи“ Школи дизайну”
+              </h1>
               <div className="news__item__text">
                 У жовтні студентське телебачення та кафедра МСТ запустили "Школу
                 Дизайну ", що веде студентка 3 курсу кафедри МСТ та провідний
-                дизайнер Медіацентру...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                дизайнер Медіацентру...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
                 <Link language="ua" to="/news_item/news_item">
-                  Дізнатись більше{" "}
-                </Link>{" "}
-              </div>{" "}
-            </div>{" "}
+                  Дізнатись більше
+                </Link>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image7.png"
@@ -121,18 +121,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                Успішно завершено захист магістерських робіт{" "}
-              </h1>{" "}
+                Успішно завершено захист магістерських робіт
+              </h1>
               <div className="news__item__text">
                 14 вересня в конференц - залі відбувся захист докторської
                 дисертації кандидата технічних наук, доцента кафедри МСТ Ігоря
-                Вікторовича Левикіна{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                Вікторовича Левикіна
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image8.png"
@@ -140,18 +140,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                Вітаємо першокурсників зі вступом до ХНУРЕ{" "}
-              </h1>{" "}
+                Вітаємо першокурсників зі вступом до ХНУРЕ
+              </h1>
               <div className="news__item__text">
                 Бажаємо впевнено прокладати шлях до обраної професії і сміливо
                 отримувати все нові і важливі знання, щоб в подальшому стати
-                відмінними фахівцями - асами...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                відмінними фахівцями - асами...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image3.png"
@@ -159,18 +159,18 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                1 березня відбувся день відкритих дверей{" "}
-              </h1>{" "}
+                1 березня відбувся день відкритих дверей
+              </h1>
               <div className="news__item__text">
                 1 березня, перший день весни!Завершальний у цьому навчальному
                 році День відкритих дверей зібрав величезну кількість
-                абітурієнтів та гостей...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                абітурієнтів та гостей...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
             <div className="news__item">
               <StaticImage
                 src="../../images/news/news_image2.png"
@@ -178,22 +178,22 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                1 березня відбувся день відкритих дверей{" "}
-              </h1>{" "}
+                1 березня відбувся день відкритих дверей
+              </h1>
               <div className="news__item__text">
                 1 березня, перший день весни!Завершальний у цьому навчальному
                 році День відкритих дверей зібрав величезну кількість
-                абітурієнтів та гостей...{" "}
-              </div>{" "}
-              <div className="news__border"> &emsp; </div>{" "}
+                абітурієнтів та гостей...
+              </div>
+              <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <a href="#"> Дізнатись більше </a>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
+                <a href="#"> Дізнатись більше </a>
+              </div>
+            </div>
+          </div>
           <Pagination />
-        </div>{" "}
-      </div>{" "}
+        </div>
+      </div>
       <Footer />
     </div>
   )

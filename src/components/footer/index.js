@@ -11,163 +11,163 @@ const Footer = ({ title }) => {
       <div className="container">
         <div className="footer__inner">
           <ul className="footer__item">
-            <li className="footer__title"> Наші контакти </li>{" "}
+            <li className="footer__title"> Наші контакти </li>
             <li className="footer__link">
               <FontAwesomeIcon
                 icon={faPhoneAlt}
                 size="lg"
                 className="footer__image"
-              />{" "}
-              (057) 702 - 13 - 78{" "}
-            </li>{" "}
+              />
+              (057) 702 - 13 - 78
+            </li>
             <li className="footer__link">
               <FontAwesomeIcon
                 icon={faPhoneAlt}
                 size="lg"
                 className="footer__image"
-              />{" "}
-              (057) 702 - 13 - 78{" "}
-            </li>{" "}
+              />
+              (057) 702 - 13 - 78
+            </li>
             <li className="footer__link">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 size="lg"
                 className="footer__image"
-              />{" "}
-              d_mst @nure.ua{" "}
-            </li>{" "}
-          </ul>{" "}
+              />
+              d_mst @nure.ua
+            </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Про кафедру </li>{" "}
+            <li className="footer__title"> Про кафедру </li>
             <li className="footer__link">
               <Link language="ua" to="/teacher" className="footer__link">
-                Склад кафедри{" "}
-              </Link>{" "}
-            </li>{" "}
+                Склад кафедри
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/history" className="footer__link">
-                Історія кафедри{" "}
-              </Link>{" "}
-            </li>{" "}
+                Історія кафедри
+              </Link>
+            </li>
             <li className="footer__link">
-              {" "}
+              
               <Link language="ua" to="/graduates" className="footer__link">
-                Наші випускники{" "}
-              </Link>{" "}
-            </li>{" "}
-          </ul>{" "}
+                Наші випускники
+              </Link>
+            </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Учбовий процес </li>{" "}
-            <li className="footer__link"> Постійна коміссія УМР </li>{" "}
-            <li className="footer__link"> Форми навчання </li>{" "}
-            <li className="footer__link"> Спеціальності </li>{" "}
-            <li className="footer__link"> Освітні програми </li>{" "}
-            <li className="footer__link"> Силабуси дисциплін </li>{" "}
-            <li className="footer__link"> Графіки навчального процесу </li>{" "}
-            <li className="footer__link"> Обрання дисциплін студентом </li>{" "}
-          </ul>{" "}
+            <li className="footer__title"> Учбовий процес </li>
+            <li className="footer__link"> Постійна коміссія УМР </li>
+            <li className="footer__link"> Форми навчання </li>
+            <li className="footer__link"> Спеціальності </li>
+            <li className="footer__link"> Освітні програми </li>
+            <li className="footer__link"> Силабуси дисциплін </li>
+            <li className="footer__link"> Графіки навчального процесу </li>
+            <li className="footer__link"> Обрання дисциплін студентом </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Наука </li>{" "}
-            <li className="footer__link"> Лабараторія </li>{" "}
+            <li className="footer__title"> Наука </li>
+            <li className="footer__link"> Лабараторія </li>
             <li className="footer__link">
               <Link language="ua" to="/directions " className="footer__link">
-                Наукові напрями{" "}
-              </Link>{" "}
-            </li>{" "}
+                Наукові напрями
+              </Link>
+            </li>
             <li className="footer__link">
-              {" "}
+              
               <Link language="ua" to="/studentscience" className="footer__link">
-                Студентська наука{" "}
-              </Link>{" "}
-            </li>{" "}
+                Студентська наука
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/works" className="footer__link">
-                Роботи студентів{" "}
-              </Link>{" "}
-            </li>{" "}
+                Роботи студентів
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/sections" className="footer__link">
-                Гуртки кафедри{" "}
-              </Link>{" "}
-            </li>{" "}
+                Гуртки кафедри
+              </Link>
+            </li>
             <li className="footer__link">
-              {" "}
+              
               <Link language="ua" to="/offer/offer" className="footer__link">
-                Запропонувати тему{" "}
-              </Link>{" "}
-            </li>{" "}
-          </ul>{" "}
+                Запропонувати тему
+              </Link>
+            </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Абітурієнтам </li>{" "}
+            <li className="footer__title"> Абітурієнтам </li>
             <li className="footer__link">
               <Link language="ua" to="/rules" className="footer__link">
-                Правила вступу{" "}
-              </Link>{" "}
-            </li>{" "}
+                Правила вступу
+              </Link>
+            </li>
             <Link language="ua" to="/admissions" className="footer__link">
-              Спеціальність{" "}
-            </Link>{" "}
-            <li className="footer__link"> Питання - відповідь </li>{" "}
+              Спеціальність
+            </Link>
+            <li className="footer__link"> Питання - відповідь </li>
             <li className="footer__link">
               <Link language="ua" to="/advertising" className="footer__link">
-                Наша реклама{" "}
-              </Link>{" "}
-            </li>{" "}
-          </ul>{" "}
+                Наша реклама
+              </Link>
+            </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Студентам </li>{" "}
+            <li className="footer__title"> Студентам </li>
             <li className="footer__link">
               <Link
                 language="ua"
                 to="http://cist.kture.kharkov.ua/"
                 className="footer__link"
               >
-                Розклад{" "}
-              </Link>{" "}
-            </li>{" "}
+                Розклад
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/resources" className="footer__link">
-                Ресурси{" "}
-              </Link>{" "}
-            </li>{" "}
+                Ресурси
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/student-life" className="footer__link">
-                Студентське життя{" "}
-              </Link>{" "}
-            </li>{" "}
+                Студентське життя
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/annotations" className="footer__link">
-                Анотації дисциплін{" "}
-              </Link>{" "}
-            </li>{" "}
+                Анотації дисциплін
+              </Link>
+            </li>
             <li className="footer__link">
-              {" "}
+              
               <Link language="ua" to="/science-work" className="footer__link">
-                Науково дослідна робота{" "}
-              </Link>{" "}
-            </li>{" "}
+                Науково дослідна робота
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/student-choise" className="footer__link">
-                Вибір студента{" "}
-              </Link>{" "}
-            </li>{" "}
+                Вибір студента
+              </Link>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/diploma" className="footer__link">
-                Дипломування{" "}
-              </Link>{" "}
-            </li>{" "}
-            <li className="footer__link"> Практика </li>{" "}
-          </ul>{" "}
+                Дипломування
+              </Link>
+            </li>
+            <li className="footer__link"> Практика </li>
+          </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Партнери </li>{" "}
-          </ul>{" "}
-        </div>{" "}
-      </div>{" "}
+            <li className="footer__title"> Партнери </li>
+          </ul>
+        </div>
+      </div>
       <div className="footer__copyright">
         <div className="container">
-          <div className="footer__copyright__inner"> ©2021 Кафедра МСТ </div>{" "}
-        </div>{" "}
-      </div>{" "}
+          <div className="footer__copyright__inner"> ©2021 Кафедра МСТ </div>
+        </div>
+      </div>
     </footer>
   )
 }

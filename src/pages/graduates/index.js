@@ -118,11 +118,11 @@ const GraduatePage = () => {
   return (
     <div>
       <Header />
-      <Title> Наші випускники </Title>{" "}
+      <Title> Наші випускники </Title>
       <div className="graduates__page">
         <div className="container">
           <div className="graduates__inner">
-            {" "}
+            
             {graduates.map((graduate, index) => (
               <div className="graduates__inner__item" key={index.toString()}>
                 <img
@@ -130,24 +130,24 @@ const GraduatePage = () => {
                   alt="1"
                   className="graduates__item__image"
                 />
-                <h1 className="graduates__item__title"> {graduate.name} </h1>{" "}
-                <p className="graduates__item__text"> {graduate.position} </p>{" "}
+                <h1 className="graduates__item__title"> {graduate.name} </h1>
+                <p className="graduates__item__text"> {graduate.position} </p>
               </div>
-            ))}{" "}
-          </div>{" "}
-        </div>{" "}
+            ))}
+          </div>
+        </div>
         <Pagination />
-      </div>{" "}
+      </div>
       <div className="works">
         <div className="container">
           <div className="works__title">
-            <h1 className="works__text"> Роботи студентів </h1>{" "}
-          </div>{" "}
-        </div>{" "}
+            <h1 className="works__text"> Роботи студентів </h1>
+          </div>
+        </div>
         <div className="graduates__works">
           <div className="container">
             <div className="graduates__works__inner">
-              {" "}
+              
               {works.map((work, index) => (
                 <div className="graduate__works__item" key={index.toString()}>
                   <img
@@ -156,20 +156,20 @@ const GraduatePage = () => {
                     className="graduate__works__image"
                   />
                   <h1 className="graduate__works__item__title">
-                    {" "}
-                    {work.name}{" "}
-                  </h1>{" "}
+                    
+                    {work.name}
+                  </h1>
                   <div className="graduate__works__item__text">
-                    {" "}
-                    {work.position}{" "}
-                  </div>{" "}
+                    
+                    {work.position}
+                  </div>
                 </div>
-              ))}{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
+              ))}
+            </div>
+          </div>
+        </div>
         <Pagination />
-      </div>{" "}
+      </div>
       <News />
       <Footer />
     </div>

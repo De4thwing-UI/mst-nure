@@ -18,27 +18,27 @@ const Disertations = () => {
       <div className="container">
         <div className="disertation__title">
           <h1 className="disertation__title__text">
-            {" "}
-            За останні роки підготовлено та захищено кандидатські дисертації{" "}
-          </h1>{" "}
-        </div>{" "}
+            
+            За останні роки підготовлено та захищено кандидатські дисертації
+          </h1>
+        </div>
         <div className="disertation__inner">
-          {" "}
+          
           {disertations.map((disertation, index) => (
             <div className="disertation__item" key={index.toString()}>
               <div className="disertation__item__title">
-                {" "}
-                {disertation.title}{" "}
-              </div>{" "}
+                
+                {disertation.title}
+              </div>
               <div className="disertation__item__text">
-                {" "}
-                {disertation.text}{" "}
-              </div>{" "}
+                
+                {disertation.text}
+              </div>
             </div>
-          ))}{" "}
-        </div>{" "}
+          ))}
+        </div>
         <Pagination />
-      </div>{" "}
+      </div>
     </div>
   )
 }

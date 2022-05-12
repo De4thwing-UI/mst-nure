@@ -13,7 +13,7 @@ const Vstup = () => {
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 1. Зареєструватися{" "}
+                    Крок 1. Зареєструватися
                   </h1>
                   <p className="vstup__item__text">
                     https://zno.testportal.com.ua/master/login – Кабінет
@@ -59,7 +59,7 @@ const Vstup = () => {
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 5. Дочекатися рейтингового списку 2 серпня{" "}
+                    Крок 5. Дочекатися рейтингового списку 2 серпня
                   </h1>
                   <p className="vstup__item__text">
                     Рекомендації для зарахування за державним замовленням
@@ -70,7 +70,7 @@ const Vstup = () => {
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 6. Принести оригінали документів.{" "}
+                    Крок 6. Принести оригінали документів.
                   </h1>
                   <p className="vstup__item__text">
                     У період з 2 серпня (після оприлюднення списку) до 10 серпня
@@ -98,7 +98,7 @@ const Vstup = () => {
                   зараховані на навчання за кошти фізичних та/або юридичних осіб
                   (відповідно до цих Правил та Умов), здійснюється не пізніше
                   ніж 19 серпня. Зарахування вступників за кошти
-                  фізичних/юридичних осіб 31 серпня.{" "}
+                  фізичних/юридичних осіб 31 серпня.
                 </p>
               </div>
               <StaticImage

@@ -67,12 +67,12 @@ const HistoryPage = () => {
   return (
     <div>
       <Header />
-      <Title> Історія кафедри </Title>{" "}
+      <Title> Історія кафедри </Title>
       <div className="history">
         <div className="container">
           <div className="history__inner">
             <ul className="history__timeline">
-              {" "}
+              
               {histories.map((history, index) => (
                 <li className="history__timeline__item" key={index.toString()}>
                   <img
@@ -81,15 +81,15 @@ const HistoryPage = () => {
                     alt="History"
                   />
                   <div className="history__item__text">
-                    <h1 className="history__item__title"> {history.year} </h1>{" "}
-                    <p className="history__item__suptitle"> {history.text} </p>{" "}
-                  </div>{" "}
+                    <h1 className="history__item__title"> {history.year} </h1>
+                    <p className="history__item__suptitle"> {history.text} </p>
+                  </div>
                 </li>
-              ))}{" "}
-            </ul>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
       <News />
       <Footer />
     </div>

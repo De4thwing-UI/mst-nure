@@ -13,105 +13,105 @@ const Header = ({ title }) => {
           <div className="header__logo">
             <Link language="ua" to="/">
               <StaticImage src="../../images/Logo1.png" alt="logo_MST" />
-            </Link>{" "}
-          </div>{" "}
+            </Link>
+          </div>
           <nav className="nav">
             <a href="#" className="nav__link">
-              Про Кафедру{" "}
+              Про Кафедру
               <div className="nav__dropdown">
                 <Link
                   language="ua"
                   to="/teacher"
                   className="nav__dropdown__link"
                 >
-                  Склад кафедри{" "}
-                </Link>{" "}
+                  Склад кафедри
+                </Link>
                 <Link
                   language="ua"
                   to="/history"
                   className="nav__dropdown__link"
                 >
-                  Історія кафедри{" "}
-                </Link>{" "}
+                  Історія кафедри
+                </Link>
                 <Link
                   language="ua"
                   to="/graduates"
                   className="nav__dropdown__link"
                 >
-                  Наші випускники{" "}
-                </Link>{" "}
-              </div>{" "}
-            </a>{" "}
+                  Наші випускники
+                </Link>
+              </div>
+            </a>
             <a href="#" className="nav__link">
-              Учбовий процес{" "}
-            </a>{" "}
+              Учбовий процес
+            </a>
             <a href="#" className="nav__link">
-              Наука{" "}
+              Наука
               <div className="nav__dropdown">
                 <Link
                   language="ua"
                   to="/teacher"
                   className="nav__dropdown__link"
                 >
-                  Лабараторія{" "}
-                </Link>{" "}
+                  Лабараторія
+                </Link>
                 <Link
                   language="ua"
                   to="/directions"
                   className="nav__dropdown__link"
                 >
-                  Наукові напрями{" "}
-                </Link>{" "}
+                  Наукові напрями
+                </Link>
                 <Link
                   language="ua"
                   to="/studentscience"
                   className="nav__dropdown__link"
                 >
-                  Студентська наука{" "}
-                </Link>{" "}
+                  Студентська наука
+                </Link>
                 <Link
                   language="ua"
                   to="/works"
                   className="nav__dropdown__link"
                 >
-                  Роботи студентів{" "}
-                </Link>{" "}
+                  Роботи студентів
+                </Link>
                 <Link
                   language="ua"
                   to="/sections"
                   className="nav__dropdown__link"
                 >
-                  Гуртки кафедри{" "}
-                </Link>{" "}
+                  Гуртки кафедри
+                </Link>
                 <Link language="ua" to="/offer" className="nav__dropdown__link">
-                  Запропонувати тему{" "}
-                </Link>{" "}
-              </div>{" "}
-            </a>{" "}
+                  Запропонувати тему
+                </Link>
+              </div>
+            </a>
             <a href="#" className="nav__link">
-              Абітурієнтам{" "}
+              Абітурієнтам
               <div className="nav__dropdown">
                 <Link language="ua" to="/rules" className="nav__dropdown__link">
-                  Правила вступу{" "}
-                </Link>{" "}
+                  Правила вступу
+                </Link>
                 <Link
                   language="ua"
                   to="/admissions"
                   className="nav__dropdown__link"
                 >
-                  Спеціальність{" "}
-                </Link>{" "}
+                  Спеціальність
+                </Link>
                 <Link
                   language="ua"
                   to="/advertising"
                   className="nav__dropdown__link"
                 >
-                  Наша реклама{" "}
-                </Link>{" "}
-              </div>{" "}
-            </a>{" "}
+                  Наша реклама
+                </Link>
+              </div>
+            </a>
             <a href="#" className="nav__link">
-              Студентам{" "}
+              Студентам
               <div className="nav__dropdown">
                 <Link
                   language="ua"
@@ -119,81 +119,81 @@ const Header = ({ title }) => {
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Розклад{" "}
-                </Link>{" "}
+                  Розклад
+                </Link>
                 <Link
                   language="ua"
                   to="/resources"
                   className="nav__dropdown__link"
                 >
-                  Ресурси{" "}
-                </Link>{" "}
+                  Ресурси
+                </Link>
                 <Link
                   language="ua"
                   to="/student-life"
                   className="nav__dropdown__link"
                 >
-                  Студентське життя{" "}
-                </Link>{" "}
+                  Студентське життя
+                </Link>
                 <Link
                   language="ua"
                   to="/annotations"
                   className="nav__dropdown__link"
                 >
-                  Анотації дисциплін{" "}
-                </Link>{" "}
+                  Анотації дисциплін
+                </Link>
                 <Link
                   language="ua"
                   to="/science-work"
                   className="nav__dropdown__link"
                 >
-                  Науково - дослід.робота{" "}
-                </Link>{" "}
+                  Науково - дослід.робота
+                </Link>
                 <Link
                   language="ua"
                   to="/student-choise"
                   className="nav__dropdown__link"
                 >
-                  Вибір студента{" "}
-                </Link>{" "}
+                  Вибір студента
+                </Link>
                 <Link
                   language="ua"
                   to="/diploma"
                   className="nav__dropdown__link"
                 >
-                  Дипломування{" "}
-                </Link>{" "}
+                  Дипломування
+                </Link>
                 <Link
                   language="ua"
                   to="/discuss"
                   className="nav__dropdown__link"
                 >
-                  Обговорення ОП{" "}
-                </Link>{" "}
-              </div>{" "}
-            </a>{" "}
+                  Обговорення ОП
+                </Link>
+              </div>
+            </a>
             <a href="/partners" className="nav__link">
-              Партнери{" "}
-            </a>{" "}
+              Партнери
+            </a>
             <a href="/contact" className="nav__link">
-              Контакти{" "}
-            </a>{" "}
-          </nav>{" "}
+              Контакти
+            </a>
+          </nav>
           <div className="mod-languages">
             <ul className="lang-inline">
               <li className="lang-active">
-                <a href="#"> Ua </a>{" "}
-              </li>{" "}
+                <a href="#"> Ua </a>
+              </li>
               <li className="lang-active">
-                <a href="#"> Ru </a>{" "}
-              </li>{" "}
+                <a href="#"> Ru </a>
+              </li>
               <li className="lang-active">
-                <a href="#"> En </a>{" "}
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                <a href="#"> En </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
   )
 }

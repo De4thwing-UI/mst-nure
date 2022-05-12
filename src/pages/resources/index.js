@@ -9,13 +9,13 @@ const ResourcesPage = () => {
   return (
     <div>
       <Header />
-      <Title> Ресурси </Title>{" "}
+      <Title> Ресурси </Title>
       <div className="resources">
         <div className="container">
           <div className="resources__title">
             Натиснувши по посиланню ви зможете знайти корисну інформацію,
-            наукові джерела поліграфічної галузі.{" "}
-          </div>{" "}
+            наукові джерела поліграфічної галузі.
+          </div>
           <div className="resources__inner">
             <ul className="resources__list">
               <li className="resources__list__item">
@@ -24,81 +24,81 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Книжкова палата України{" "}
-                </a>{" "}
-              </li>{" "}
+                  Книжкова палата України
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://drukarstvo.org.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Друкарство{" "}
-                </a>{" "}
-              </li>{" "}
+                  Друкарство
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://bukvoid.com.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Буквоіід{" "}
-                </a>{" "}
-              </li>{" "}
+                  Буквоіід
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://polykur.com.ua/doska/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Поліграфічний кур 'єр{" "}
-                </a>{" "}
-              </li>{" "}
+                  Поліграфічний кур 'єр
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="https://printus.com.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Друкуй з нами{" "}
-                </a>{" "}
-              </li>{" "}
+                  Друкуй з нами
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.uapp.org/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Українська асоціація видавців періодичної преси{" "}
-                </a>{" "}
-              </li>{" "}
+                  Українська асоціація видавців періодичної преси
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.redactor.in.ua/"
                   className="resources__link"
                 >
-                  Редакторский портал{" "}
-                </a>{" "}
-              </li>{" "}
+                  Редакторский портал
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="https://www.publish.ru/"
                   className="resources__link"
                   target="_blank"
                 >
-                  PUBLISH / ДИЗАЙН.ВЕРСТКА.ПЕЧАТЬ{" "}
-                </a>{" "}
-              </li>{" "}
+                  PUBLISH / ДИЗАЙН.ВЕРСТКА.ПЕЧАТЬ
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.compuart.ru/"
                   className="resources__link"
                   target="_blank"
                 >
-                  КомпьюАрт{" "}
-                </a>{" "}
-              </li>{" "}
-            </ul>{" "}
+                  КомпьюАрт
+                </a>
+              </li>
+            </ul>
             <ul className="resources__list">
               <li className="resources__list__item">
                 <a
@@ -106,75 +106,75 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Дежурка{" "}
-                </a>{" "}
-              </li>{" "}
+                  Дежурка
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.gipp.ru/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Гільдія видавців періодичної преси{" "}
-                </a>{" "}
-              </li>{" "}
+                  Гільдія видавців періодичної преси
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="https://mediamedia.me/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Media - Media{" "}
-                </a>{" "}
-              </li>{" "}
+                  Media - Media
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.rup.com.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  Сайт про поліграфію і рекламі в Україні{" "}
-                </a>{" "}
-              </li>{" "}
+                  Сайт про поліграфію і рекламі в Україні
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="https://pechatnick.com/"
                   className="resources__link"
                   target="_blank"
                 >
-                  ПЕЧАТНИК.com{" "}
-                </a>{" "}
-              </li>{" "}
+                  ПЕЧАТНИК.com
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://www.upba.org.ua/index.php/uk/"
                   className="resources__link"
                 >
-                  Українська Асоціація Видавців та Книгорозповсюджувачів{" "}
-                </a>{" "}
-              </li>{" "}
+                  Українська Асоціація Видавців та Книгорозповсюджувачів
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="https://www.ranok.com.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  ТОВ Видавництво« Ранок»{" "}
-                </a>{" "}
-              </li>{" "}
+                  ТОВ Видавництво« Ранок»
+                </a>
+              </li>
               <li className="resources__list__item">
                 <a
                   href="http://unisoft.ua/"
                   className="resources__link"
                   target="_blank"
                 >
-                  ПП« Юніcофт»{" "}
-                </a>{" "}
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                  ПП« Юніcофт»
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <News />
       <Footer />
     </div>

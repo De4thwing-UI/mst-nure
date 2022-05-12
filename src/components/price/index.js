@@ -9,7 +9,7 @@ const Price = () => {
         <div className="container">
           <div className="price-one__title">
             Вартість одного року навчання за кошти фізичних або юридичних осіб
-            (контрактна форма) на першому (бакалаврському) рівні вищої освіти{" "}
+            (контрактна форма) на першому (бакалаврському) рівні вищої освіти
           </div>
           <div className="price-one__inner">
             <div className="price-one__item">

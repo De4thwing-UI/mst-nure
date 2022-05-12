@@ -28,26 +28,26 @@ const Works = () => {
     <div className="works">
       <div className="container">
         <div className="works__title">
-          <h1 className="works__text"> Роботи студентів </h1>{" "}
+          <h1 className="works__text"> Роботи студентів </h1>
           <a href="#" className="works__link">
-            <Button> Дивитись всі </Button>{" "}
-          </a>{" "}
-        </div>{" "}
+            <Button> Дивитись всі </Button>
+          </a>
+        </div>
         <div className="works__inner">
-          {" "}
+          
           {works.map((work, index) => (
             <div className="works__item" key={index.toString()}>
               <img src={work.photo} alt="1" className="works__image" />
-              <h1 className="works__item__title"> {work.name} </h1>{" "}
-              <div className="works__item__text"> {work.position} </div>{" "}
+              <h1 className="works__item__title"> {work.name} </h1>
+              <div className="works__item__text"> {work.position} </div>
             </div>
-          ))}{" "}
+          ))}
           <a href="#" className="works__link-sm">
-            <Button> Дивитись всі </Button>{" "}
-          </a>{" "}
-        </div>{" "}
+            <Button> Дивитись всі </Button>
+          </a>
+        </div>
         <Pagination />
-      </div>{" "}
+      </div>
     </div>
   )
 }

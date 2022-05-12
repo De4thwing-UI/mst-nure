@@ -14,7 +14,7 @@ const StudentsciencePage = () => {
   return (
     <div>
       <Header />
-      <Title> Студентська наука </Title>{" "}
+      <Title> Студентська наука </Title>
       <div className="sudentscience">
         <Studentscience />
         <Research />
@@ -29,13 +29,13 @@ const StudentsciencePage = () => {
               <div className="measures__title">
                 <h1 className="measures__text">
                   Наші студенти щорічно беруть участь в таких студентських
-                  науково - практичних заходах{" "}
-                </h1>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                  науково - практичних заходах
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Conferences />
       <News />
       <Footer />

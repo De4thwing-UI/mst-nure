@@ -92,36 +92,36 @@ const ScienceworkPage = () => {
   return (
     <div>
       <Header />
-      <Title> Науково - дослідницька робота </Title>{" "}
+      <Title> Науково - дослідницька робота </Title>
       <div className="science-work">
         <div className="container">
           <div className="science-work__title">
             План кафедри медіасистем та технології з науково - дослідної роботи
-            студентів на 2021 / 2022 Навчальний рік{" "}
-          </div>{" "}
+            студентів на 2021 / 2022 Навчальний рік
+          </div>
           <div className="science-work__inner">
             <table className="science-work__table">
               <tr className="science-work__item">
-                <th className="science-work__cell"> № </th>{" "}
-                <th className="science-work__cell"> Заходи </th>{" "}
-                <th className="science-work__cell"> Термін виконання </th>{" "}
-                <th className="science-work__cell"> Відповідальний </th>{" "}
-              </tr>{" "}
+                <th className="science-work__cell"> № </th>
+                <th className="science-work__cell"> Заходи </th>
+                <th className="science-work__cell"> Термін виконання </th>
+                <th className="science-work__cell"> Відповідальний </th>
+              </tr>
               {tables.map((table, index) => (
                 <tr className="science-work__item" key={index.toString()}>
-                  <th className="science-work__column"> {table.number} </th>{" "}
-                  <th className="science-work__column"> {table.measures} </th>{" "}
-                  <th className="science-work__column"> {table.term} </th>{" "}
+                  <th className="science-work__column"> {table.number} </th>
+                  <th className="science-work__column"> {table.measures} </th>
+                  <th className="science-work__column"> {table.term} </th>
                   <th className="science-work__column">
-                    {" "}
-                    {table.responsible}{" "}
-                  </th>{" "}
+                    
+                    {table.responsible}
+                  </th>
                 </tr>
-              ))}{" "}
-            </table>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+              ))}
+            </table>
+          </div>
+        </div>
+      </div>
       <News />
       <Footer />
     </div>

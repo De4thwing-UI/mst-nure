@@ -21,58 +21,58 @@ const ContactPage = () => {
             <p className="contact__text">Тел.: (+38 057) 702-13-78</p>
             <p className="contact__text">Email: d_mst@nure.ua</p>
             <p className="contact__text">
-              Офіційна сторінка ХНУРЕ в{" "}
+              Офіційна сторінка ХНУРЕ в
               <a
                 href="https://www.facebook.com/nureKharkiv/"
                 className="contact__link"
                 target="_blank"
               >
                 facebook
-              </a>{" "}
+              </a>
             </p>
             <p className="contact__text">
-              {" "}
-              Офіційна сторінка ХНУРЕ в{" "}
+              
+              Офіційна сторінка ХНУРЕ в
               <a
                 href="https://t.me/nure_press"
                 className="contact__link"
                 target="_blank"
               >
                 telegram
-              </a>{" "}
+              </a>
             </p>
             <p className="contact__text">
-              {" "}
-              Офіційна сторінка ХНУРЕ в{" "}
+              
+              Офіційна сторінка ХНУРЕ в
               <a
                 href="https://t.me/nure_press"
                 className="contact__link"
                 target="_blank"
               >
                 YouTube
-              </a>{" "}
+              </a>
             </p>
             <p className="contact__text">
-              {" "}
-              Сторінка кафедри МСТ в{" "}
+              
+              Сторінка кафедри МСТ в
               <a
                 href="https://www.instagram.com/mst_nure_ua/"
                 className="contact__link"
                 target="_blank"
               >
                 Instagram
-              </a>{" "}
+              </a>
             </p>
             <p className="contact__text">
-              {" "}
-              Офіційна сторінка ХНУРЕ в{" "}
+              
+              Офіційна сторінка ХНУРЕ в
               <a
                 href="https://www.facebook.com/groups/635508543937648/?ref=share"
                 className="contact__link"
                 target="_blank"
               >
                 facebook
-              </a>{" "}
+              </a>
             </p>
           </div>
           <div className="contact__title">Наші контакти</div>

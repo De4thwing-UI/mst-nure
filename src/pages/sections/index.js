@@ -44,11 +44,11 @@ const SectionsPage = () => {
   return (
     <div>
       <Header />
-      <Title> Гуртки кафедри </Title>{" "}
+      <Title> Гуртки кафедри </Title>
       <div className="sections">
         <div className="container">
           <div className="sections__inner">
-            {" "}
+            
             {sections.map((section, index) => (
               <div className="sections__item" key={index.toString()}>
                 <img
@@ -57,21 +57,21 @@ const SectionsPage = () => {
                   className="sections__image"
                 />
                 <div className="section__item__text">
-                  <h1 className="section__item__title"> {section.name} </h1>{" "}
-                  <p className="section__item__teacher"> {section.teacher} </p>{" "}
-                </div>{" "}
+                  <h1 className="section__item__title"> {section.name} </h1>
+                  <p className="section__item__teacher"> {section.teacher} </p>
+                </div>
                 <div className="section__item__place">
-                  <p className="section__item__day"> {section.day} </p>{" "}
+                  <p className="section__item__day"> {section.day} </p>
                   <p className="section__item__audition">
-                    {" "}
-                    {section.audition}{" "}
-                  </p>{" "}
-                </div>{" "}
+                    
+                    {section.audition}
+                  </p>
+                </div>
               </div>
-            ))}{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            ))}
+          </div>
+        </div>
+      </div>
       <News />
       <Footer />
     </div>

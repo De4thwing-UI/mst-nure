@@ -96,27 +96,27 @@ export const HeaderSm = () => {
             size="2x"
             color="#393982"
             onClick={() => setBurgerMenu(true)}
-          />{" "}
-          <span className="line"></span>
+          />
+          <span className="line" />
           <StaticImage
             className="header-sm_logo"
             src="../images/Logo1.png"
             alt="logo_MST"
           />
-        </div>{" "}
+        </div>
         <div className="mod-languages">
           <ul className="lang-inline">
             <li className="lang-active">
-              <a href="#"> Ua </a>{" "}
-            </li>{" "}
+              <a href="#"> Ua </a>
+            </li>
             <li className="lang-active">
-              <a href="#"> Ru </a>{" "}
-            </li>{" "}
+              <a href="#"> Ru </a>
+            </li>
             <li className="lang-active">
-              <a href="#"> En </a>{" "}
-            </li>{" "}
-          </ul>{" "}
-        </div>{" "}
+              <a href="#"> En </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className={burgerMenu ? "header-open-sm" : "menu-none"}>
         <div className="header-menu-sm">
@@ -125,8 +125,8 @@ export const HeaderSm = () => {
             size="2x"
             color="#393982"
             onClick={() => setBurgerMenu(false)}
-          />{" "}
-          <span className="line"></span>{" "}
+          />
+          <span className="line"></span>
           <StaticImage
             className="header-sm_logo"
             src="../images/Logo1.png"
@@ -134,7 +134,7 @@ export const HeaderSm = () => {
           />
         </div>
         <ul className="link-list-sm">
-          {" "}
+          
           {menuItems.map((item, key) => (
             <li
               className={
@@ -153,39 +153,39 @@ export const HeaderSm = () => {
                       onClick={() => toggleSubMenu(key)}
                       className="list-item_link"
                     >
-                      {item.displayName}{" "}
-                    </span>{" "}
-                  </li>{" "}
+                      {item.displayName}
+                    </span>
+                  </li>
                   {item.subItems.map((subItem, subItemIndex) => (
                     <li
                       className="list-item-sm"
                       key={subItem + subItemIndex.toString()}
                     >
                       <Link className="list-item_link" to={subItem.link}>
-                        {" "}
-                        {subItem.displayName}{" "}
-                      </Link>{" "}
+                        
+                        {subItem.displayName}
+                      </Link>
                     </li>
-                  ))}{" "}
+                  ))}
                 </ul>
               ) : item.link ? (
                 <Link className="list-item_link" to={item.link}>
-                  {" "}
-                  {item.displayName}{" "}
+                  
+                  {item.displayName}
                 </Link>
               ) : (
                 <span
                   onClick={() => toggleSubMenu(key)}
                   className="list-item_link"
                 >
-                  {" "}
-                  {item.displayName}{" "}
+                  
+                  {item.displayName}
                 </span>
-              )}{" "}
+              )}
             </li>
-          ))}{" "}
-        </ul>{" "}
-      </div>{" "}
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

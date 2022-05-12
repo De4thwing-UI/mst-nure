@@ -32,9 +32,9 @@ const Employment = () => {
   return (
     <div className="employment">
       <div className="container">
-        <div className="employment__title"> Працевлаштування </div>{" "}
+        <div className="employment__title"> Працевлаштування </div>
         <div className="employment__inner">
-          {" "}
+          
           {employments.map((employment, index) => (
             <div className="employment__item" key={index.toString()}>
               <img
@@ -43,15 +43,15 @@ const Employment = () => {
                 className="employment__image"
               />
             </div>
-          ))}{" "}
-        </div>{" "}
+          ))}
+        </div>
         <div className="employment__button">
-          {" "}
+          
           <a href="#">
-            <Button> Всі партнери </Button>{" "}
-          </a>{" "}
-        </div>{" "}
-      </div>{" "}
+            <Button> Всі партнери </Button>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }

@@ -33,23 +33,23 @@ const DirectionsPage = () => {
       <div className="budget">
         <div className="container">
           <div className="budget__title">
-            <h1 className="budget__title__text"> Держбюджетна тематика </h1>{" "}
-          </div>{" "}
+            <h1 className="budget__title__text"> Держбюджетна тематика </h1>
+          </div>
           <div className="budget__inner">
-            {" "}
+            
             {budgets.map((budget, index) => (
               <div className="budget__item" key={index.toString()}>
                 <div className="budget__item__title">
-                  {" "}
-                  {budget.title}{" "}
-                  <p className="budget__item__suptitle"> {budget.suptitle} </p>{" "}
-                </div>{" "}
-                <div className="budget__item__text"> {budget.text} </div>{" "}
+                  
+                  {budget.title}
+                  <p className="budget__item__suptitle"> {budget.suptitle} </p>
+                </div>
+                <div className="budget__item__text"> {budget.text} </div>
               </div>
-            ))}{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            ))}
+          </div>
+        </div>
+      </div>
       <Tems />
       <Experiments />
       <Disertations />

@@ -61,7 +61,7 @@ const TeachersPage = () => {
   return (
     <div>
       <Header />
-      <Title> Склад кафедри </Title>{" "}
+      <Title> Склад кафедри </Title>
       <div className="features">
         <div className="container">
           <div className="features__inner">
@@ -72,9 +72,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24 <p className="features__text"> Викладача </p>{" "}
-              </div>{" "}
-            </div>{" "}
+                24 <p className="features__text"> Викладача </p>
+              </div>
+            </div>
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -82,9 +82,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                4 <p className="features__text"> Сумісника </p>{" "}
-              </div>{" "}
-            </div>{" "}
+                4 <p className="features__text"> Сумісника </p>
+              </div>
+            </div>
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -92,16 +92,16 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                16 <p className="features__text"> Кандидатів наук </p>{" "}
-              </div>{" "}
-            </div>{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+                16 <p className="features__text"> Кандидатів наук </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="teachers__page">
         <div className="container">
           <div className="teachers__inner">
-            {" "}
+            
             {teachers.map((teacher, index) => (
               <div className="teachers__inner__item" key={index.toString()}>
                 <img
@@ -109,13 +109,13 @@ const TeachersPage = () => {
                   src={teacher.photo}
                   alt="teachers__photo"
                 />
-                <h1 className="teachers__item__title"> {teacher.name} </h1>{" "}
-                <p className="teachers__item__text"> {teacher.position} </p>{" "}
+                <h1 className="teachers__item__title"> {teacher.name} </h1>
+                <p className="teachers__item__text"> {teacher.position} </p>
               </div>
-            ))}{" "}
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+            ))}
+          </div>
+        </div>
+      </div>
       <News />
       <Footer />
     </div>

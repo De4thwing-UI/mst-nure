@@ -41,14 +41,14 @@ const Specialities = () => {
       <div className="container">
         <div className="specialties__title">
           <h1 className="specialties__text">
-            Спеціальність 186 Видавництво та поліграфія{" "}
-          </h1>{" "}
+            Спеціальність 186 Видавництво та поліграфія
+          </h1>
           <a href="#" className="specialties__link">
-            <Button> Дізнатись більше </Button>{" "}
-          </a>{" "}
-        </div>{" "}
+            <Button> Дізнатись більше </Button>
+          </a>
+        </div>
         <div className="specialities__inner">
-          {" "}
+          
           {specialities.map((specialitie, index) => (
             <div className="specialities__item" key={index.toString()}>
               <img
@@ -57,16 +57,16 @@ const Specialities = () => {
                 className="specialities__image"
               />
               <div className="specialities__item__title">
-                {" "}
-                {specialitie.title}{" "}
-              </div>{" "}
+                
+                {specialitie.title}
+              </div>
             </div>
-          ))}{" "}
+          ))}
           <a href="#" className="specialties__link-sm">
-            <Button> Дізнатись більше </Button>{" "}
-          </a>{" "}
-        </div>{" "}
-      </div>{" "}
+            <Button> Дізнатись більше </Button>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
