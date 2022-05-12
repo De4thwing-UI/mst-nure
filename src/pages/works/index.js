@@ -98,7 +98,7 @@ export const query = graphql`
       }
     }
 
-    allFile(filter: {relativeDirectory: {eq: "Works"}}) {
+    allFile(filter: {relativeDirectory: {eq: "works"}}) {
       edges {
         node {
           publicURL
