@@ -1,12 +1,12 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "src/components/button"
-import WebImg from "src/images/Specialities/web.svg"
-import VpsImg from "src/images/Specialities/VPS.svg"
-import GraphImg from "src/images/Specialities/graph.svg"
-import ThreedImg from "src/images/Specialities/3d.svg"
-import EbooksImg from "src/images/Specialities/e-books.svg"
-import VideoImg from "src/images/Specialities/video.svg"
+import WebImg from "src/images/specialities/web.svg"
+import VpsImg from "src/images/specialities/VPS.svg"
+import GraphImg from "src/images/specialities/graph.svg"
+import ThreedImg from "src/images/specialities/3d.svg"
+import EbooksImg from "src/images/specialities/e-books.svg"
+import VideoImg from "src/images/specialities/video.svg"
 import "./specialities.css"
 
 const Specialities = () => {

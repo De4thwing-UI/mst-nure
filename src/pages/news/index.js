@@ -17,7 +17,7 @@ const NewsPage = () => {
           <div className="news__page__inner">
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image1.png"
+                src="../../images/news/news_image1.png"
                 alt="News"
                 className="news__image"
               />
@@ -36,7 +36,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image2.png"
+                src="../../images/news/news_image2.png"
                 alt="News"
                 className="news__image"
               />
@@ -55,7 +55,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image4.png"
+                src="../../images/news/news_image4.png"
                 alt="News"
                 className="news__image"
               />
@@ -74,7 +74,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image5.png"
+                src="../../images/news/news_image5.png"
                 alt="News"
                 className="news__image"
               />
@@ -95,7 +95,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image6.png"
+                src="../../images/news/news_image6.png"
                 alt="News"
                 className="news__image"
               />
@@ -116,7 +116,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image7.png"
+                src="../../images/news/news_image7.png"
                 alt="News"
                 className="news__image"
               />
@@ -135,7 +135,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image8.png"
+                src="../../images/news/news_image8.png"
                 alt="News"
                 className="news__image"
               />
@@ -154,7 +154,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image3.png"
+                src="../../images/news/news_image3.png"
                 alt="News"
                 className="news__image"
               />
@@ -173,7 +173,7 @@ const NewsPage = () => {
             </div>{" "}
             <div className="news__item">
               <StaticImage
-                src="../../images/News/news_image2.png"
+                src="../../images/news/news_image2.png"
                 alt="News"
                 className="news__image"
               />

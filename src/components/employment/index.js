@@ -1,11 +1,11 @@
 import React from "react"
 import Button from "src/components/button"
-import FirstImg from "src/images/Employment/factor.png"
-import SecondImg from "src/images/Employment/ranok.png"
-import ThirdImg from "src/images/Employment/data.png"
-import FourImg from "src/images/Employment/epam.png"
-import FiveImg from "src/images/Employment/softserve.png"
-import SixImg from "src/images/Employment/grid.png"
+import FirstImg from "src/images/employment/factor.png"
+import SecondImg from "src/images/employment/ranok.png"
+import ThirdImg from "src/images/employment/data.png"
+import FourImg from "src/images/employment/epam.png"
+import FiveImg from "src/images/employment/softserve.png"
+import SixImg from "src/images/employment/grid.png"
 import "./employment.css"
 
 const Employment = () => {
