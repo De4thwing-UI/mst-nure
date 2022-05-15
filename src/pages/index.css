@@ -296,7 +296,7 @@ ul {
     }
 
     .intro__image-sm {
-        display: block;
+        display: block !important;
         margin: 40px auto;
         max-width: 375px;
     }

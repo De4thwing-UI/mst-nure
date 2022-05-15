@@ -138,10 +138,12 @@ export const HeaderSm = () => {
             onClick={() => setBurgerMenu(false)}
           />
           <span className="line"/>
-          <GatsbyImage
-            className="header-sm_logo"
-            image={logo.file.childImageSharp.gatsbyImageData}
-            alt="logo_MST" />
+          <Link language="ua" to="/">
+            <GatsbyImage
+              className="header-sm_logo"
+              image={logo.file.childImageSharp.gatsbyImageData}
+              alt="logo_MST" />
+          </Link>
         </div>
         <ul className="link-list-sm">
 
