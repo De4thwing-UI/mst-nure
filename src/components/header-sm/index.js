@@ -2,11 +2,21 @@ import React, { useState } from "react"
 import "./index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export const HeaderSm = () => {
+  const logo = useStaticQuery(graphql`
+    query {
+      file(name: {eq: "Logo1"}) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `)
+
   const menuItems = [
     {
       displayName: "Про кафедру",
@@ -130,7 +140,7 @@ export const HeaderSm = () => {
           />{" "}
           <span className="line" />
           <Link language="ua" to="/">
-            <StaticImage
+            <GatsbyImage
               className="header-sm_logo"
               src="../../images/Logo1.png"
               alt="logo_MST"
