@@ -142,10 +142,9 @@ export const HeaderSm = () => {
           <Link language="ua" to="/">
             <GatsbyImage
               className="header-sm_logo"
-              src="../../images/Logo1.png"
-              alt="logo_MST"
-            />
-          </Link>{" "}
+              image={logo.file.childImageSharp.gatsbyImageData}
+              alt="logo_MST" />
+          </Link>
         </div>{" "}
         <div className="mod-languages">
           <ul className="lang-inline">
@@ -170,11 +169,12 @@ export const HeaderSm = () => {
             onClick={() => setBurgerMenu(false)}
           />{" "}
           <span className="line"> </span>{" "}
-          <StaticImage
-            className="header-sm_logo"
-            src="../images/Logo1.png"
-            alt="logo_MST"
-          />
+          <Link language="ua" to="/">
+            <GatsbyImage
+              className="header-sm_logo"
+              image={logo.file.childImageSharp.gatsbyImageData}
+              alt="logo_MST" />
+          </Link>
         </div>{" "}
         <ul className="link-list-sm">
           {" "}
