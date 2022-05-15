@@ -1,0 +1,15 @@
+.advertising {
+    padding: 80px 0 0 0;
+}
+
+.advertising__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.advertising__video {
+    background: url(src/images/advertising/1.png);
+    padding: 0;
+}
