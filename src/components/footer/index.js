@@ -50,7 +50,6 @@ const Footer = ({ title }) => {
               </Link>
             </li>
             <li className="footer__link">
-              
               <Link language="ua" to="/graduates" className="footer__link">
                 Наші випускники
               </Link>
@@ -58,13 +57,76 @@ const Footer = ({ title }) => {
           </ul>
           <ul className="footer__item">
             <li className="footer__title"> Учбовий процес </li>
-            <li className="footer__link"> Постійна коміссія УМР </li>
-            <li className="footer__link"> Форми навчання </li>
-            <li className="footer__link"> Спеціальності </li>
-            <li className="footer__link"> Освітні програми </li>
-            <li className="footer__link"> Силабуси дисциплін </li>
-            <li className="footer__link"> Графіки навчального процесу </li>
-            <li className="footer__link"> Обрання дисциплін студентом </li>
+            <li className="footer__link">
+              {" "}
+              <Link language="ua" className="footer__link">
+                Постійна комісія УМР
+              </Link>{" "}
+            </li>
+            <li className="footer__link">
+              {" "}
+              <a
+                language="ua"
+                href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
+                className="footer__link"
+                target="_blank"
+              >
+                Форми освіти{" "}
+              </a>{" "}
+            </li>
+            <li className="footer__link">
+              <a
+                language="ua"
+                href="https://nure.ua/ru/faculty/fakultet-kompyuternyih-nauk"
+                className="footer__link"
+                target="_blank"
+              >
+                Спеціальності{" "}
+              </a>{" "}
+            </li>
+            <li className="footer__link">
+              {" "}
+              <a
+                language="ua"
+                href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
+                className="footer__link"
+                target="_blank"
+              >
+                Освітні програми{" "}
+              </a>{" "}
+            </li>
+            <li className="footer__link">
+              {" "}
+              <a
+                language="ua"
+                href="https://drive.google.com/drive/folders/1B91OGarzXYz8Inyn5AKPDTIa48Qs_duo"
+                className="footer__link"
+                target="_blank"
+              >
+                Силлабуси дисциплин{" "}
+              </a>{" "}
+            </li>
+            <li className="footer__link">
+              <a
+                language="ua"
+                href="https://cist.nure.ua/ias/app/tt/f?p=778:2:4427815546178203"
+                className="footer__link"
+                target="_blank"
+              >
+                Графіки навчального процесу{" "}
+              </a>{" "}
+            </li>
+            <li className="footer__link">
+              {" "}
+              <a
+                language="ua"
+                href="https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst"
+                className="footer__link"
+                target="_blank"
+              >
+                Обрання дисциплін студентом{" "}
+              </a>{" "}
+            </li>
           </ul>
           <ul className="footer__item">
             <li className="footer__title"> Наука </li>
@@ -75,7 +137,6 @@ const Footer = ({ title }) => {
               </Link>
             </li>
             <li className="footer__link">
-              
               <Link language="ua" to="/studentscience" className="footer__link">
                 Студентська наука
               </Link>
@@ -91,7 +152,6 @@ const Footer = ({ title }) => {
               </Link>
             </li>
             <li className="footer__link">
-              
               <Link language="ua" to="/offer/offer" className="footer__link">
                 Запропонувати тему
               </Link>
@@ -141,7 +201,6 @@ const Footer = ({ title }) => {
               </Link>
             </li>
             <li className="footer__link">
-              
               <Link language="ua" to="/science-work" className="footer__link">
                 Науково дослідна робота
               </Link>

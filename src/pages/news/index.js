@@ -79,7 +79,7 @@ const NewsPage = () => {
                 className="news__image"
               />
               <h1 className="news__item__title">
-                ХНУРЕ проводить всеукраїнську олімпіаду
+                ХНУРЕ проводить всеукраїнську олімпіаду 
               </h1>
               <div className="news__item__text">
                 1 березня, перший день весни!Завершальний у цьому навчальному
@@ -88,7 +88,7 @@ const NewsPage = () => {
               </div>
               <div className="news__border"> &emsp; </div>
               <div className="news__item__link">
-                <Link language="ua" to="/news_itemА">
+                <Link language="ua" to="/news_item">
                   Дізнатись більше
                 </Link>
               </div>

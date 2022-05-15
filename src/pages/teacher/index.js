@@ -101,7 +101,6 @@ const TeachersPage = () => {
       <div className="teachers__page">
         <div className="container">
           <div className="teachers__inner">
-            
             {teachers.map((teacher, index) => (
               <div className="teachers__inner__item" key={index.toString()}>
                 <img

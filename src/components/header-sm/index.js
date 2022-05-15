@@ -18,7 +18,38 @@ export const HeaderSm = () => {
         { displayName: "Наші випускники", link: "/graduates" },
       ],
     },
-    { displayName: "Учбовий процес", open: false, hide: false, subItems: [] },
+    {
+      displayName: "Учбовий процес",
+      open: false,
+      hide: false,
+      subItems: [
+        { displayName: "Постійна комісія УМР", link: "/commission/commission" },
+        {
+          displayName: "Форми освіти",
+          link: "https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf",
+        },
+        {
+          displayName: "Спеці альності",
+          link: "https://nure.ua/ru/faculty/fakultet-kompyuternyih-nauk",
+        },
+        {
+          displayName: "Освітні програми",
+          link: "https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf",
+        },
+        {
+          displayName: "Силлабуси дисциплин",
+          link: "https://drive.google.com/drive/folders/1B91OGarzXYz8Inyn5AKPDTIa48Qs_duo",
+        },
+        {
+          displayName: "Графіки учбового процесса",
+          link: "https://cist.nure.ua/ias/app/tt/f?p=778:2:4427815546178203",
+        },
+        {
+          displayName: "Вибір дисциплін студентом",
+          link: "https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst",
+        },
+      ],
+    },
     {
       displayName: "Наука",
       open: false,
@@ -96,29 +127,30 @@ export const HeaderSm = () => {
             size="2x"
             color="#393982"
             onClick={() => setBurgerMenu(true)}
-          />
+          />{" "}
           <span className="line" />
           <Link language="ua" to="/">
             <StaticImage
               className="header-sm_logo"
               src="../../images/Logo1.png"
-              alt="logo_MST" />
-          </Link>
-        </div>
+              alt="logo_MST"
+            />
+          </Link>{" "}
+        </div>{" "}
         <div className="mod-languages">
           <ul className="lang-inline">
             <li className="lang-active">
-              <a href="#"> Ua </a>
-            </li>
+              <a href="#"> Ua </a>{" "}
+            </li>{" "}
             <li className="lang-active">
-              <a href="#"> Ru </a>
-            </li>
+              <a href="#"> Ru </a>{" "}
+            </li>{" "}
             <li className="lang-active">
-              <a href="#"> En </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+              <a href="#"> En </a>{" "}
+            </li>{" "}
+          </ul>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className={burgerMenu ? "header-open-sm" : "menu-none"}>
         <div className="header-menu-sm">
           <FontAwesomeIcon
@@ -126,16 +158,16 @@ export const HeaderSm = () => {
             size="2x"
             color="#393982"
             onClick={() => setBurgerMenu(false)}
-          />
-          <span className="line"></span>
+          />{" "}
+          <span className="line"> </span>{" "}
           <StaticImage
             className="header-sm_logo"
             src="../images/Logo1.png"
             alt="logo_MST"
           />
-        </div>
+        </div>{" "}
         <ul className="link-list-sm">
-          
+          {" "}
           {menuItems.map((item, key) => (
             <li
               className={
@@ -154,39 +186,38 @@ export const HeaderSm = () => {
                       onClick={() => toggleSubMenu(key)}
                       className="list-item_link"
                     >
-                      {item.displayName}
-                    </span>
-                  </li>
+                      {item.displayName}{" "}
+                    </span>{" "}
+                  </li>{" "}
                   {item.subItems.map((subItem, subItemIndex) => (
                     <li
                       className="list-item-sm"
                       key={subItem + subItemIndex.toString()}
                     >
                       <Link className="list-item_link" to={subItem.link}>
-                        
-                        {subItem.displayName}
-                      </Link>
+                        {" "}
+                        {subItem.displayName}{" "}
+                      </Link>{" "}
                     </li>
-                  ))}
+                  ))}{" "}
                 </ul>
               ) : item.link ? (
                 <Link className="list-item_link" to={item.link}>
-                  
-                  {item.displayName}
+                  {" "}
+                  {item.displayName}{" "}
                 </Link>
               ) : (
                 <span
                   onClick={() => toggleSubMenu(key)}
                   className="list-item_link"
                 >
-                  
-                  {item.displayName}
+                  {item.displayName}{" "}
                 </span>
-              )}
+              )}{" "}
             </li>
-          ))}
-        </ul>
-      </div>
+          ))}{" "}
+        </ul>{" "}
+      </div>{" "}
     </div>
   )
 }

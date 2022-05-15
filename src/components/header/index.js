@@ -44,6 +44,63 @@ const Header = ({ title }) => {
             </a>
             <a href="#" className="nav__link">
               Учбовий процес
+              <div className="nav__dropdown">
+                <Link
+                  language="ua"
+                  to="/commission/commission"
+                  className="nav__dropdown__link"
+                >
+                  Постійна комісія УМР
+                </Link>
+                <a
+                  language="ua"
+                  href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Форми освіти{" "}
+                </a>
+                <a
+                  language="ua"
+                  href="https://nure.ua/ru/faculty/fakultet-kompyuternyih-nauk"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Спеціальності{" "}
+                </a>
+                <a
+                  language="ua"
+                  href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Освітні програми{" "}
+                </a>
+                <a
+                  language="ua"
+                  href="https://drive.google.com/drive/folders/1B91OGarzXYz8Inyn5AKPDTIa48Qs_duo"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Силлабуси дисциплин{" "}
+                </a>
+                <a
+                  language="ua"
+                  href="https://cist.nure.ua/ias/app/tt/f?p=778:2:4427815546178203"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Графіки навчального процесу{" "}
+                </a>
+                <a
+                  language="ua"
+                  href="https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  Обрання дисциплін студентом{" "}
+                </a>
+              </div>
             </a>
             <a href="#" className="nav__link">
               Наука
@@ -69,11 +126,7 @@ const Header = ({ title }) => {
                 >
                   Студентська наука
                 </Link>
-                <Link
-                  language="ua"
-                  to="/works"
-                  className="nav__dropdown__link"
-                >
+                <Link language="ua" to="/works" className="nav__dropdown__link">
                   Роботи студентів
                 </Link>
                 <Link
