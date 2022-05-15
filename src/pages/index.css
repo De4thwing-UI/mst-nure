@@ -109,7 +109,7 @@ ul {
 }
 
 .intro__image-sm {
-    display: none;
+    display: none !important;
 }
 
 
