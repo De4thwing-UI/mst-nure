@@ -2,11 +2,21 @@ import React, { useState } from "react"
 import "./index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
-import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 export const HeaderSm = () => {
+  const logo = useStaticQuery(graphql`
+    query {
+      file(name: {eq: "Logo1"}) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `)
+
   const menuItems = [
     {
       displayName: "Про кафедру",
@@ -99,9 +109,9 @@ export const HeaderSm = () => {
           />
           <span className="line" />
           <Link language="ua" to="/">
-            <StaticImage
+            <GatsbyImage
               className="header-sm_logo"
-              src="../../images/Logo1.png"
+              image={logo.file.childImageSharp.gatsbyImageData}
               alt="logo_MST" />
           </Link>
         </div>
@@ -127,15 +137,14 @@ export const HeaderSm = () => {
             color="#393982"
             onClick={() => setBurgerMenu(false)}
           />
-          <span className="line"></span>
-          <StaticImage
+          <span className="line"/>
+          <GatsbyImage
             className="header-sm_logo"
-            src="../images/Logo1.png"
-            alt="logo_MST"
-          />
+            image={logo.file.childImageSharp.gatsbyImageData}
+            alt="logo_MST" />
         </div>
         <ul className="link-list-sm">
-          
+
           {menuItems.map((item, key) => (
             <li
               className={
@@ -163,7 +172,7 @@ export const HeaderSm = () => {
                       key={subItem + subItemIndex.toString()}
                     >
                       <Link className="list-item_link" to={subItem.link}>
-                        
+
                         {subItem.displayName}
                       </Link>
                     </li>
@@ -171,7 +180,7 @@ export const HeaderSm = () => {
                 </ul>
               ) : item.link ? (
                 <Link className="list-item_link" to={item.link}>
-                  
+
                   {item.displayName}
                 </Link>
               ) : (
@@ -179,7 +188,7 @@ export const HeaderSm = () => {
                   onClick={() => toggleSubMenu(key)}
                   className="list-item_link"
                 >
-                  
+
                   {item.displayName}
                 </span>
               )}
