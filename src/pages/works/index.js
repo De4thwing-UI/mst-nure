@@ -11,43 +11,45 @@ const WorksPage = ({ data }) => {
   const works = [
     {
       name: "Гапіч Антон",
-      position: "Ілюстрація"
+      position: "Ілюстрація",
     },
     {
       name: "Ісаєнко Тетяна",
-      position: "Ілюстрація"
+      position: "Ілюстрація",
     },
     {
       name: "Музичук Анна",
-      position: "Соціальний плакат"
+      position: "Соціальний плакат",
     },
     {
       name: "Гапіч Антон",
-      position: "Мобільний додаток"
+      position: "Мобільний додаток",
     },
     {
       name: "Тарас Степаненко",
-      position: "Веб сайт"
+      position: "Веб сайт",
     },
     {
       name: "Олександр Зінченко",
-      position: "Веб сайт"
+      position: "Веб сайт",
     },
     {
       name: "Георгій Бущан",
-      position: "Веб сайт"
+      position: "Веб сайт",
     },
     {
       name: "Андрій Ярмоленко",
-      position: "Ілюстрація"
+      position: "Ілюстрація",
     },
     {
       name: "Дмитро Мельніченко",
-      position: "3D Ілюстрація"
+      position: "3D Ілюстрація",
     },
-  ].map(({name, position}, index) =>
-    ({name, position, photo: data.allFile.edges[index].node.publicURL})
-  )
+  ].map(({ name, position }, index) => ({
+    name,
+    position,
+    photo: data.allFile.edges[index].node.publicURL,
+  }))
 
   return (
     <div>
@@ -65,9 +67,7 @@ const WorksPage = ({ data }) => {
                     alt="1"
                     className="graduate__works__image"
                   />
-                  <h1 className="graduate__works__item__title">
-                    {work.name}
-                  </h1>
+                  <h1 className="graduate__works__item__title">{work.name}</h1>
                   <div className="graduate__works__item__text">
                     {work.position}
                   </div>
@@ -98,7 +98,7 @@ export const query = graphql`
       }
     }
 
-    allFile(filter: {relativeDirectory: {eq: "works"}}) {
+    allFile(filter: { relativeDirectory: { eq: "works" } }) {
       edges {
         node {
           publicURL
