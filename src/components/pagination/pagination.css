@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.works__pagination a {
+.works__pagination .works__pagination__item {
     font-family: 'Montserrat';
     margin-left: 14px;
     height: 20px;
@@ -17,18 +17,14 @@
     font-weight: normal;
 }
 
-.works__paginations-arrow {
-    background-color: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
-    border-radius: 2px;
-}
 
-.works__pagination a :hover {
+.works__pagination .works__pagination__item:hover {
     background: #393982;
     border-radius: 2px;
     color: #fff;
 }
 
-.works__pagination .works__pagination__active {
+.works__pagination__item.active {
     background-color: #393982;
     color: #fff;
     border-radius: 2px;

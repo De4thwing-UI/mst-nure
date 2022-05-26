@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Header from "src/components/header"
 import Footer from "src/components/footer"
@@ -8,6 +8,7 @@ import Title from "src/components/title"
 import "./works.css"
 
 const WorksPage = ({ data }) => {
+  debugger
   const works = [
     {
       name: "Гапіч Антон",
@@ -49,6 +50,14 @@ const WorksPage = ({ data }) => {
     ({name, position, photo: data.allFile.edges[index].node.publicURL})
   )
 
+  const limit = 3
+  const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
+
+  const handlePageChange = (page) => {
+    const offset = limit * (page - 1)
+    setDisplayWorks(works.slice(offset, offset + limit))
+  }
+
   return (
     <div>
       <Header />
@@ -76,7 +85,7 @@ const WorksPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <Pagination />
+        <Pagination items={displayWorks.length} handlePageChange={handlePageChange} />
       </div>
       <News />
       <Footer />

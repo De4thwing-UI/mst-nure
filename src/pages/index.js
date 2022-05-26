@@ -21,7 +21,6 @@ const IndexPage = () => {
         <div className="container">
           <div className="intro__inner">
             <StaticImage src="../images/intro-bg-sm.svg"
-
               alt="intro_image-sm"
               className="intro__image-sm"
             />

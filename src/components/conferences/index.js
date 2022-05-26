@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./conferences.css"
 import Pagination from "src/components/pagination"
 
@@ -15,6 +15,15 @@ const Conferences = () => {
       city: "М. Київ",
     },
   ]
+
+  const limit = 2
+  const [displayItems, setDisplayItems] = useState(conferences.slice(0, limit))
+
+  const handlePageChange = (page) => {
+    const offset = limit * (page - 1)
+    setDisplayItems(conferences.slice(offset, offset + limit))
+  }
+
   return (
     <div className="conferences">
       <div className="container">
@@ -43,7 +52,7 @@ const Conferences = () => {
             </div>
           ))}
         </div>
-        <Pagination />
+        <Pagination items={displayItems} handlePageChange={handlePageChange} />
       </div>
     </div>
   )

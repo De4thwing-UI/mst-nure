@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./disertations.css"
 import Pagination from "src/components/pagination"
 
@@ -13,6 +13,15 @@ const Disertations = () => {
       text: "«Моделі, методи та інструментальні засоби побудови автоматизованих навчальних систем», науковий керівник Ткаченко В.П. - 2009.",
     },
   ]
+
+  const limit = 2
+  const [displayItems, setDisplayItems] = useState(disertations.slice(0, limit))
+
+  const handlePageChange = (page) => {
+    const offset = limit * (page - 1)
+    setDisplayItems(disertations.slice(offset, offset + limit))
+  }
+
   return (
     <div className="disertation">
       <div className="container">
@@ -37,7 +46,7 @@ const Disertations = () => {
             </div>
           ))}
         </div>
-        <Pagination />
+        <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
       </div>
     </div>
   )

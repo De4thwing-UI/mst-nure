@@ -1,6 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import "./graduates.css"
 import Header from "src/components/header"
 import Footer from "src/components/footer"
@@ -114,7 +113,23 @@ const GraduatePage = () => {
       photo: NineImg,
       position: "3D Ілюстрація",
     },
-  ]
+  ];
+
+  const worksLimit = 3
+  const [displayWorks, setDisplayWorks] = useState(works.slice(0, worksLimit))
+  const graduatesLimit = 3
+  const [displayGraduates, setDisplayGraduates] = useState(graduates.slice(0, graduatesLimit))
+
+  const handleWorksPageChange = (page) => {
+    const offset = worksLimit * (page - 1)
+    setDisplayWorks(works.slice(offset, offset + worksLimit))
+  }
+
+  const handleGraduatesPageChange = (page) => {
+    const offset = graduatesLimit * (page - 1)
+    setDisplayGraduates(works.slice(offset, offset + graduatesLimit))
+  }
+
   return (
     <div>
       <Header />
@@ -122,7 +137,6 @@ const GraduatePage = () => {
       <div className="graduates__page">
         <div className="container">
           <div className="graduates__inner">
-            
             {graduates.map((graduate, index) => (
               <div className="graduates__inner__item" key={index.toString()}>
                 <img
@@ -136,7 +150,7 @@ const GraduatePage = () => {
             ))}
           </div>
         </div>
-        <Pagination />
+        <Pagination items={displayGraduates.length} handlePageChange={handleGraduatesPageChange} />
       </div>
       <div className="works">
         <div className="container">
@@ -168,7 +182,7 @@ const GraduatePage = () => {
             </div>
           </div>
         </div>
-        <Pagination />
+        <Pagination items={displayWorks.length} handlePageChange={handleWorksPageChange} />
       </div>
       <News />
       <Footer />

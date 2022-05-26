@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Button from "../button"
 import Pagination from "src/components/pagination"
 import "./works.css"
@@ -23,7 +23,46 @@ const Works = () => {
       photo: ThirdImg,
       position: "Соціальний плакат",
     },
+    {
+      name: "Музичук Анна",
+      photo: ThirdImg,
+      position: "Соціальний плакат",
+    },
+    {
+      name: "Ісаєнко Тетяна",
+      photo: SecondImg,
+      position: "Ілюстрація",
+    },
+    {
+      name: "Гапіч Антон",
+      photo: FirstImg,
+      position: "Ілюстрація",
+    },
+    {
+      name: "Ісаєнко Тетяна",
+      photo: SecondImg,
+      position: "Ілюстрація",
+    },
+    {
+      name: "Гапіч Антон",
+      photo: FirstImg,
+      position: "Ілюстрація",
+    },
+    {
+      name: "Музичук Анна",
+      photo: ThirdImg,
+      position: "Соціальний плакат",
+    }
   ]
+
+  const limit = 3
+  const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
+
+  const handlePageChange = (page) => {
+    const offset = limit * (page - 1)
+    setDisplayWorks(works.slice(offset, offset + limit))
+  }
+
   return (
     <div className="works">
       <div className="container">
@@ -35,7 +74,7 @@ const Works = () => {
         </div>
         <div className="works__inner">
           
-          {works.map((work, index) => (
+          {displayWorks.map((work, index) => (
             <div className="works__item" key={index.toString()}>
               <img src={work.photo} alt="1" className="works__image" />
               <h1 className="works__item__title"> {work.name} </h1>
@@ -46,7 +85,7 @@ const Works = () => {
             <Button> Дивитись всі </Button>
           </a>
         </div>
-        <Pagination />
+        <Pagination items={works.length} handlePageChange={handlePageChange} />
       </div>
     </div>
   )

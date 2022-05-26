@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./faq.css"
 import Pagination from "src/components/pagination"
 
@@ -55,7 +55,16 @@ const Faq = () => {
       link: "//www.google.com/search?sxsrf=APq-WBto1qlShUAUN632LJBnQRXVvIKIhA:1644323507415&q=%D0%9E%D0%B1%D1%89%D0%B5%D0%B6%D0%B8%D1%82%D0%B8%D0%B5%20%D0%A5%D0%BD%D1%83%D1%80%D0%B5&npsic=0&rflfq=1&rldoc=1&rllag=50019467,36220359,696&tbm=lcl&sa=X&ved=2ahUKEwiT97e0jvD1AhXFtqQKHeEwA9oQtgN6BAgCEEs&biw=1440&bih=730&dpr=2&tbs=lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:;mv:[[50.062717199999994,36.232593],[50.0132195,36.1934514]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
       text: "Гуртожитки на карті",
     },
-  ]
+  ];
+
+  const limit = 3
+  const [displayItems, setDisplayItems] = useState(faqs.slice(0, limit))
+
+  const handlePageChange = (page) => {
+    const offset = limit * (page - 1)
+    setDisplayItems(displayItems.slice(offset, offset + limit))
+  }
+
   return (
     <div className="faq">
       <div className="container">
@@ -76,7 +85,7 @@ const Faq = () => {
             </div>
           ))}
         </div>
-        <Pagination />
+        <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
       </div>
     </div>
   )
