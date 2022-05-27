@@ -52,7 +52,7 @@ const Conferences = () => {
             </div>
           ))}
         </div>
-        <Pagination items={displayItems} handlePageChange={handlePageChange} />
+        <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
       </div>
     </div>
   )
