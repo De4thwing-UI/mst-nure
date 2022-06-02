@@ -112,10 +112,7 @@ const ScienceworkPage = () => {
                   <th className="science-work__column"> {table.number} </th>
                   <th className="science-work__column"> {table.measures} </th>
                   <th className="science-work__column"> {table.term} </th>
-                  <th className="science-work__column">
-                    
-                    {table.responsible}
-                  </th>
+                  <th className="science-work__column">{table.responsible}</th>
                 </tr>
               ))}
             </table>

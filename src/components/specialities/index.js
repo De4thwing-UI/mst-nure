@@ -48,7 +48,6 @@ const Specialities = () => {
           </a>
         </div>
         <div className="specialities__inner">
-          
           {specialities.map((specialitie, index) => (
             <div className="specialities__item" key={index.toString()}>
               <img
@@ -57,7 +56,6 @@ const Specialities = () => {
                 className="specialities__image"
               />
               <div className="specialities__item__title">
-                
                 {specialitie.title}
               </div>
             </div>

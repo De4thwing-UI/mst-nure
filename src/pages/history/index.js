@@ -72,7 +72,6 @@ const HistoryPage = () => {
         <div className="container">
           <div className="history__inner">
             <ul className="history__timeline">
-              
               {histories.map((history, index) => (
                 <li className="history__timeline__item" key={index.toString()}>
                   <img

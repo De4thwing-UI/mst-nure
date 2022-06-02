@@ -50,10 +50,7 @@ const StudentchoisePage = () => {
                 Навчально - методичне забезпечення
               </a>
             </p>
-            <h1 className="student-choise__course__title">
-              
-              Технічна механіка
-            </h1>
+            <h1 className="student-choise__course__title">Технічна механіка</h1>
             <p className="student-choise__course__tems">
               Вибір теми:
               <a
@@ -80,10 +77,7 @@ const StudentchoisePage = () => {
                 Навчально - методичне забезпечення
               </a>
             </p>
-            <h1 className="student-choise__course__title">
-              
-              Web - технології
-            </h1>
+            <h1 className="student-choise__course__title">Web - технології</h1>
             <p className="student-choise__course__tems">
               Вибір теми:
               <a

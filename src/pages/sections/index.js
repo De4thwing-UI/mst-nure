@@ -48,7 +48,6 @@ const SectionsPage = () => {
       <div className="sections">
         <div className="container">
           <div className="sections__inner">
-            
             {sections.map((section, index) => (
               <div className="sections__item" key={index.toString()}>
                 <img
@@ -62,10 +61,7 @@ const SectionsPage = () => {
                 </div>
                 <div className="section__item__place">
                   <p className="section__item__day"> {section.day} </p>
-                  <p className="section__item__audition">
-                    
-                    {section.audition}
-                  </p>
+                  <p className="section__item__audition">{section.audition}</p>
                 </div>
               </div>
             ))}

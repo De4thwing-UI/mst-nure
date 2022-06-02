@@ -36,11 +36,9 @@ const DirectionsPage = () => {
             <h1 className="budget__title__text"> Держбюджетна тематика </h1>
           </div>
           <div className="budget__inner">
-            
             {budgets.map((budget, index) => (
               <div className="budget__item" key={index.toString()}>
                 <div className="budget__item__title">
-                  
                   {budget.title}
                   <p className="budget__item__suptitle"> {budget.suptitle} </p>
                 </div>

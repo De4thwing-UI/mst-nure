@@ -21,8 +21,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `locale`,
-        path: `${__dirname}/locales`
-      }
+        path: `${__dirname}/locales`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -44,29 +44,29 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`ua`, `ru`, `en`],
-        defaultLanguage: `ru`,
+        languages: [`ua`, `en`],
+        defaultLanguage: `ua`,
         siteUrl: `http://localhost:8000/`,
         i18nextOptions: {
           interpolation: {
-            escapeValue: false
+            escapeValue: false,
           },
           keySeparator: false,
-          nsSeparator: false
+          nsSeparator: false,
         },
         pages: [
           {
-            matchPath: '/:lang?/blog/:uid',
+            matchPath: "/:lang?/blog/:uid",
             getLanguageFromPath: true,
-            excludeLanguages: ['es']
+            excludeLanguages: ["es"],
           },
           {
-            matchPath: '/preview',
-            languages: ['ru']
-          }
-        ]
-      }
-    }
+            matchPath: "/preview",
+            languages: ["ua"],
+          },
+        ],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -1,5 +1,32 @@
 {
-    "componentChunkName": "component---src-pages-graduates-graduates-js",
-    "path": "/ua/graduates/graduates/",
-    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"مرحبًا بكم في موقع Gatsby الخاص بي!\",\"My name is Shanika\":\"اسمي شانيكا\",\"My profession is SSE\":\"مهنتي هي SSE\",\"message\":\"root\"}","language":"ua"}}]}},"pageContext":{"language":"ua","i18n":{"language":"ua","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":true,"originalPath":"/graduates/graduates/","path":"ua/graduates/graduates/"}}},
-    "staticQueryHashes": []}
+  "componentChunkName": "component---src-pages-graduates-graduates-js",
+  "path": "/ua/graduates/graduates/",
+  "result": {
+    "data": {
+      "locales": {
+        "edges": [
+          {
+            "node": {
+              "ns": "translation",
+              "data": "{\"Welcome to my Gatsby site!\":\"مرحبًا بكم في موقع Gatsby الخاص بي!\",\"My name is Shanika\":\"اسمي شانيكا\",\"My profession is SSE\":\"مهنتي هي SSE\",\"message\":\"root\"}",
+              "language": "ua"
+            }
+          }
+        ]
+      }
+    },
+    "pageContext": {
+      "language": "ua",
+      "i18n": {
+        "language": "ua",
+        "languages": ["ua", "ru", "en"],
+        "defaultLanguage": "ru",
+        "generateDefaultLanguagePage": false,
+        "routed": true,
+        "originalPath": "/graduates/graduates/",
+        "path": "ua/graduates/graduates/"
+      }
+    }
+  },
+  "staticQueryHashes": []
+}

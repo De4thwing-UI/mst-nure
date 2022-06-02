@@ -48,13 +48,11 @@ const Research = () => {
             </li>
             <li className="research__item">
               <span className="research__item__text">
-                
                 Включення елементів НДР в навчальні заняття.
               </span>
             </li>
             <li className="research__item">
               <span className="research__item__text">
-                
                 Залучення студентів до участі в науково-інноваційній діяльності.
               </span>
             </li>

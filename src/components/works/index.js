@@ -52,13 +52,13 @@ const Works = () => {
       name: "Музичук Анна",
       photo: ThirdImg,
       position: "Соціальний плакат",
-    }
+    },
   ]
 
   const limit = 3
   const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
 
-  const handlePageChange = (page) => {
+  const handlePageChange = page => {
     const offset = limit * (page - 1)
     setDisplayWorks(works.slice(offset, offset + limit))
   }
@@ -73,7 +73,6 @@ const Works = () => {
           </a>
         </div>
         <div className="works__inner">
-          
           {displayWorks.map((work, index) => (
             <div className="works__item" key={index.toString()}>
               <img src={work.photo} alt="1" className="works__image" />

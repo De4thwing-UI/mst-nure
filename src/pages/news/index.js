@@ -1,7 +1,5 @@
 import React, { useState } from "react"
-import { graphql, Link } from "gatsby"
-import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
-import { StaticImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby"
 import "./news.css"
 import Header from "src/components/header"
 import Footer from "src/components/footer"
@@ -77,7 +75,7 @@ const NewsPage = () => {
   const limit = 3
   const [displayItems, setDisplayItems] = useState(newses.slice(0, limit))
 
-  const handlePageChange = (page) => {
+  const handlePageChange = page => {
     const offset = limit * (page - 1)
     setDisplayItems(newses.slice(offset, offset + limit))
   }
@@ -101,7 +99,10 @@ const NewsPage = () => {
               </div>
             ))}
           </div>{" "}
-          <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
+          <Pagination
+            items={displayItems.length}
+            handlePageChange={handlePageChange}
+          />
         </div>{" "}
       </div>{" "}
       <Footer />

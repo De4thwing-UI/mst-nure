@@ -2,14 +2,17 @@ import React, { useState } from "react"
 import "./index.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { faTimes } from "@fortawesome/free-solid-svg-icons/faTimes"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 
 export const HeaderSm = () => {
+  const { languages, changeLanguage } = useI18next()
+
   const logo = useStaticQuery(graphql`
     query {
-      file(name: {eq: "Logo1"}) {
+      file(name: { eq: "Logo1" }) {
         childImageSharp {
           gatsbyImageData
         }
@@ -143,20 +146,26 @@ export const HeaderSm = () => {
             <GatsbyImage
               className="header-sm_logo"
               image={logo.file.childImageSharp.gatsbyImageData}
-              alt="logo_MST" />
+              alt="logo_MST"
+            />
           </Link>
         </div>{" "}
         <div className="mod-languages">
           <ul className="lang-inline">
-            <li className="lang-active">
-              <a href="#"> Ua </a>{" "}
-            </li>{" "}
-            <li className="lang-active">
-              <a href="#"> Ru </a>{" "}
-            </li>{" "}
-            <li className="lang-active">
-              <a href="#"> En </a>{" "}
-            </li>{" "}
+            {languages.map(lang => (
+              <li className="lang-active" key={lang}>
+                <a
+                  href="#"
+                  className="lang-link"
+                  onClick={e => {
+                    e.preventDefault()
+                    changeLanguage(lang)
+                  }}
+                >
+                  {lang}
+                </a>
+              </li>
+            ))}
           </ul>{" "}
         </div>{" "}
       </div>{" "}
@@ -173,7 +182,8 @@ export const HeaderSm = () => {
             <GatsbyImage
               className="header-sm_logo"
               image={logo.file.childImageSharp.gatsbyImageData}
-              alt="logo_MST" />
+              alt="logo_MST"
+            />
           </Link>
         </div>{" "}
         <ul className="link-list-sm">

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"Bienvenue sur mon site Gatsby !\",\"My name is Shanika\":\"Je m'appelle Shanika\",\"My profession is SSE\":\"Ma profession est ESS\",\"message\":\"test\"}","language":"ru"}}]}},"pageContext":{"language":"ru","i18n":{"language":"ru","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":false,"originalPath":"/","path":"/"}}},
+    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"مرحبًا بكم في موقع Gatsby الخاص بي!\",\"My name is Shanika\":\"اسمي شانيكا\",\"My profession is SSE\":\"مهنتي هي SSE\",\"message\":\"root\",\"test\":\"тест\"}","language":"ua"}}]}},"pageContext":{"language":"ua","i18n":{"language":"ua","languages":["ua","en"],"defaultLanguage":"ua","generateDefaultLanguagePage":false,"routed":false,"originalPath":"/","path":"/"}}},
     "staticQueryHashes": ["1299629666"]}

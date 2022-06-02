@@ -19,7 +19,7 @@ const Conferences = () => {
   const limit = 2
   const [displayItems, setDisplayItems] = useState(conferences.slice(0, limit))
 
-  const handlePageChange = (page) => {
+  const handlePageChange = page => {
     const offset = limit * (page - 1)
     setDisplayItems(conferences.slice(offset, offset + limit))
   }
@@ -52,7 +52,10 @@ const Conferences = () => {
             </div>
           ))}
         </div>
-        <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
+        <Pagination
+          items={displayItems.length}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </div>
   )

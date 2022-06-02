@@ -34,7 +34,6 @@ const Employment = () => {
       <div className="container">
         <div className="employment__title"> Працевлаштування </div>
         <div className="employment__inner">
-          
           {employments.map((employment, index) => (
             <div className="employment__item" key={index.toString()}>
               <img
@@ -46,7 +45,6 @@ const Employment = () => {
           ))}
         </div>
         <div className="employment__button">
-          
           <a href="#">
             <Button> Всі партнери </Button>
           </a>

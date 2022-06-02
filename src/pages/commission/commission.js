@@ -56,7 +56,7 @@ const CommissionPage = () => {
       name: "Борисов. П.Д.",
       photo: BorysovImg,
       role: "Член комісії",
-    },  
+    },
   ]
   return (
     <div>
