@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import "./pagination.css"
 
-const Pagination = ({ items, handlePageChange }) => {
+const Pagination = ({ items, limit = 3, handlePageChange }) => {
   const [currentPage, setPage] = useState(1)
-  const pages = Math.ceil(items / 3)
+  const pages = Math.ceil(items / limit)
 
   return (
     <div className="works__pagination">

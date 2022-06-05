@@ -156,12 +156,12 @@ const Header = () => {
                 </Link>
               </div>
             </a>
-            <a href="/partners" className="nav__link">
+            <Link to="/partners" className="nav__link">
               Партнери
-            </a>
-            <a href="/contact" className="nav__link">
+            </Link>
+            <Link to="/contact" className="nav__link">
               Контакти
-            </a>
+            </Link>
           </nav>
           <div className="mod-languages">
             <ul className="lang-inline">
