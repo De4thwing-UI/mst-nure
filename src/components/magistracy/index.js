@@ -1,37 +1,38 @@
 import React from "react"
 import "./magistracy.css"
+import { Trans } from "react-i18next"
 
 const Magistracy = () => {
   const magistracies = [
     {
-      suptitle: "Освітньо-професійна програма",
-      name: "ТЕМВ",
-      text: "Технології електронних мультимедійних видань",
+      suptitle: "Educational and professional program",
+      name: "TEMP",
+      text: "Technologies of electronic multimedia publications",
     },
     {
-      suptitle: "Освітньо-професійна програма",
-      name: "КТСВПВ",
-      text: "Комп’ютерні технології та системи видавничо-поліграфічних виробництв",
+      suptitle: "Educational and professional program",
+      name: "CTSPPP",
+      text: "Computer technologies",
     },
     {
-      suptitle: "Освітньо-професійна програма",
-      name: "ТДВ",
-      text: "Технології друкованих видань",
+      suptitle: "Educational and professional program",
+      name: "TPP",
+      text: "Technologies of printed publications",
     },
   ]
 
   return (
     <div className="magistracy">
       <div className="container">
-        <div className="magistracy__title">Магістратура</div>
+        <div className="magistracy__title"><Trans>Magistracy</Trans></div>
         <div className="magistracy__inner">
           {magistracies.map((magistracy, index) => (
             <div className="magistracy__item" key={index.toString()}>
               <p className="magistracy__item__suptitle">
-                {magistracy.suptitle}
+                <Trans>{magistracy.suptitle}</Trans>
               </p>
-              <h1 className="magistracy__item__name">{magistracy.name}</h1>
-              <p className="magistracy__item__text">{magistracy.text}</p>
+              <h1 className="magistracy__item__name"><Trans>{magistracy.name}</Trans></h1>
+              <p className="magistracy__item__text"><Trans>{magistracy.text}</Trans></p>
             </div>
           ))}
         </div>

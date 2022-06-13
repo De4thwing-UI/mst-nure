@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby-plugin-react-i18next"
+import { Link, Trans } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import Button from "src/components/button"
 import "./lastnews.css"
@@ -9,9 +9,13 @@ const News = () => {
     <div className="news">
       <div className="container">
         <div className="news__title">
-          <h1 className="news__text"> Новини кафедри </h1>
+          <h1 className="news__text">
+            <Trans>News of the department</Trans>
+          </h1>
           <Link language="ua" to="/news" className="news__link">
-            <Button> Всі новини </Button>
+            <Button>
+              <Trans>All news</Trans>
+            </Button>
           </Link>
         </div>
         <div className="news__inner">
@@ -22,16 +26,16 @@ const News = () => {
               className="news__image"
             />
             <h1 className="news__item__title">
-              1 березня відбувся день відкритих дверей
+              <Trans>On March 1, an open day was held</Trans>
             </h1>
             <div className="news__item__text">
-              1 березня, перший день весни!Завершальний у цьому навчальному році
-              День відкритих дверей зібрав величезну кількість абітурієнтів та
-              гостей...
+              <Trans>March 1, the first day of spring!</Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">
-              <a href="#"> Дізнатись більше </a>
+              <a href="#">
+                <Trans>Learn more</Trans>
+              </a>
             </div>
           </div>
           <div className="news__item">
@@ -41,16 +45,16 @@ const News = () => {
               className="news__image"
             />
             <h1 className="news__item__title">
-              1 березня відбувся день відкритих дверей
+              <Trans>On March 1, an open day was held</Trans>
             </h1>
             <div className="news__item__text">
-              1 березня, перший день весни!Завершальний у цьому навчальному році
-              День відкритих дверей зібрав величезну кількість абітурієнтів та
-              гостей...
+              <Trans>March 1, the first day of spring!</Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">
-              <a href="#"> Дізнатись більше </a>
+              <a href="#">
+                <Trans>Learn more</Trans>
+              </a>
             </div>
           </div>
           <div className="news__item">
@@ -60,21 +64,23 @@ const News = () => {
               className="news__image"
             />
             <h1 className="news__item__title">
-              1 березня відбувся день відкритих дверей
+              <Trans>On March 1, an open day was held</Trans>
             </h1>
             <div className="news__item__text">
-              1 березня, перший день весни!Завершальний у цьому навчальному році
-              День відкритих дверей зібрав величезну кількість абітурієнтів та
-              гостей...
+              <Trans>March 1, the first day of spring!</Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">
-              <a href="#"> Дізнатись більше </a>
+              <a href="#">
+                <Trans>Learn more</Trans>
+              </a>
             </div>
           </div>
         </div>
         <Link language="ua" to="/news/news" className="news__link-sm">
-          <Button> Всі новини </Button>
+          <Button>
+            <Trans>All news</Trans>
+          </Button>
         </Link>
       </div>
     </div>

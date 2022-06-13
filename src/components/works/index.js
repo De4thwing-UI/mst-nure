@@ -5,53 +5,54 @@ import "./works.css"
 import FirstImg from "src/images/works/1.png"
 import SecondImg from "src/images/works/2.png"
 import ThirdImg from "src/images/works/3.png"
+import { Trans } from "react-i18next"
 
 const Works = () => {
   const works = [
     {
-      name: "Гапіч Антон",
+      name: "Anton Gapich",
       photo: FirstImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Ісаєнко Тетяна",
+      name: "Tatyana Isayenko",
       photo: SecondImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Музичук Анна",
+      name: "Anna Muzychuk",
       photo: ThirdImg,
-      position: "Соціальний плакат",
+      position: "Social poster",
     },
     {
-      name: "Музичук Анна",
+      name: "Anna Muzychuk",
       photo: ThirdImg,
-      position: "Соціальний плакат",
+      position: "Social poster",
     },
     {
-      name: "Ісаєнко Тетяна",
+      name: "Tatyana Isayenko",
       photo: SecondImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Гапіч Антон",
+      name: "Anton Gapich",
       photo: FirstImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Ісаєнко Тетяна",
+      name: "Tatyana Isayenko",
       photo: SecondImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Гапіч Антон",
+      name: "Anton Gapich",
       photo: FirstImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Музичук Анна",
+      name: "Anna Muzychuk",
       photo: ThirdImg,
-      position: "Соціальний плакат",
+      position: "Social poster",
     },
   ]
 
@@ -67,17 +68,17 @@ const Works = () => {
     <div className="works">
       <div className="container">
         <div className="works__title">
-          <h1 className="works__text"> Роботи студентів </h1>
+          <h1 className="works__text"> <Trans>Works of students</Trans> </h1>
           <a href="#" className="works__link">
-            <Button> Дивитись всі </Button>
+            <Button> <Trans>Show more</Trans> </Button>
           </a>
         </div>
         <div className="works__inner">
           {displayWorks.map((work, index) => (
             <div className="works__item" key={index.toString()}>
               <img src={work.photo} alt="1" className="works__image" />
-              <h1 className="works__item__title"> {work.name} </h1>
-              <div className="works__item__text"> {work.position} </div>
+              <h1 className="works__item__title"> <Trans>{work.name}</Trans> </h1>
+              <div className="works__item__text"> <Trans>{work.position}</Trans> </div>
             </div>
           ))}
           <a href="#" className="works__link-sm">

@@ -185,9 +185,8 @@ export const HeaderSm = () => {
               alt="logo_MST"
             />
           </Link>
-        </div>{" "}
+        </div>
         <ul className="link-list-sm">
-          {" "}
           {menuItems.map((item, key) => (
             <li
               className={
@@ -215,11 +214,10 @@ export const HeaderSm = () => {
                       key={subItem + subItemIndex.toString()}
                     >
                       <Link className="list-item_link" to={subItem.link}>
-                        {" "}
-                        {subItem.displayName}{" "}
-                      </Link>{" "}
+                        {subItem.displayName}
+                      </Link>
                     </li>
-                  ))}{" "}
+                  ))}
                 </ul>
               ) : item.link ? (
                 <Link className="list-item_link" to={item.link}>
