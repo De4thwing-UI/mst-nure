@@ -80,8 +80,7 @@ const NewsPage = () => {
   const handlePageChange = (page) => {
     const offset = limit * (page - 1)
     setDisplayItems(newses.slice(offset, offset + limit))
-  }
-
+  } 
   return (
     <div>
       <Header />
