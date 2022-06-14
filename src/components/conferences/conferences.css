@@ -57,6 +57,10 @@
     color: #7676A7;
 }
 
+.conferences__button.active {
+    color: #d772c1;
+}
+
 .conferences__button:hover {
     color: #d772c1;
     border-bottom: 3px solid #d772c1;

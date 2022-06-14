@@ -20,19 +20,22 @@ const IndexPage = () => {
       <div className="intro">
         <div className="container">
           <div className="intro__inner">
-            <StaticImage src="../images/intro-bg-sm.svg"
+            <StaticImage
+              src="../images/intro-bg-sm.svg"
               alt="intro_image-sm"
               className="intro__image-sm"
             />
             <h1 className="intro__title">
-              Харківський національний університет радіоелектроніки
+              <Trans>Kharkiv National University of Radio Electronics</Trans>
             </h1>
             <h2 className="intro__subtitle">
-              Кафедра Медіасистеми та технології
+              <Trans>Department of Media Systems and Technologies</Trans>
             </h2>
             <h3 className="intro__text">
-              Ми завжди готові допомогти Вам отримати максимум знань і умінь в
-              нашій професійній сфері
+              <Trans>
+                We are always ready to help you gain maximum knowledge and
+                skills in our professional field
+              </Trans>
             </h3>
           </div>
           <StaticImage
@@ -53,7 +56,10 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24 <p className="features__text"> Викладача </p>
+                24{" "}
+                <p className="features__text">
+                  <Trans>Teachers</Trans>
+                </p>
               </div>
             </div>
             <div className="features__item">
@@ -63,7 +69,10 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                100 % <p className="features__text"> Працевлаштування </p>
+                100 %{" "}
+                <p className="features__text">
+                  <Trans>Employment</Trans>{" "}
+                </p>
               </div>
             </div>
             <div className="features__item">
@@ -73,7 +82,10 @@ const IndexPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                3000 + <p className="features__text"> Випускників </p>
+                3000 +{" "}
+                <p className="features__text">
+                  <Trans>Graduates</Trans>{" "}
+                </p>
               </div>
             </div>
           </div>

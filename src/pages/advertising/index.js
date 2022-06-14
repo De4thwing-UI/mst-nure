@@ -35,7 +35,6 @@ const AdvertisingPage = () => {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                   className="advertising__video"
-                  
                 ></iframe>
               </div>
             ))}

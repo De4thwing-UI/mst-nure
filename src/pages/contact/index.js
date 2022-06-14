@@ -31,7 +31,6 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              
               Офіційна сторінка ХНУРЕ в
               <a
                 href="https://t.me/nure_press"
@@ -42,7 +41,6 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              
               Офіційна сторінка ХНУРЕ в
               <a
                 href="https://t.me/nure_press"
@@ -53,7 +51,6 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              
               Сторінка кафедри МСТ в
               <a
                 href="https://www.instagram.com/mst_nure_ua/"
@@ -64,7 +61,6 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              
               Офіційна сторінка ХНУРЕ в
               <a
                 href="https://www.facebook.com/groups/635508543937648/?ref=share"

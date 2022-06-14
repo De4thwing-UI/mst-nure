@@ -113,19 +113,21 @@ const GraduatePage = () => {
       photo: NineImg,
       position: "3D Ілюстрація",
     },
-  ];
+  ]
 
   const worksLimit = 3
   const [displayWorks, setDisplayWorks] = useState(works.slice(0, worksLimit))
   const graduatesLimit = 3
-  const [displayGraduates, setDisplayGraduates] = useState(graduates.slice(0, graduatesLimit))
+  const [displayGraduates, setDisplayGraduates] = useState(
+    graduates.slice(0, graduatesLimit)
+  )
 
-  const handleWorksPageChange = (page) => {
+  const handleWorksPageChange = page => {
     const offset = worksLimit * (page - 1)
     setDisplayWorks(works.slice(offset, offset + worksLimit))
   }
 
-  const handleGraduatesPageChange = (page) => {
+  const handleGraduatesPageChange = page => {
     const offset = graduatesLimit * (page - 1)
     setDisplayGraduates(works.slice(offset, offset + graduatesLimit))
   }
@@ -150,7 +152,10 @@ const GraduatePage = () => {
             ))}
           </div>
         </div>
-        <Pagination items={displayGraduates.length} handlePageChange={handleGraduatesPageChange} />
+        <Pagination
+          items={displayGraduates.length}
+          handlePageChange={handleGraduatesPageChange}
+        />
       </div>
       <div className="works">
         <div className="container">
@@ -161,7 +166,6 @@ const GraduatePage = () => {
         <div className="graduates__works">
           <div className="container">
             <div className="graduates__works__inner">
-              
               {works.map((work, index) => (
                 <div className="graduate__works__item" key={index.toString()}>
                   <img
@@ -169,12 +173,8 @@ const GraduatePage = () => {
                     alt="1"
                     className="graduate__works__image"
                   />
-                  <h1 className="graduate__works__item__title">
-                    
-                    {work.name}
-                  </h1>
+                  <h1 className="graduate__works__item__title">{work.name}</h1>
                   <div className="graduate__works__item__text">
-                    
                     {work.position}
                   </div>
                 </div>
@@ -182,7 +182,10 @@ const GraduatePage = () => {
             </div>
           </div>
         </div>
-        <Pagination items={displayWorks.length} handlePageChange={handleWorksPageChange} />
+        <Pagination
+          items={displayWorks.length}
+          handlePageChange={handleWorksPageChange}
+        />
       </div>
       <News />
       <Footer />

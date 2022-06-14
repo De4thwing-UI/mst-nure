@@ -69,7 +69,6 @@ const RulesPage = () => {
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    
                     ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
                   </span>
                 </li>
@@ -155,7 +154,6 @@ const RulesPage = () => {
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    
                     ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
                   </span>
                 </li>
@@ -189,7 +187,6 @@ const RulesPage = () => {
             Абітурієнте!Якщо у тебе повна середня загальна освіта, ти можеш:
           </div>
           <div className="abiturient__inner">
-            
             <ul className="abiturient__list">
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
@@ -201,7 +198,6 @@ const RulesPage = () => {
               </li>
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  
                   Скласти вступні випробування з 01 до 13 липня 2022 р.(за
                   необхідності, якщо є на це підстави);
                 </span>
@@ -216,7 +212,6 @@ const RulesPage = () => {
               </li>
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  
                   ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
                 </span>
               </li>
@@ -230,7 +225,6 @@ const RulesPage = () => {
             Абітурієнте!Якщо у тебе повна середня загальна освіта, ти можеш:
           </div>
           <div className="bakalavr__inner">
-            
             <ul className="bakalavr__list">
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
@@ -239,7 +233,6 @@ const RulesPage = () => {
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  
                   Скласти вступний тест в Приймальній комісії ХНУРЕ з 24 по 30
                   липня 2021 р.;
                 </span>
@@ -253,14 +246,12 @@ const RulesPage = () => {
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  
                   Особисто принести оригінали документів до 17: 00 4 серпня 2021
                   р.;
                 </span>
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  
                   Зарахування не пізніше 6 серпня 2021 р.
                 </span>
               </li>

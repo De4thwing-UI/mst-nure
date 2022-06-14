@@ -1,5 +1,32 @@
 {
-    "componentChunkName": "component---src-pages-news-item-news-item-js",
-    "path": "/en/news_item/news_item/",
-    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"Welcome to my Gatsby site!\",\"My name is Shanika\":\"My name is Shanika\",\"My profession is SSE\":\"My profession is SSE\",\"message\":\"messages\"}","language":"en"}}]}},"pageContext":{"language":"en","i18n":{"language":"en","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":true,"originalPath":"/news_item/news_item/","path":"en/news_item/news_item/"}}},
-    "staticQueryHashes": []}
+  "componentChunkName": "component---src-pages-news-item-news-item-js",
+  "path": "/en/news_item/news_item/",
+  "result": {
+    "data": {
+      "locales": {
+        "edges": [
+          {
+            "node": {
+              "ns": "translation",
+              "data": "{\"Welcome to my Gatsby site!\":\"Welcome to my Gatsby site!\",\"My name is Shanika\":\"My name is Shanika\",\"My profession is SSE\":\"My profession is SSE\",\"message\":\"messages\"}",
+              "language": "en"
+            }
+          }
+        ]
+      }
+    },
+    "pageContext": {
+      "language": "en",
+      "i18n": {
+        "language": "en",
+        "languages": ["ua", "ru", "en"],
+        "defaultLanguage": "ru",
+        "generateDefaultLanguagePage": false,
+        "routed": true,
+        "originalPath": "/news_item/news_item/",
+        "path": "en/news_item/news_item/"
+      }
+    }
+  },
+  "staticQueryHashes": []
+}

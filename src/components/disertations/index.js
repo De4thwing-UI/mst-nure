@@ -17,7 +17,7 @@ const Disertations = () => {
   const limit = 2
   const [displayItems, setDisplayItems] = useState(disertations.slice(0, limit))
 
-  const handlePageChange = (page) => {
+  const handlePageChange = page => {
     const offset = limit * (page - 1)
     setDisplayItems(disertations.slice(offset, offset + limit))
   }
@@ -27,26 +27,23 @@ const Disertations = () => {
       <div className="container">
         <div className="disertation__title">
           <h1 className="disertation__title__text">
-            
             За останні роки підготовлено та захищено кандидатські дисертації
           </h1>
         </div>
         <div className="disertation__inner">
-          
           {disertations.map((disertation, index) => (
             <div className="disertation__item" key={index.toString()}>
               <div className="disertation__item__title">
-                
                 {disertation.title}
               </div>
-              <div className="disertation__item__text">
-                
-                {disertation.text}
-              </div>
+              <div className="disertation__item__text">{disertation.text}</div>
             </div>
           ))}
         </div>
-        <Pagination items={displayItems.length} handlePageChange={handlePageChange} />
+        <Pagination
+          items={displayItems.length}
+          handlePageChange={handlePageChange}
+        />
       </div>
     </div>
   )

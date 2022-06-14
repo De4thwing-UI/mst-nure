@@ -55,7 +55,7 @@ const WorksPage = ({ data }) => {
   const limit = 3
   const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
 
-  const handlePageChange = (page) => {
+  const handlePageChange = page => {
     const offset = limit * (page - 1)
     setDisplayWorks(works.slice(offset, offset + limit))
   }
@@ -85,7 +85,10 @@ const WorksPage = ({ data }) => {
             </div>
           </div>
         </div>
-        <Pagination items={displayWorks.length} handlePageChange={handlePageChange} />
+        <Pagination
+          items={displayWorks.length}
+          handlePageChange={handlePageChange}
+        />
       </div>
       <News />
       <Footer />

@@ -1,5 +1,32 @@
 {
-    "componentChunkName": "component---src-pages-studentscience-studentscience-js",
-    "path": "/en/studentscience/studentscience/",
-    "result": {"data":{"locales":{"edges":[{"node":{"ns":"translation","data":"{\"Welcome to my Gatsby site!\":\"Welcome to my Gatsby site!\",\"My name is Shanika\":\"My name is Shanika\",\"My profession is SSE\":\"My profession is SSE\",\"message\":\"messages\"}","language":"en"}}]}},"pageContext":{"language":"en","i18n":{"language":"en","languages":["ua","ru","en"],"defaultLanguage":"ru","generateDefaultLanguagePage":false,"routed":true,"originalPath":"/studentscience/studentscience/","path":"en/studentscience/studentscience/"}}},
-    "staticQueryHashes": []}
+  "componentChunkName": "component---src-pages-studentscience-studentscience-js",
+  "path": "/en/studentscience/studentscience/",
+  "result": {
+    "data": {
+      "locales": {
+        "edges": [
+          {
+            "node": {
+              "ns": "translation",
+              "data": "{\"Welcome to my Gatsby site!\":\"Welcome to my Gatsby site!\",\"My name is Shanika\":\"My name is Shanika\",\"My profession is SSE\":\"My profession is SSE\",\"message\":\"messages\"}",
+              "language": "en"
+            }
+          }
+        ]
+      }
+    },
+    "pageContext": {
+      "language": "en",
+      "i18n": {
+        "language": "en",
+        "languages": ["ua", "ru", "en"],
+        "defaultLanguage": "ru",
+        "generateDefaultLanguagePage": false,
+        "routed": true,
+        "originalPath": "/studentscience/studentscience/",
+        "path": "en/studentscience/studentscience/"
+      }
+    }
+  },
+  "staticQueryHashes": []
+}
