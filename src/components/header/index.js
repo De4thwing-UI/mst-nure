@@ -19,148 +19,147 @@ const Header = () => {
           </div>
           <nav className="nav">
             <a href="#" className="nav__link">
-              <Trans>test</Trans>
-              Про Кафедру
+              <Trans>About the Department</Trans>
               <div className="nav__dropdown">
                 <Link to="/teacher" className="nav__dropdown__link">
-                  Склад кафедри
+                  <Trans>The composition of the department</Trans>
                 </Link>
                 <Link to="/history" className="nav__dropdown__link">
-                  Історія кафедри
+                  <Trans>History of the department</Trans>
                 </Link>
                 <Link to="/graduates" className="nav__dropdown__link">
-                  Наші випускники
+                  <Trans>Our graduates</Trans>
                 </Link>
               </div>
             </a>
             <a href="#" className="nav__link">
-              Учбовий процес
+              <Trans>Educational process</Trans>
               <div className="nav__dropdown">
                 <Link
                   to="/commission/commission"
                   className="nav__dropdown__link"
                 >
-                  Постійна комісія УМР
+                  <Trans>UMR Standing Committee</Trans>
                 </Link>
                 <a
                   href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Форми освіти{" "}
+                  <Trans>Forms of education</Trans>{" "}
                 </a>
                 <a
                   href="https://nure.ua/ru/faculty/fakultet-kompyuternyih-nauk"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Спеціальності{" "}
+                  <Trans>Specialties</Trans>{" "}
                 </a>
                 <a
                   href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Освітні програми{" "}
+                  <Trans>Educational programs</Trans>{" "}
                 </a>
                 <a
                   href="https://drive.google.com/drive/folders/1B91OGarzXYz8Inyn5AKPDTIa48Qs_duo"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Силлабуси дисциплин{" "}
+                  <Trans>Syllabus of disciplines</Trans>{" "}
                 </a>
                 <a
                   href="https://cist.nure.ua/ias/app/tt/f?p=778:2:4427815546178203"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Графіки навчального процесу{" "}
+                  <Trans>Training schedules</Trans>{" "}
                 </a>
                 <a
                   href="https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Обрання дисциплін студентом{" "}
+                  <Trans>Election of disciplines by students</Trans>{" "}
                 </a>
               </div>
             </a>
             <a href="#" className="nav__link">
-              Наука
+              <Trans>Science</Trans>
               <div className="nav__dropdown">
                 <Link to="/teacher" className="nav__dropdown__link">
-                  Лабараторія
+                  <Trans>Laboratory</Trans>
                 </Link>
                 <Link to="/directions" className="nav__dropdown__link">
-                  Наукові напрями
+                  <Trans>Scientific directions</Trans>
                 </Link>
                 <Link to="/studentscience" className="nav__dropdown__link">
-                  Студентська наука
+                  <Trans>Student science</Trans>
                 </Link>
                 <Link to="/works" className="nav__dropdown__link">
-                  Роботи студентів
+                  <Trans>Students' works</Trans>
                 </Link>
                 <Link to="/sections" className="nav__dropdown__link">
-                  Гуртки кафедри
+                  <Trans>Circles of the department</Trans>
                 </Link>
                 <Link to="/offer" className="nav__dropdown__link">
-                  Запропонувати тему
+                  <Trans>Suggest a topic</Trans>
                 </Link>
               </div>
             </a>
             <a href="#" className="nav__link">
-              Абітурієнтам
+              <Trans>Applicants</Trans>
               <div className="nav__dropdown">
                 <Link to="/rules" className="nav__dropdown__link">
-                  Правила вступу
+                  <Trans>Admission rules</Trans>
                 </Link>
                 <Link to="/admissions" className="nav__dropdown__link">
-                  Спеціальність
+                  <Trans>Specialty</Trans>
                 </Link>
                 <Link to="/advertising" className="nav__dropdown__link">
-                  Наша реклама
+                  <Trans>Our advertising</Trans>
                 </Link>
               </div>
             </a>
             <a href="#" className="nav__link">
-              Студентам
+              <Trans>Students</Trans>
               <div className="nav__dropdown">
                 <a
                   href="http://cist.kture.kharkov.ua/"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  Розклад
+                  <Trans>Schedule</Trans>
                 </a>
                 <Link to="/resources" className="nav__dropdown__link">
-                  Ресурси
+                  <Trans>Resource</Trans>
                 </Link>
                 <Link to="/student-life" className="nav__dropdown__link">
-                  Студентське життя
+                  <Trans>Students' life</Trans>
                 </Link>
                 <Link to="/annotations" className="nav__dropdown__link">
-                  Анотації дисциплін
+                  <Trans>Annotations of disciplines</Trans>
                 </Link>
                 <Link to="/science-work" className="nav__dropdown__link">
-                  Науково - дослід.робота
+                 <Trans>Scientific - research work</Trans>
                 </Link>
                 <Link to="/student-choise" className="nav__dropdown__link">
-                  Вибір студента
+                  <Trans>Student's choice</Trans>
                 </Link>
                 <Link to="/diploma" className="nav__dropdown__link">
-                  Дипломування
+                  <Trans>Graduation</Trans>
                 </Link>
                 <Link to="/discuss" className="nav__dropdown__link">
-                  Обговорення ОП
+                  <Trans>Discussion of OP</Trans>
                 </Link>
               </div>
             </a>
             <Link to="/partners" className="nav__link">
-              Партнери
+              <Trans>Partners</Trans>
             </Link>
             <Link to="/contact" className="nav__link">
-              Контакти
+              <Trans>Contacts</Trans>
             </Link>
           </nav>
           <div className="mod-languages">

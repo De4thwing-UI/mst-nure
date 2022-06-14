@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next"
 import "./footer.css"
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons/faPhoneAlt"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons/faEnvelope"
@@ -11,7 +11,10 @@ const Footer = ({ title }) => {
       <div className="container">
         <div className="footer__inner">
           <ul className="footer__item">
-            <li className="footer__title"> Наші контакти </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>Contacts</Trans>{" "}
+            </li>
             <li className="footer__link">
               <FontAwesomeIcon
                 icon={faPhoneAlt}
@@ -38,29 +41,35 @@ const Footer = ({ title }) => {
             </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Про кафедру </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>About the Department</Trans>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/teacher" className="footer__link">
-                Склад кафедри
+                <Trans>The composition of the department</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/history" className="footer__link">
-                Історія кафедри
+                <Trans>History of the department</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/graduates" className="footer__link">
-                Наші випускники
+                <Trans>Our graduates</Trans>
               </Link>
             </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Учбовий процес </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>Educational process</Trans>{" "}
+            </li>
             <li className="footer__link">
               {" "}
               <Link language="ua" className="footer__link">
-                Постійна комісія УМР
+                <Trans>UMR Standing Committee</Trans>
               </Link>{" "}
             </li>
             <li className="footer__link">
@@ -71,7 +80,7 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Форми освіти{" "}
+                <Trans>Forms of education</Trans>{" "}
               </a>{" "}
             </li>
             <li className="footer__link">
@@ -81,7 +90,7 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Спеціальності{" "}
+                <Trans>Specialties</Trans>{" "}
               </a>{" "}
             </li>
             <li className="footer__link">
@@ -92,7 +101,7 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Освітні програми{" "}
+                <Trans>Educational programs</Trans>{" "}
               </a>{" "}
             </li>
             <li className="footer__link">
@@ -103,7 +112,7 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Силлабуси дисциплин{" "}
+                <Trans>Syllabus of disciplines</Trans>{" "}
               </a>{" "}
             </li>
             <li className="footer__link">
@@ -113,7 +122,7 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Графіки навчального процесу{" "}
+                <Trans>Training schedules</Trans>{" "}
               </a>{" "}
             </li>
             <li className="footer__link">
@@ -124,101 +133,113 @@ const Footer = ({ title }) => {
                 className="footer__link"
                 target="_blank"
               >
-                Обрання дисциплін студентом{" "}
+                <Trans>Election of disciplines by students</Trans>{" "}
               </a>{" "}
             </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Наука </li>
-            <li className="footer__link"> Лабараторія </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>Science</Trans>{" "}
+            </li>
+            <li className="footer__link">
+              {" "}
+              <Trans>Laboratory</Trans>
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/directions " className="footer__link">
-                Наукові напрями
+                <Trans>Scientific directions</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/studentscience" className="footer__link">
-                Студентська наука
+                <Trans>Student science</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/works" className="footer__link">
-                Роботи студентів
+                <Trans>Students' works</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/sections" className="footer__link">
-                Гуртки кафедри
+                <Trans>Circles of the department</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/offer/offer" className="footer__link">
-                Запропонувати тему
+                <Trans>Suggest a topic</Trans>
               </Link>
             </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Абітурієнтам </li>
+            <li className="footer__title">
+              <Trans>Applicants</Trans>{" "}
+            </li>
             <li className="footer__link">
               <Link language="ua" to="/rules" className="footer__link">
-                Правила вступу
+                <Trans>Admission rules</Trans>
               </Link>
             </li>
             <Link language="ua" to="/admissions" className="footer__link">
-              Спеціальність
+              <Trans>Specialty</Trans>
             </Link>
-            <li className="footer__link"> Питання - відповідь </li>
             <li className="footer__link">
               <Link language="ua" to="/advertising" className="footer__link">
-                Наша реклама
+                <Trans>Our advertising</Trans>
               </Link>
             </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Студентам </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>Students</Trans>{" "}
+            </li>
             <li className="footer__link">
               <Link
                 language="ua"
                 to="http://cist.kture.kharkov.ua/"
                 className="footer__link"
               >
-                Розклад
+                <Trans>Schedule</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/resources" className="footer__link">
-                Ресурси
+                <Trans>Resource</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/student-life" className="footer__link">
-                Студентське життя
+                <Trans>Students' life</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/annotations" className="footer__link">
-                Анотації дисциплін
+                <Trans>Annotations of disciplines</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/science-work" className="footer__link">
-                Науково дослідна робота
+                <Trans>Scientific - research work</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/student-choise" className="footer__link">
-                Вибір студента
+                <Trans>Student's choice</Trans>
               </Link>
             </li>
             <li className="footer__link">
               <Link language="ua" to="/diploma" className="footer__link">
-                Дипломування
+                <Trans>Graduation</Trans>
               </Link>
             </li>
-            <li className="footer__link"> Практика </li>
           </ul>
           <ul className="footer__item">
-            <li className="footer__title"> Партнери </li>
+            <li className="footer__title">
+              {" "}
+              <Trans>Partners</Trans>{" "}
+            </li>
           </ul>
         </div>
       </div>
