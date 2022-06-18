@@ -28,6 +28,7 @@
     
     .employment__item {
         max-width: 413px;
+        padding: 0 25px;
         box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
     }
     

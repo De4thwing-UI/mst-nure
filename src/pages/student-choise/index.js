@@ -34,11 +34,11 @@ const StudentchoisePage = () => {
               </p>
             </div>
           </div>
-          <div className="student-choise__title"> Курсове проектування </div>
+          <div className="student-choise__title"> Курсове проєктування </div>
           <div className="student-choise__course"> 2 курс </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Художні основи проектування видань
+              Художні основи проєктування видань
             </h1>
             <p className="student-choise__course__tems">
               Вибір теми:
@@ -65,7 +65,7 @@ const StudentchoisePage = () => {
           <div className="student-choise__course"> 3 курс </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проектів
+              Технологія та обладнання друкарських та післядрукарських проєктів
             </h1>
             <p className="student-choise__course__tems">
               Вибір теми:
@@ -105,7 +105,7 @@ const StudentchoisePage = () => {
           <div className="student-choise__course"> 4 курс </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проектів
+              Технологія та обладнання друкарських та післядрукарських проєктів
             </h1>
             <p className="student-choise__course__tems">
               Вибір теми:

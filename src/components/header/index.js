@@ -77,7 +77,7 @@ const Header = () => {
                   <Trans>Training schedules</Trans>{" "}
                 </a>
                 <a
-                  href="https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst"
+                  href="https://nure.ua/branch/navchalniy-viddil/informacijni-povidomlennja-navchalnogo-viddilu/grafiki-navchalnogo-procesu-2020-2021-n-r"
                   className="nav__dropdown__link"
                   target="_blank"
                 >
@@ -88,7 +88,11 @@ const Header = () => {
             <a href="#" className="nav__link">
               <Trans>Science</Trans>
               <div className="nav__dropdown">
-                <Link to="/teacher" className="nav__dropdown__link">
+                <Link
+                  to="https://nure.ua/departments/laboratoriyi"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
                   <Trans>Laboratory</Trans>
                 </Link>
                 <Link to="/directions" className="nav__dropdown__link">
@@ -136,13 +140,13 @@ const Header = () => {
                   <Trans>Resource</Trans>
                 </Link>
                 <Link to="/student-life" className="nav__dropdown__link">
-                  <Trans>Students' life</Trans>
+                  <Trans>Student`s life</Trans>
                 </Link>
                 <Link to="/annotations" className="nav__dropdown__link">
                   <Trans>Annotations of disciplines</Trans>
                 </Link>
                 <Link to="/science-work" className="nav__dropdown__link">
-                 <Trans>Scientific - research work</Trans>
+                  <Trans>Scientific - research work</Trans>
                 </Link>
                 <Link to="/student-choise" className="nav__dropdown__link">
                   <Trans>Student's choice</Trans>

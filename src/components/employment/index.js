@@ -7,7 +7,7 @@ import FourImg from "src/images/employment/epam.png"
 import FiveImg from "src/images/employment/softserve.png"
 import SixImg from "src/images/employment/grid.png"
 import "./employment.css"
-import { Trans } from "react-i18next"
+import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next"
 
 const Employment = () => {
   const employments = [
@@ -33,7 +33,9 @@ const Employment = () => {
   return (
     <div className="employment">
       <div className="container">
-        <div className="employment__title"><Trans>Employment</Trans></div>
+        <div className="employment__title">
+          <Trans>Employment</Trans>
+        </div>
         <div className="employment__inner">
           {employments.map((employment, index) => (
             <div className="employment__item" key={index.toString()}>
@@ -46,9 +48,11 @@ const Employment = () => {
           ))}
         </div>
         <div className="employment__button">
-          <a href="#">
-            <Button><Trans>All partners</Trans></Button>
-          </a>
+          <Link to="/partners">
+            <Button>
+              <Trans>All partners</Trans>
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

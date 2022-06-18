@@ -116,7 +116,7 @@ a {
 }
 
 .lang-active {
-    text-decoration: none;
+    text-transform: uppercase;
     list-style-type: none;
     margin-left: 16px;
 }

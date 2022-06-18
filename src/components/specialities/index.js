@@ -7,7 +7,7 @@ import ThreedImg from "src/images/specialities/3d.svg"
 import EbooksImg from "src/images/specialities/e-books.svg"
 import VideoImg from "src/images/specialities/video.svg"
 import "./specialities.css"
-import { Trans } from "react-i18next"
+import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next"
 
 const Specialities = () => {
   const specialities = [
@@ -45,7 +45,10 @@ const Specialities = () => {
           </h1>
           <a href="#" className="specialties__link">
             <Button>
-              <Trans>Learn more</Trans>{" "}
+              <Link to="/admissions">
+                {" "}
+                <Trans>Learn more</Trans>
+              </Link>{" "}
             </Button>
           </a>
         </div>
@@ -58,15 +61,16 @@ const Specialities = () => {
                 className="specialities__image"
               />
               <div className="specialities__item__title">
-                <Trans>
-                  {specialitie.title}
-                </Trans>
+                <Trans>{specialitie.title}</Trans>
               </div>
             </div>
           ))}
           <a href="#" className="specialties__link-sm">
             <Button>
-              <Trans>Learn more</Trans>{" "}
+              <Link to="/admissions">
+                {" "}
+                <Trans>Learn more</Trans>
+              </Link>{" "}
             </Button>
           </a>
         </div>
