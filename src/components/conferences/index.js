@@ -1,63 +1,64 @@
 import React, { useState } from "react"
 import "./conferences.css"
 import Pagination from "src/components/pagination"
+import { Trans } from "react-i18next"
 
 const Conferences = () => {
   const limit = 2
   const [selectedItems, setSelectedItems] = useState("Конференції")
   const scienceTypes = [
     {
-      name: "Конференції",
+      name: "Conferences",
       children: [
         {
           title:
-            "Міжнародний молодіжний форум «Радіоелектроніка та молодь у ХХІ столітті»",
-          city: "М. Харків",
+            "International Youth Forum «Radio Electronics and Youth in the 21 st Century»",
+          city: "C. Kharkiv",
         },
         {
           title:
-            "Міжнародна науково-технічна конференція студентів та аспірантів «Друкарство молоде»",
-          city: "М. Київ",
+            "International scientific and technical conference of students and postgraduates «Young Printing»",
+          city: "C. Kyiv",
         },
       ],
     },
     {
-      name: "Конкурси",
+      name: "Competitions",
       children: [
         {
           title:
-            "Міжнародна науково-технічна конференція студентів та аспірантів «Друкарство молоде»",
-          city: "М. Київ",
+            "International scientific and technical conference of students and postgraduates «Young Printing»",
+          city: "C. Kyiv",
         },
       ],
     },
     {
-      name: "Олімпіади",
+      name: "Olympics",
       children: [
         {
           title:
-            "Міжнародний молодіжний форум «Радіоелектроніка та молодь у ХХІ столітті»",
-          city: "М. Харків",
+            "International Youth Forum «Radio Electronics and Youth in the 21 st Century»",
+          city: "C. Kharkiv",
         },
         {
           title:
-            "Міжнародна науково-технічна конференція студентів та аспірантів «Друкарство молоде»",
-          city: "М. Київ",
+          "International scientific and technical conference of students and postgraduates «Young Printing»",
+        city: "C. Kyiv",
         },
       ],
     },
     {
-      name: "Публікації",
+      name: "Publications",
       children: [
         {
           title:
-            "Міжнародний молодіжний форум «Радіоелектроніка та молодь у ХХІ столітті»",
-          city: "М. Харків",
+          "International Youth Forum «Radio Electronics and Youth in the 21 st Century»",
+        city: "C. Kharkiv",
         },
         {
           title:
-            "Міжнародна науково-технічна конференція студентів та аспірантів «Друкарство молоде»",
-          city: "М. Київ",
+          "International scientific and technical conference of students and postgraduates «Young Printing»",
+        city: "C. Kyiv",
         },
       ],
     },
@@ -97,7 +98,7 @@ const Conferences = () => {
                   }
                   onClick={() => handleScienceTypeChange(item.name)}
                 >
-                  {item.name}
+                  <Trans>{item.name}</Trans>
                 </button>
               </div>
             ))}
@@ -106,8 +107,12 @@ const Conferences = () => {
         <div className="conferences__inner">
           {displayItems.map((conference, index) => (
             <div className="conferences__item" key={index.toString()}>
-              <div className="conferences__item__title">{conference.title}</div>
-              <div className="conferences__item__city">{conference.city}</div>
+              <div className="conferences__item__title">
+                <Trans>{conference.title}</Trans>
+              </div>
+              <div className="conferences__item__city">
+                <Trans>{conference.city}</Trans>
+              </div>
             </div>
           ))}
         </div>

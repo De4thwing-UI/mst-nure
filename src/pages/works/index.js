@@ -6,45 +6,46 @@ import News from "src/components/lastnews"
 import Pagination from "src/components/pagination"
 import Title from "src/components/title"
 import "./works.css"
+import { Trans } from "react-i18next"
 
 const WorksPage = ({ data }) => {
   debugger
   const works = [
     {
-      name: "Гапіч Антон",
-      position: "Ілюстрація",
+      name: "Anton Gapich",
+      position: "Illustration",
     },
     {
-      name: "Ісаєнко Тетяна",
-      position: "Ілюстрація",
+      name: "Tatyana Isayenko",
+      position: "Illustration",
     },
     {
-      name: "Музичук Анна",
-      position: "Соціальний плакат",
+      name: "Anna Muzychuk",
+      position: "Social poster",
     },
     {
-      name: "Гапіч Антон",
-      position: "Мобільний додаток",
+      name: "Anton Gapich",
+      position: "Mobile application",
     },
     {
-      name: "Тарас Степаненко",
-      position: "Веб сайт",
+      name: "Anton Gapich",
+      position: "Website",
     },
     {
-      name: "Олександр Зінченко",
-      position: "Веб сайт",
+      name: "Anton Gapich",
+      position: "Website",
     },
     {
-      name: "Георгій Бущан",
-      position: "Веб сайт",
+      name: "Anna Muzychuk",
+      position: "Website",
     },
     {
-      name: "Андрій Ярмоленко",
-      position: "Ілюстрація",
+      name: "Andriy Yarmolenko",
+      position: "Illustration",
     },
     {
-      name: "Дмитро Мельніченко",
-      position: "3D Ілюстрація",
+      name: "Dmytro Melnichenko",
+      position: "Website",
     },
   ].map(({ name, position }, index) => ({
     name,
@@ -63,25 +64,30 @@ const WorksPage = ({ data }) => {
   return (
     <div>
       <Header />
-      <Title> Роботи студентів </Title>
+      <Title>
+        <Trans>Student`s Works</Trans>
+      </Title>
       <div className="works">
-        <div className="container"> </div>
-        <div className="graduates__works">
-          <div className="container">
-            <div className="graduates__works__inner">
-              {works.map((work, index) => (
-                <div className="graduate__works__item" key={index.toString()}>
-                  <img
-                    src={work.photo}
-                    alt="1"
-                    className="graduate__works__image"
-                  />
-                  <h1 className="graduate__works__item__title">{work.name}</h1>
-                  <div className="graduate__works__item__text">
-                    {work.position}
+        <div className="container">
+          <div className="graduates__works">
+            <div className="container">
+              <div className="graduates__works__inner">
+                {works.map((work, index) => (
+                  <div className="graduate__works__item" key={index.toString()}>
+                    <img
+                      src={work.photo}
+                      alt="1"
+                      className="graduate__works__image"
+                    />
+                    <h1 className="graduate__works__item__title">
+                      <Trans>{work.name}</Trans>
+                    </h1>
+                    <div className="graduate__works__item__text">
+                      <Trans>{work.position}</Trans>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -1,59 +1,59 @@
 import React, { useState } from "react"
 import "./faq.css"
 import Pagination from "src/components/pagination"
-
+import { Trans } from "react-i18next"
 const Faq = () => {
   const faqs = [
     {
       question:
-        "Чи необхідно вміти малювати для навчання за спеціальністю «186 Видавництво та поліграфія»?",
+        "Is it necessary to be able to draw to study in the specialty «186 Publishing and Printing»?",
       answer:
-        "Це не обов'язково, володіння художніми навичками може знадобитися при вивченні таких дисциплін як «Основи графічного дизайну», «Художні основи проектування видань», «Обробка графічної інформації».",
+        "It is not necessary, the possession of artistic skills may be necessary when studying such disciplines as «Basics of graphic design», «Artistic basics of publication design», «Graphic information processing».",
     },
     {
-      question: "Який обсяг математичних дисциплін і фізики??",
+      question: "What is the scope of mathematical disciplines and physics?",
       answer:
-        "Обсяг викладання вищої математики та фізики (в навчальних годинах) відповідає обсягу, передбаченому Міністерством науки і освіти України для технічних вузів, однак він все-таки трохи нижчий, ніж на інших спеціальностях в ХНУРЕ. ",
+        "The volume of higher mathematics and physics teaching (in teaching hours) corresponds to the volume provided by the Ministry of Science and Education of Ukraine for technical universities, but it is still slightly lower than in other specialties at NURE.",
     },
 
     {
       question:
-        "Якщо я громадянин іншої держави, чи можу я вчитися в ХНУРЕ на бюджетній основі?",
+        "If I am a citizen of another country, can I study at NURE on a budget basis?",
       answer:
-        "Ні. Громадяни інших держав можуть навчатися тільки на контрактній формі навчання, тобто за кошти фізичних або юридичних осіб.",
+        "No. Citizens of other states can study only on a contractual basis, i.e. at the expense of individuals or legal entities.",
     },
     {
       question:
-        "Якщо я не згоден з оцінкою екзаменаційної роботи, чи маю я право на апеляцію?",
+        "If I do not agree with the assessment of the examination paper, do I have the right to appeal?",
       answer:
-        "Так. Абітурієнт має право подати заяву на апеляцію в день оголошення результатів іспиту.",
+        "So. The applicant has the right to file an appeal on the day the exam results are announced",
     },
 
     {
-      question: "Далеко знаходяться гуртожитки ХНУРЕ від університету?",
+      question: "How far are the NURE dormitories from the university?",
       answer:
-        "Університет має кілька гуртожитків, дістатися до яких можна протягом 10-30 хвилин (міським транспортом), розташовані близько від станцій метро. Гуртожитки університету мають усі умови для навчання і відпочинку студентів. Студенти живуть по 2-3 людини в кімнаті.  ",
+        "The university has several dormitories, which can be reached within 10-30 minutes (by public transport), located near metro stations. University dormitories have all the conditions for studying and recreation of students. Students live 2-3 people in a room.ніверситет має кілька гуртожитків, дістатися до яких можна протягом 10-30 хвилин (міським транспортом), розташовані близько від станцій метро. Гуртожитки університету мають усі умови для навчання і відпочинку студентів. Студенти живуть по 2-3 людини в кімнаті.",
       link: "//www.google.com/search?sxsrf=APq-WBto1qlShUAUN632LJBnQRXVvIKIhA:1644323507415&q=%D0%9E%D0%B1%D1%89%D0%B5%D0%B6%D0%B8%D1%82%D0%B8%D0%B5%20%D0%A5%D0%BD%D1%83%D1%80%D0%B5&npsic=0&rflfq=1&rldoc=1&rllag=50019467,36220359,696&tbm=lcl&sa=X&ved=2ahUKEwiT97e0jvD1AhXFtqQKHeEwA9oQtgN6BAgCEEs&biw=1440&bih=730&dpr=2&tbs=lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:;mv:[[50.062717199999994,36.232593],[50.0132195,36.1934514]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
-      text: "Гуртожитки на карті",
+      text: "Hostels on the map",
     },
     {
-      question: "Чи можливий перехід з контрактної форми навчання на бюджет?",
+      question: "Is it possible to switch from the contractual form of education to the budget?",
       answer:
-        "Так, можливий. Якщо студент-контрактник показав добрі та відмінні результати у навчанні, а також є вільне бюджетне місце (що трапляється після сесії), може розглядатися питання про його перехід з контрактної форми навчання на бюджетну форму. ",
+        "Yes, it is possible. If a contract student has shown good and excellent results in studies, and there is also a free budget place (which happens after the session), the question of his transition from the contract form of education to the budget form may be considered.",
     },
     {
       question:
-        "Які предмети ЗНО потрібно обрати під час вступу на навчання за спеціальністю «Видавництво та поліграфія»?",
-      answer: "Всі предмети ЗНО та вагові коефіціенти перелічені за ",
+        "What VET subjects should be chosen when enrolling in the «Publishing and printing» specialty?",
+      answer: "All VET subjects and weighting coefficients are listed for ",
       link: "",
-      text: "цим посиланням",
+      text: "by this link",
     },
     {
-      question: "Далеко знаходяться гуртожитки ХНУРЕ від університету?",
+      question: "How far are the NURE dormitories from the university?",
       answer:
-        "Університет має кілька гуртожитків, дістатися до яких можна протягом 10-30 хвилин (міським транспортом), розташовані близько від станцій метро. Гуртожитки університету мають усі умови для навчання і відпочинку студентів. Студенти живуть по 2-3 людини в кімнаті.",
+        "The university has several dormitories, which can be reached within 10-30 minutes (by public transport), located near metro stations. University dormitories have all the conditions for studying and recreation of students. Students live 2-3 people in a room.ніверситет має кілька гуртожитків, дістатися до яких можна протягом 10-30 хвилин (міським транспортом), розташовані близько від станцій метро. Гуртожитки університету мають усі умови для навчання і відпочинку студентів. Студенти живуть по 2-3 людини в кімнаті.",
       link: "//www.google.com/search?sxsrf=APq-WBto1qlShUAUN632LJBnQRXVvIKIhA:1644323507415&q=%D0%9E%D0%B1%D1%89%D0%B5%D0%B6%D0%B8%D1%82%D0%B8%D0%B5%20%D0%A5%D0%BD%D1%83%D1%80%D0%B5&npsic=0&rflfq=1&rldoc=1&rllag=50019467,36220359,696&tbm=lcl&sa=X&ved=2ahUKEwiT97e0jvD1AhXFtqQKHeEwA9oQtgN6BAgCEEs&biw=1440&bih=730&dpr=2&tbs=lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2&rlst=f#rlfi=hd:;si:;mv:[[50.062717199999994,36.232593],[50.0132195,36.1934514]];tbs:lrf:!1m4!1u2!2m2!2m1!1e1!2m1!1e2!3sIAE,lf:1,lf_ui:2",
-      text: "Гуртожитки на карті",
+      text: "Hostels on the map",
     },
   ]
 
@@ -68,15 +68,15 @@ const Faq = () => {
   return (
     <div className="faq">
       <div className="container">
-        <div className="faq__title"> Питання та відповіді </div>
+        <div className="faq__title"><Trans>Questions and answers</Trans> </div>
         <div className="faq__inner">
           {faqs.map((faq, index) => (
             <div className="faq__item" key={index.toString()}>
-              <div className="faq__question"> {faq.question} </div>
+              <div className="faq__question"><Trans>{faq.question}</Trans></div>
               <div className="faq__answer">
-                {faq.answer}
+               <Trans>{faq.answer}</Trans> 
                 <a href={faq.link} className="faq__link">
-                  {faq.text}
+                  <Trans>{faq.text}</Trans>
                 </a>
               </div>
             </div>

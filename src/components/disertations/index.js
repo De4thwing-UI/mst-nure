@@ -1,16 +1,17 @@
 import React, { useState } from "react"
 import "./disertations.css"
 import Pagination from "src/components/pagination"
+import { Trans } from "react-i18next"
 
 const Disertations = () => {
   const disertations = [
     {
-      title: "Попов О.В.",
-      text: "«Моделі, методи та інструментальні засоби оперативного управління міським господарством», науковий керівник Ткаченко В.П. - 2008.",
+      title: "Popov O.V.",
+      text: "«Models, methods and instrumental means of operational management of urban economy», research supervisor V.P. Tkachenko. - 2008.",
     },
     {
-      title: "Костарєв Д.Б.",
-      text: "«Моделі, методи та інструментальні засоби побудови автоматизованих навчальних систем», науковий керівник Ткаченко В.П. - 2009.",
+      title: "Kostarev D.B.",
+      text: "«Models, methods and tools for building automated learning systems», scientific supervisor V.P. Tkachenko. - 2009.",
     },
   ]
 
@@ -27,16 +28,20 @@ const Disertations = () => {
       <div className="container">
         <div className="disertation__title">
           <h1 className="disertation__title__text">
-            За останні роки підготовлено та захищено кандидатські дисертації
+            <Trans>
+              Candidate theses have been prepared and defended in recent years{" "}
+            </Trans>
           </h1>
         </div>
         <div className="disertation__inner">
           {disertations.map((disertation, index) => (
             <div className="disertation__item" key={index.toString()}>
               <div className="disertation__item__title">
-                {disertation.title}
+                <Trans>{disertation.title}</Trans>
               </div>
-              <div className="disertation__item__text">{disertation.text}</div>
+              <div className="disertation__item__text">
+                <Trans>{disertation.text}</Trans>
+              </div>
             </div>
           ))}
         </div>

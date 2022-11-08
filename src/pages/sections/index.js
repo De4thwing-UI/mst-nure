@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
@@ -10,41 +9,44 @@ import WEBImg from "src/images/sections/WEB.png"
 import OTIImg from "src/images/sections/OTI.png"
 import SecurityImg from "src/images/sections/Security.png"
 import "./sections.css"
+import { Trans } from "react-i18next"
 const SectionsPage = () => {
   const sections = [
     {
-      name: "Матеріали та технології в полиграфії",
+      name: "Materials and technologies in printing",
       photo: TZMImg,
-      teacher: "Викладач: проф. Григорьев А.В.",
-      day: "Среда, 9:30 – 11:05,",
-      audition: "ауд.505і",
+      teacher: "Teacher: prof. Hryhoryev A.V.",
+      day: "Wed., 9:30 - 11:05,",
+      audition: "aud. 505i",
     },
     {
-      name: "Web-технології",
+      name: "Web technologies",
       photo: WEBImg,
-      teacher: "Викладач: проф. Єгорова І.М.",
-      day: "Четвер,14:55 – 16:30,",
-      audition: "ауд.508і",
+      teacher: "Teacher: prof. Yehorova I.M.",
+      day: "Thursday, 14:55 – 16:30,",
+      audition: "aud. 508i",
     },
     {
-      name: "Обробка текстової та графічної інформації, верстка",
+      name: "Processing of text and graphic information, typesetting",
       photo: OTIImg,
-      teacher: "Викладачі: доц. Челомбітько В.Ф, доц. Дейнеко Ж.В.",
-      day: "Четвер,14:55 – 16:30,",
-      audition: "ауд.508і",
+      teacher: "Teachers: Assoc. Chelombitko V.F., Assoc. Deineko Zh.V.",
+      day: "Thursday, 14:55 – 16:30,",
+      audition: "aud. 508i",
     },
     {
-      name: "Захист інформації в електронних і друкованих виданнях",
+      name: "Protection of information in electronic and printed publications",
       photo: SecurityImg,
       teacher: "Викладач: проф. Бізюк А.В.",
-      day: "Четвер,14:55 – 16:30,",
-      audition: "ауд.508і",
+      day: "Thursday, 14:55 – 16:30,",
+      audition: "aud. 508i",
     },
   ]
   return (
     <div>
       <Header />
-      <Title> Гуртки кафедри </Title>
+      <Title>
+        <Trans>Circles of the department</Trans>
+      </Title>
       <div className="sections">
         <div className="container">
           <div className="sections__inner">
@@ -56,12 +58,20 @@ const SectionsPage = () => {
                   className="sections__image"
                 />
                 <div className="section__item__text">
-                  <h1 className="section__item__title"> {section.name} </h1>
-                  <p className="section__item__teacher"> {section.teacher} </p>
+                  <h1 className="section__item__title">
+                    <Trans>{section.name}</Trans>
+                  </h1>
+                  <p className="section__item__teacher">
+                    <Trans>{section.teacher}</Trans>
+                  </p>
                 </div>
                 <div className="section__item__place">
-                  <p className="section__item__day"> {section.day} </p>
-                  <p className="section__item__audition">{section.audition}</p>
+                  <p className="section__item__day">
+                    <Trans>{section.day}</Trans>
+                  </p>
+                  <p className="section__item__audition">
+                    <Trans>{section.audition}</Trans>
+                  </p>
                 </div>
               </div>
             ))}

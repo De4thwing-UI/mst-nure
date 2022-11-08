@@ -5,6 +5,7 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
 const AdvertisingPage = () => {
   const advertisings = [
     {
@@ -20,7 +21,7 @@ const AdvertisingPage = () => {
   return (
     <div>
       <Header />
-      <Title>Наша реклама</Title>
+      <Title><Trans>Our advertising</Trans></Title>
       <div className="advertising">
         <div className="container">
           <div className="advertising__inner">

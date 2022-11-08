@@ -9,12 +9,13 @@ import Title from "src/components/title"
 import Studentscience from "src/components/student_science"
 import Research from "src/components/research"
 import Conferences from "src/components/conferences"
+import { Trans } from "react-i18next"
 
 const StudentsciencePage = () => {
   return (
     <div>
       <Header />
-      <Title> Студентська наука </Title>
+      <Title><Trans>Student science</Trans></Title>
       <div className="sudentscience">
         <Studentscience />
         <Research />
@@ -28,8 +29,7 @@ const StudentsciencePage = () => {
               />
               <div className="measures__title">
                 <h1 className="measures__text">
-                  Наші студенти щорічно беруть участь в таких студентських
-                  науково - практичних заходах
+                 <Trans>Our students annually participate in such student scientific and practical events</Trans>
                 </h1>
               </div>
             </div>

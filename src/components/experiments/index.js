@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import "./experiments.css"
+import { Trans } from "react-i18next"
 
 const Experiments = () => {
   return (
@@ -14,21 +15,31 @@ const Experiments = () => {
           />
           <div className="experiments__intro__inner__text">
             <h1 className="experiments__intro__title">
-              На цей час розробляється ще кілька науково-дослідних тем:
+              <Trans>
+                At this time, several more research topics are being developed:
+              </Trans>
             </h1>
             <ol>
               <li className="experiments__intro__subtitle">
-                Інформаційно-аналітичні технології та інструментальні засоби
-                підвищення ефективності та безпеки
+                <Trans>
+                  Information and analytical technologies and tools for
+                  improving efficiency and security
+                </Trans>
               </li>
 
               <li className="experiments__intro__subtitle">
-                Розроблення геоінформаційної аналітичної системи моніторингу і
-                управління ресурсами об'єднаних територіальних громад
+                <Trans>
+                  Development of a geo-information analytical system for
+                  monitoring and managing resources of united territorial
+                  communities
+                </Trans>
               </li>
               <li className="experiments__intro__subtitle">
-                Грантова угода на розробку проекту «Сколе туристичний» між ХНУРЕ
-                та Університетом Економіки в м. Бигдощ (Польща).
+                <Trans>
+                  Grant agreement for the development of the «Skole tourist»
+                  project between NURE and the University of Economics in
+                  Bygdoszcz (Poland).
+                </Trans>
               </li>
             </ol>
           </div>

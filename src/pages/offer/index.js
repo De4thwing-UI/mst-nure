@@ -8,56 +8,62 @@ import Title from "src/components/title"
 import Button from "src/components/button"
 import { faLink } from "@fortawesome/free-solid-svg-icons/faLink"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Trans } from "react-i18next"
 
 const OfferPage = () => {
   return (
     <div>
       <Header />
-      <Title> Запропонувати тему </Title>
+      <Title><Trans>Suggest a topic</Trans></Title>
       <div className="offer">
         <div className="container">
           <div className="offer__inner">
             <div className="offer__text">
               <h1 className="offer__title">
-                Сподіваємося на плідну співпрацю!Чекаємо Ваших заявок.
+                <Trans>
+                  We hope for fruitful cooperation! We are waiting for your
+                  applications.
+                </Trans>
               </h1>
               <p className="offer__suptitle">
-                Шановні керівники поліграфічних, видавничих, рекламних
-                підприємств, фірм, організацій!Кафедра відкриває сторінку
-                формування заявок з підприємствами - замовниками поліграфічної
-                та видавничої продукції.
+                <Trans>
+                  Dear managers of printing, publishing, advertising
+                  enterprises, firms, organizations! The department opens a page
+                  for forming applications with enterprises - customers of
+                  printing and publishing products.
+                </Trans>
               </p>
             </div>
             <form className="offer__form">
               <label className="form__project-name">
-                <span className="form__text"> Назва проекту </span>
+                <span className="form__text"><Trans>Project name</Trans></span>
                 <input className="form__input" type="text" />
               </label>
               <label className="form__project-name">
-                <span className="form__text"> Підприємство замовник </span>
+                <span className="form__text"> <Trans>Customer</Trans> </span>
                 <input className="form__input" type="text" />
               </label>
               <label className="form__project-name">
-                <span className="form__text"> Телефон контактної особи </span>
+                <span className="form__text"> <Trans>Contact person's phone number</Trans> </span>
                 <input className="form__input" type="text" id="" />
               </label>
               <label className="form__project-name">
-                <span className="form__text"> E - mail контактної особи </span>
+                <span className="form__text"> <Trans>E-mail of the contact person</Trans> </span>
                 <input className="form__input" type="text" />
               </label>
               <label className="form__project-name">
-                <span className="form__text"> Опис проекту </span>
+                <span className="form__text"> <Trans>Description of the project</Trans>  </span>
                 <textarea className="form__text-area" type="text" />
               </label>
               <div className="form__submit">
-                <Button className="offer__button"> Надіслати </Button>
+                <Button className="offer__button"><Trans>Send</Trans></Button>
                 <label className="form__atach">
                   <FontAwesomeIcon
                     icon={faLink}
                     size="lg"
                     className="atach__icon"
                   />
-                  Прикріпити файл
+                  <Trans>Attach a file</Trans>
                   <input className="form__atach__button" type="file" />
                 </label>
               </div>

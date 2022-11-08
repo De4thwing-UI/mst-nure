@@ -2,6 +2,7 @@ import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import "./intro.css"
+import { Trans } from "react-i18next"
 
 const Intro = () => {
   return (
@@ -10,14 +11,17 @@ const Intro = () => {
         <div className="directions__intro__inner">
           <div className="directions__intro__inner__text">
             <h1 className="directions__intro__title">
-              У науковій роботі беруть активну участь не тільки викладачі та
-              співробітники кафедри
+              <Trans>Not only teachers and employees of the department
+              take an active part in scientific work</Trans>
             </h1>
             <h2 className="directions__intro__subtitle">
-              А й студенти, і магістранти спеціальності «Видавництво і
-              поліграфія». Викладачі, аспіранти, співробітники та студенти
-              кафедри постійно беруть участь у міжнародних науково-практичних
-              конференціях, форумах, виставках.
+              <Trans>
+                And students and master's students of the «Publishing and
+                printing» specialty. Teachers, graduate students, employees and
+                students of the department constantly participate in
+                international scientific and practical conferences, forums, and
+                exhibitions.
+              </Trans>
             </h2>
           </div>
           <StaticImage
@@ -35,7 +39,7 @@ const Intro = () => {
             />
             <div className="directions__features__title">
               150
-              <p className="directions__features__text">Наукових робіт</p>
+              <p className="directions__features__text"><Trans>Scientific works</Trans></p>
             </div>
           </div>
           <div className="directions__features__item">
@@ -46,7 +50,7 @@ const Intro = () => {
             />
             <div className="directions__features__title">
               740
-              <p className="directions__features__text">Тез доповідей</p>
+              <p className="directions__features__text"><Trans>Abstracts of reports</Trans></p>
             </div>
           </div>
           <div className="directions__features__item">
@@ -57,7 +61,7 @@ const Intro = () => {
             />
             <div className="directions__features__title">
               300
-              <p className="directions__features__text">Експонатів виставок</p>
+              <p className="directions__features__text"><Trans>Exhibition exhibits</Trans></p>
             </div>
           </div>
         </div>

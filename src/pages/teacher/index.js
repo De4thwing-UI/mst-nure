@@ -1,6 +1,7 @@
-import React from "react"
 import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import React, { useState } from "react"
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import "./teacher.css"
 import Header from "src/components/header"
 import Footer from "src/components/footer"
@@ -31,150 +32,154 @@ import ParamonovImg from "src/images/teachers/paramonov.png"
 import KraevskaImg from "src/images/teachers/kraevska.png"
 
 const TeachersPage = () => {
+  const { t } = useTranslation()
   const teachers = [
     {
-      name: "Дейнеко Ж. В.",
+      name: "Deineko Zh. V.",
       photo: DeynekoImg,
-      position: "Зав. кафедри",
+      position: "Chief department",
       link: "https://nure.ua/staff/zhanna-valentinivna-deyneko",
     },
     {
-      name: "Єгорова І.М.",
+      name: "Yehorova I.M.",
       photo: EgorovaImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "https://nure.ua/staff/irina-mikolayivna-yegorova",
     },
     {
-      name: "Кулішова Н.Є.",
+      name: "Kulishova N.E.",
       photo: KulishovaImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "https://nure.ua/staff/nonna-yevgenivna-kulishova",
     },
     {
-      name: "Левикін І.В.",
+      name: "Levykin I.V.",
       photo: LevikinImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "hhttps://nure.ua/staff/igor-viktorovich-levikin",
     },
     {
-      name: "Манаков В.П.",
+      name: "Manakov V.P.",
       photo: ManakovImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "https://nure.ua/staff/volodimir-pavlovich-manakov",
     },
     {
-      name: "Ткаченко В.П.",
+      name: "Tkachenko V.P.",
       photo: TkachenkoImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "https://nure.ua/staff/volodimir-pilipovich-tkachenko",
     },
     {
-      name: "Бізюк А.В.",
+      name: "Bizyuk A.V.",
       photo: BizukImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/andriy-valeriyovich-bizyuk",
     },
     {
-      name: "Вовк О.В.",
+      name: "Vovk O.V.",
       photo: VovkImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/oleksandr-volodimirovich-vovk",
     },
     {
-      name: "Григор’єв О.В.",
+      name: "Grigoriev O.V.",
       photo: GrygorevImg,
-      position: "Професор ХНУРЕ",
+      position: "Professor Khnure",
       link: "https://nure.ua/staff/oleksandr-viktorovich-grigor-yev",
     },
     {
-      name: "Євстратов М.Д.",
+      name: "Evstratov M.D.",
       photo: EvstratovImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/mikola-dmitrovich-yevstratov",
     },
     {
-      name: "Колесникова Т.А.",
+      name: "Kolesnikova T.A.",
       photo: KolesnikovaImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/tetyana-anatoliyivna-kolesnikova",
     },
     {
-      name: "Челомбітько В.Ф.",
+      name: "Chelombitko V.F.",
       photo: ChelombitkoImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/viktor-fedorovich-chelombitko",
     },
     {
-      name: "Бельчева А.В.",
+      name: "Belcheva A.V.",
       photo: BelchevaImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/ganna-volodimirivna-byelcheva",
     },
     {
-      name: "Дорофєєва Ю.С.",
+      name: "Dorofeeva Yu.S.",
       photo: DorofeevaImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/yuliya-semenivna-gubnitska",
     },
     {
-      name: "Табакова І.С.",
+      name: "Tabakova I.S.",
       photo: TabakovaImg,
-      position: "Доцент",
+      position: "Docent",
       link: "https://nure.ua/staff/irina-stanislavivna-tabakova",
     },
     {
-      name: "Зелений О.П.",
+      name: "Zeleny O.P",
       photo: ZelenyyImg,
-      position: "Старший викладач",
+      position: "Senior Lecturer ",
       link: "https://nure.ua/staff/oleksandr-pavlovich-zeleniy",
     },
     {
-      name: "Чеботарьова І.Б.",
+      name: "Chebotaryova I.B.",
       photo: ChebotaryovaImg,
-      position: "Старший викладач",
+      position: "Senior Lecturer ",
       link: "https://nure.ua/staff/irina-borisivna-chebotarova",
     },
     {
-      name: "Бокарєва Ю.С.",
+      name: "Bokareva Yu.S.",
       photo: BokarevaImg,
-      position: "Старший викладач",
+      position: "Senior Lecturer ",
       link: "https://nure.ua/staff/yuliya-sergiyivna-bokaryeva",
     },
     {
-      name: "Губа М.І.",
+      name: "Guba M.I.",
       photo: GubaImg,
-      position: "Старший викладач",
+      position: "Senior Lecturer ",
       link: "https://nure.ua/staff/mikola-ivanovich-guba",
     },
     {
-      name: "Яценко Л.О.",
+      name: "Yatsenko L.O.",
       photo: YacenkoImg,
-      position: "Старший викладач",
+      position: "Senior Lecturer ",
       link: "https://nure.ua/staff/larisa-oleksandrivna-yatsenko",
     },
     {
-      name: "Ліхачов С.О.",
+      name: "Likhachev S.O.",
       photo: LihachovImg,
-      position: "Асистент",
+      position: "Assistant",
       link: "https://nure.ua/staff/sergiy-oleksandrovich-lihachov",
     },
     {
       name: "Парамонов А.К.",
       photo: ParamonovImg,
-      position: "Асистент",
+      position: "Assistant",
       link: "https://nure.ua/staff/anton-kostyantinovich-paramonov",
     },
     {
       name: "Краєвська Н.О.",
       photo: KraevskaImg,
-      position: "Асистент",
+      position: "Assistant",
       link: "https://nure.ua/staff/natalija-oleksandrivna-kraievska",
     },
   ]
   return (
     <div>
       <Header />
-      <Title> Склад кафедри </Title>
+      <Title>
+        {" "}
+        <Trans>The composition of the department</Trans>{" "}
+      </Title>{" "}
       <div className="features">
         <div className="container">
           <div className="features__inner">
@@ -185,9 +190,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24 <p className="features__text"> Викладача </p>
-              </div>
-            </div>
+                24 <p className="features__text"> <Trans>Teachers</Trans> </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -195,9 +200,9 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                1 <p className="features__text"> Доктор наук</p>
-              </div>
-            </div>
+                1 <p className="features__text"> <Trans>Doctor of Science</Trans> </p>{" "}
+              </div>{" "}
+            </div>{" "}
             <div className="features__item">
               <StaticImage
                 className="features__icon"
@@ -205,15 +210,16 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                16 <p className="features__text"> Кандидатів наук </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+                16 <p className="features__text"> <Trans>Candidates of Sciences</Trans> </p>{" "}
+              </div>{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <div className="teachers__page">
         <div className="container">
           <div className="teachers__inner">
+            {" "}
             {teachers.map((teacher, index) => (
               <div className="teachers__inner__item" key={index.toString()}>
                 <img
@@ -222,14 +228,14 @@ const TeachersPage = () => {
                   alt="teachers__photo"
                 />
                 <a href={teacher.link} target="_blank">
-                  <h1 className="teachers__item__title"> {teacher.name} </h1>
-                </a>
-                <p className="teachers__item__text"> {teacher.position} </p>
+                  <h1 className="teachers__item__title"> <Trans>{teacher.name}</Trans> </h1>{" "}
+                </a>{" "}
+                <p className="teachers__item__text"> <Trans> {teacher.position} </Trans> </p>{" "}
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
+      </div>{" "}
       <News />
       <Footer />
     </div>

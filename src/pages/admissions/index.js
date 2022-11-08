@@ -7,12 +7,14 @@ import News from "src/components/lastnews"
 import Title from "src/components/title"
 import Specialty from "src/components/specialty"
 import Faq from "src/components/faq"
+import { Trans } from "react-i18next"
 
 const AdmissionsPage = () => {
   return (
     <div>
       <Header />
-      <Title> Спеціальність </Title> <Specialty />
+      <Title><Trans>Specialty</Trans></Title> 
+      <Specialty />
       <Faq />
       <News />
       <Footer />

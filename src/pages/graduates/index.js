@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next"
 import { graphql } from "gatsby"
 import "./graduates.css"
 import Header from "src/components/header"
@@ -27,91 +28,91 @@ import NineImg from "src/images/works/9.png"
 const GraduatePage = () => {
   const graduates = [
     {
-      name: "Гапіч Антон",
+      name: "Gapich Anton",
       photo: GapichImg,
-      position: "ВПВПС-18-2",
+      position: "VPVPS-18-2",
     },
     {
-      name: "Леві Аккерман",
+      name: "Levi Ackerman",
       photo: LeviImg,
-      position: "ВПВПС-16-1",
+      position: "VPVPS-16-1",
     },
     {
-      name: "Андрій Ярмоленко",
+      name: "Andriy Yarmolenko",
       photo: YarmolaImg,
-      position: "ВПВПС-18-2",
+      position: "VPVPS-18-2",
     },
     {
-      name: "Роман Яремчук",
+      name: "Roman Yaremchuk",
       photo: YaremchukImg,
-      position: "ВПВПС-17-3",
+      position: "VPVPS-17-3",
     },
     {
-      name: "Златан Ібрагімович",
+      name: "Zlatan Ibrahimovich",
       photo: IbraImg,
-      position: "ВПВПС-16-4",
+      position: "VPVPS-16-4",
     },
     {
-      name: "Тарас Романюк",
+      name: "Taras Romanyuk",
       photo: RomanukImg,
-      position: "ВПВПС-18-1",
+      position: "VPVPS-18-1",
     },
     {
-      name: "Джотаро Куджо",
+      name: "Jotaro Kujo",
       photo: KudzoImg,
-      position: "ВПВПС-18-2",
+      position: "VPVPS-18-2",
     },
     {
-      name: "Олександр Зінченко",
+      name: "Oleksandr Zinchenko",
       photo: ZinaImg,
-      position: "ВПВПС-18-3",
+      position: "VPVPS-18-2",
     },
   ]
   const works = [
     {
-      name: "Гапіч Антон",
+      name: "Gapich Anton",
       photo: FirstImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Ісаєнко Тетяна",
+      name: "Tatyana Isayenko",
       photo: SecondImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Музичук Анна",
+      name: "Anna Muzychuk",
       photo: ThirdImg,
-      position: "Соціальний плакат",
+      position: "Social poster",
     },
     {
-      name: "Гапіч Антон",
+      name: "Gapich Anton",
       photo: FourthImg,
-      position: "Мобільний додаток",
+      position: "Mobile application",
     },
     {
-      name: "Тарас Степаненко",
+      name: "Anna Muzychuk",
       photo: FiveImg,
-      position: "Веб сайт",
+      position: "Website",
     },
     {
-      name: "Олександр Зінченко",
+      name: "Oleksandr Zinchenko",
       photo: SixImg,
-      position: "Веб сайт",
+      position: "Website",
     },
     {
-      name: "Георгій Бущан",
+      name: "Gapich Anton",
       photo: SevenImg,
-      position: "Веб сайт",
+      position: "Website",
     },
     {
-      name: "Андрій Ярмоленко",
+      name: "Andriy Yarmolenko",
       photo: EightImg,
-      position: "Ілюстрація",
+      position: "Illustration",
     },
     {
-      name: "Дмитро Мельніченко",
+      name: "Dmytro Melnichenko",
       photo: NineImg,
-      position: "3D Ілюстрація",
+      position: "Illustration",
     },
   ]
 
@@ -135,10 +136,14 @@ const GraduatePage = () => {
   return (
     <div>
       <Header />
-      <Title> Наші випускники </Title>
+      <Title>
+        {" "}
+        <Trans>Our graduates</Trans>{" "}
+      </Title>{" "}
       <div className="graduates__page">
         <div className="container">
           <div className="graduates__inner">
+            {" "}
             {graduates.map((graduate, index) => (
               <div className="graduates__inner__item" key={index.toString()}>
                 <img
@@ -146,26 +151,27 @@ const GraduatePage = () => {
                   alt="1"
                   className="graduates__item__image"
                 />
-                <h1 className="graduates__item__title"> {graduate.name} </h1>
-                <p className="graduates__item__text"> {graduate.position} </p>
+                <h1 className="graduates__item__title"> <Trans> {graduate.name}</Trans> </h1>{" "}
+                <p className="graduates__item__text"> <Trans>{graduate.position}</Trans></p>{" "}
               </div>
-            ))}
-          </div>
-        </div>
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
         <Pagination
           items={displayGraduates.length}
           handlePageChange={handleGraduatesPageChange}
-        />
-      </div>
+        />{" "}
+      </div>{" "}
       <div className="works">
         <div className="container">
           <div className="works__title">
-            <h1 className="works__text"> Роботи студентів </h1>
-          </div>
-        </div>
+            <h1 className="works__text"> Роботи студентів </h1>{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="graduates__works">
           <div className="container">
             <div className="graduates__works__inner">
+              {" "}
               {works.map((work, index) => (
                 <div className="graduate__works__item" key={index.toString()}>
                   <img
@@ -173,20 +179,24 @@ const GraduatePage = () => {
                     alt="1"
                     className="graduate__works__image"
                   />
-                  <h1 className="graduate__works__item__title">{work.name}</h1>
+                  <h1 className="graduate__works__item__title">
+                    {" "}
+                    {work.name}{" "}
+                  </h1>{" "}
                   <div className="graduate__works__item__text">
-                    {work.position}
-                  </div>
+                    {" "}
+                    {work.position}{" "}
+                  </div>{" "}
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
+              ))}{" "}
+            </div>{" "}
+          </div>{" "}
+        </div>{" "}
         <Pagination
           items={displayWorks.length}
           handlePageChange={handleWorksPageChange}
-        />
-      </div>
+        />{" "}
+      </div>{" "}
       <News />
       <Footer />
     </div>

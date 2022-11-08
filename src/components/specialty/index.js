@@ -1,24 +1,26 @@
 import React from "react"
+import { graphql } from "gatsby"
 import "./specialty.css"
+import { Trans } from "react-i18next"
 
 const Specialty = () => {
   const specialties = [
     {
-      name: "186 Видавництво та поліграфія · Бакалавр",
-      specialization: "Освітня програма: Видавничо-поліграфічна справа (ВПС).",
+      name: "186 Publishing and printing · Bachelor",
+      specialization: "Publishing and printing business (VPS).",
     },
     {
-      name: "186 Видавництво та поліграфія · Бакалавр",
-      specialization: "Технології друкованих видань (ТДВ).",
+      name: "186 Publishing and printing · Bachelor",
+      specialization: "Technologies of printed publications (TDV).",
     },
     {
-      name: "186 Видавництво та поліграфія · Магістр",
+      name: "186 Publishing and printing · Master's degree",
       specialization:
-        "Комп’ютерні технології і системи видавничо-поліграфічних виробництв (КТС ВПВ).",
+        "Computer technologies and systems of publishing and printing industries (KTS VPV).",
     },
     {
-      name: "186 Видавництво та поліграфія · Магістр",
-      specialization: "Технології електронних мультимедійних видань (ТЕМВ)",
+      name: "186 Publishing and printing · Master's degree",
+      specialization: "Technologies of electronic multimedia publications (TOPIC)",
     },
   ]
   return (
@@ -27,10 +29,15 @@ const Specialty = () => {
         <div className="specialty__inner">
           {specialties.map((specialtie, index) => (
             <div className="specialty__item" key={index.toString()}>
-              <div className="specialty__text">Спеціальність</div>
-              <div className="specialty__name">{specialtie.name}</div>
+              <div className="specialty__text">
+                <Trans>Specialty</Trans>
+              </div>
+              <div className="specialty__name"><Trans>{specialtie.name}</Trans></div>
               <div className="specialty__specialization">
-                <span>Спеціалізація:</span> {specialtie.specialization}
+                <span>
+                  <Trans>Specialty</Trans>:
+                </span>{" "}
+                <Trans>{specialtie.specialization}</Trans>
               </div>
             </div>
           ))}
