@@ -1,4 +1,4 @@
-import React from "react"
+  import React from "react"
 import { graphql } from "gatsby"
 import Header from "src/components/header"
 import Footer from "src/components/footer"

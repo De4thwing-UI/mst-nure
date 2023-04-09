@@ -5,23 +5,35 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
 const ContactPage = () => {
   return (
     <div>
       <Header />
-      <Title>Контакти</Title>
+      <Title>
+        <Trans>Contacts</Trans>
+      </Title>
       <div className="contacts">
         <div className="container">
-          <div className="contact__title">Наші контакти</div>
+          <div className="contact__title">
+            <Trans>Contacts</Trans>
+          </div>
           <div className="contact__inner">
             <p className="contact__text">
-              Адреса: пр. Науки, 14, корпус "І", 5 поверх, кабінет 507, Харків,
-              Україна, 61166
+              <Trans>
+                Address: Science Ave, 14, Building 'I', 5 th floor, Room 507,
+                Kharkiv, Ukraine, 61166
+              </Trans>
             </p>
-            <p className="contact__text">Тел.: (+38 057) 702-13-78</p>
+            <p className="contact__text">
+              <Trans>Phone: (+38 057) 702-13-78</Trans>
+            </p>
             <p className="contact__text">Email: d_mst@nure.ua</p>
             <p className="contact__text">
-              Офіційна сторінка ХНУРЕ в
+              <Trans>
+                Official website of Kharkiv National University of Radio
+                Electronics (KhNURE) is
+              </Trans>
               <a
                 href="https://www.facebook.com/nureKharkiv/"
                 className="contact__link"
@@ -31,7 +43,10 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              Офіційна сторінка ХНУРЕ в
+              <Trans>
+                Official website of Kharkiv National University of Radio
+                Electronics (KhNURE) is
+              </Trans>
               <a
                 href="https://t.me/nure_press"
                 className="contact__link"
@@ -41,7 +56,10 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              Офіційна сторінка ХНУРЕ в
+              <Trans>
+                Official website of Kharkiv National University of Radio
+                Electronics (KhNURE) is
+              </Trans>
               <a
                 href="https://t.me/nure_press"
                 className="contact__link"
@@ -51,7 +69,7 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              Сторінка кафедри МСТ в
+              <Trans>Department of Translation and Interpreting</Trans>
               <a
                 href="https://www.instagram.com/mst_nure_ua/"
                 className="contact__link"
@@ -61,7 +79,10 @@ const ContactPage = () => {
               </a>
             </p>
             <p className="contact__text">
-              Офіційна сторінка ХНУРЕ в
+              <Trans>
+                Official website of Kharkiv National University of Radio
+                Electronics (KhNURE) is
+              </Trans>
               <a
                 href="https://www.facebook.com/groups/635508543937648/?ref=share"
                 className="contact__link"
@@ -71,27 +92,34 @@ const ContactPage = () => {
               </a>
             </p>
           </div>
-          <div className="contact__title">Наші контакти</div>
+          <div className="contact__title">
+            <Trans>Contacts</Trans>
+          </div>
           <div className="contact__inner">
             <ul className="contact__list">
               <li className="contact__list__item">
                 <span className="contact__item__text">
-                  Приймальна комісія: +38 (057) 702-17-20
+                  <Trans>Admissions Committee: +38 (057) 702-17-20</Trans>
                 </span>
               </li>
               <li className="contact__list__item">
                 <span className="contact__item__text">
-                  Центр післядипломної освіти: +38 (057) 702-18-05
+                  <Trans>
+                    Postgraduate Education Center: +38 (057) 702-18-05
+                  </Trans>
                 </span>
               </li>
               <li className="contact__list__item">
                 <span className="contact__item__text">
-                  Центр заочної форми навчання: +38 (057) 702-14-75
+                  <Trans>Distance Learning Center: +38 (057) 702-14-75</Trans>
                 </span>
               </li>
               <li className="contact__list__item">
                 <span className="contact__item__text">
-                  Центр довузівської підготовки: +38 (057) 702-14-55
+                  <Trans>
+                    Preparatory Center for Pre-University Training: +38 (057)
+                    702-14-55
+                  </Trans>
                 </span>
               </li>
             </ul>

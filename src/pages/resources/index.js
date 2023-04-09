@@ -5,16 +5,24 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
+
 const ResourcesPage = () => {
   return (
     <div>
       <Header />
-      <Title> Ресурси </Title>
+      <Title>
+        {" "}
+        <Trans>Resource</Trans>{" "}
+      </Title>
       <div className="resources">
         <div className="container">
           <div className="resources__title">
-            Натиснувши по посиланню ви зможете знайти корисну інформацію,
-            наукові джерела поліграфічної галузі.
+            <Trans>
+              By clicking on the link, you will be able to find useful
+              information and scientific sources related to the printing
+              industry.
+            </Trans>
           </div>
           <div className="resources__inner">
             <ul className="resources__list">
@@ -24,7 +32,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Книжкова палата України
+                  <Trans>National Library of Ukraine</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -33,7 +41,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Друкарство
+                  <Trans>Printing</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -42,7 +50,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Буквоіід
+                  <Trans>Bukvoid</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -51,7 +59,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Поліграфічний кур 'єр
+                  <Trans>Printing courier</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -60,7 +68,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Друкуй з нами
+                  <Trans>Print with us</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -69,7 +77,9 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Українська асоціація видавців періодичної преси
+                  <Trans>
+                    Ukrainian Association of Publishers of Periodical Press
+                  </Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -77,7 +87,7 @@ const ResourcesPage = () => {
                   href="http://www.redactor.in.ua/"
                   className="resources__link"
                 >
-                  Редакторский портал
+                  <Trans>Editorial portal</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -86,7 +96,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  PUBLISH / ДИЗАЙН.ВЕРСТКА.ПЕЧАТЬ
+                  <Trans>PUBLISH / DESIGN.LAYOUT.PRINT</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -95,7 +105,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  КомпьюАрт
+                  <Trans>CompuArt</Trans>
                 </a>
               </li>
             </ul>
@@ -106,7 +116,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Дежурка
+                  <Trans>Watch Duty</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -115,7 +125,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Гільдія видавців періодичної преси
+                  <Trans>Guild of Publishers of Periodical Press</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -133,7 +143,9 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  Сайт про поліграфію і рекламі в Україні
+                  <Trans>
+                    Website about Printing and Advertising in Ukraine
+                  </Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -142,7 +154,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  ПЕЧАТНИК.com
+                  <Trans>PECHATNIK.com</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -150,7 +162,9 @@ const ResourcesPage = () => {
                   href="http://www.upba.org.ua/index.php/uk/"
                   className="resources__link"
                 >
-                  Українська Асоціація Видавців та Книгорозповсюджувачів
+                  <Trans>
+                    Ukrainian Association of Publishers and Book Distributors
+                  </Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -159,7 +173,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  ТОВ Видавництво« Ранок»
+                  <Trans>LLC Publishing House 'Ranok'</Trans>
                 </a>
               </li>
               <li className="resources__list__item">
@@ -168,7 +182,7 @@ const ResourcesPage = () => {
                   className="resources__link"
                   target="_blank"
                 >
-                  ПП« Юніcофт»
+                  <Trans>Sole Proprietorship 'Unisoft</Trans>
                 </a>
               </li>
             </ul>

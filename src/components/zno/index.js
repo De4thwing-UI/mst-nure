@@ -1,66 +1,67 @@
 import React from "react"
 import "./zno.css"
+import { Trans } from "react-i18next"
 
 const Zno = () => {
   const znos = [
     {
-      title: "ЗНО з математики",
-      text: "Профільний рівень(за шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Mathematics",
+      text:"Profile level (on a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з української мови або з української мови та літератури.",
-      text: "Для технічного ЗВО на спеціальність 186 Видавництво та поліграфія достатньо української мови (за шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Ukrainian language or Ukrainian language and literature.",
+      text: "For technical universities, for specialty 186 Publishing and Printing, Ukrainian language (on a scale of 100-200 points) is sufficient.",
     },
   ]
   const choices = [
     {
-      title: "ЗНО з фізики",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Physics",
+      text: "(On a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з Хімії",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Chemistry",
+      text: "(On a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з іноземної мови",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in a foreign language",
+      text: "(On a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з географії",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Geography",
+      text: "(On a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з Історії України",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Ukrainian History",
+      text: "(On a scale of 100-200 points)",
     },
     {
-      title: "ЗНО з біології",
-      text: "За шкалою 100‒200 балів)",
+      title: "External Independent Testing (EIT) in Biology",
+      text: "(On a scale of 100-200 points)",
     },
   ]
   return (
     <div className="zno">
       <div className="container">
         <div className="zno__title">
-          На спеціальність 186 Видавництво та поліграфія в конкурсі берутьучасть
+         <Trans>For the specialty 186 Publishing and Printing in the competition, participation is allowed.</Trans>
         </div>
         <div className="zno__inner">
           {znos.map((zno, index) => (
             <div className="zno__item" key={index.toString()}>
-              <div className="zno__item__title">{zno.title}</div>
-              <div className="zno__item__text">{zno.text}</div>
+              <div className="zno__item__title"><Trans>{zno.title}</Trans></div>
+              <div className="zno__item__text"><Trans>{zno.text}</Trans></div>
             </div>
           ))}
         </div>
       </div>
       <div className="zno__choice">
         <div className="container">
-          <div className="zno__choice__title">Спеціальності на вибір</div>
+          <div className="zno__choice__title"><Trans>Specialties available for selection</Trans></div>
           <div className="zno__choice__inner">
             {choices.map((choice, index) => (
               <div className="zno__choice__item" key={index.toString()}>
-                <div className="zno__choice__item__title">{choice.title}</div>
-                <div className="zno__choice__item__text">{choice.text}</div>
+                <div className="zno__choice__item__title"><Trans>{choice.title}</Trans></div>
+                <div className="zno__choice__item__text"><Trans>{choice.text}</Trans></div>
               </div>
             ))}
           </div>

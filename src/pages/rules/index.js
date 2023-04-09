@@ -9,30 +9,36 @@ import Zno from "src/components/zno"
 import Atestat from "src/components/atestat"
 import Vstup from "src/components/vstup"
 import Price from "src/components/price"
-
+import { Trans } from "react-i18next"
 import "./rules.css"
 
 const RulesPage = () => {
   return (
     <div>
       <Header />
-      <Title> Вcтупна кампанія 2022 року </Title>
+      <Title>
+        {" "}
+        <Trans>Introductory Campaign of 2022</Trans>{" "}
+      </Title>
       <div className="competition">
         <div className="container">
           <div className="competition__inner">
             <div className="competition__title">
               <h1 className="competition__suptitle">
-                Конкурсний відбір абітурієнтів 2022 року
+                <Trans>Admissions Competition for 2022 Applicants</Trans>
               </h1>
               <p className="competition__text">
-                Для конкурсного відбору абітурієнтів ЗВО будуть зараховуватися
-                бали сертифікатів ЗНО з трьох конкурсних предметів.Причому, у
-                цьому році дійсні сертифікати за 2018 - 2021 роки.Нагадуємо, що
-                у 2021 році в переліку навчальних предметів, із яких проходитиме
-                ЗНО, виокремлюють українську мову й українську мову і
-                літературу.А математика має два рівня– стандарт та
-                профільний.Для технічного ЗВО необхідно здавати ЗНО з математики
-                профільного рівня
+                <Trans>
+                  For the competitive selection of university applicants, scores
+                  from three competitive subjects in the External Independent
+                  Testing (EIT) certificates will be taken into account. Valid
+                  certificates from 2018 to 2021 will be accepted this year.
+                  Please note that in 2021, the list of subjects for EIT
+                  includes Ukrainian language and Ukrainian language and
+                  literature, while mathematics has two levels - standard and
+                  profile. Technical universities require EIT in mathematics at
+                  the profile level.
+                </Trans>
               </p>
             </div>
             <StaticImage
@@ -47,48 +53,71 @@ const RulesPage = () => {
         <div className="container">
           <div className="coefficient__inner">
             <div className="coefficient__rating">
-              <h1 className="rating__title"> Рейтингові коефіціенти </h1>
+              <h1 className="rating__title">
+                {" "}
+                <Trans>Rating coefficients</Trans>{" "}
+              </h1>
               <p className="rating__text">
-                Закладам вищої освіти(ЗВО) дозволили встановлювати в залежності
-                від пріоритетності предмету рейтингові коефіцієнти ? Мінімальний
-                конкурсний бал для допуску до участі у конкурсі або для
-                зарахування поза конкурсом 125.
+                <Trans>
+                  Higher education institutions (HEIs) have been allowed to
+                  establish rating coefficients based on the priority of the
+                  subject? The minimum competitive score for participation in
+                  the competition or admission outside the competition is 125.
+                </Trans>
               </p>
             </div>
             <div className="coeficcient__storage">
               <h1 className="storage__title">
-                За спеціальністю 186 Видавництво та поліграфія конкурсний бал
-                складає :
+                <Trans>
+                  The competitive score for the specialty 186 Publishing and
+                  Printing is composed of:
+                </Trans>
               </h1>
               <ul className="storage__list">
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    Бал атестата про повну загальну середню освіту(коефіцієнт 0,
-                    1);
+                    <Trans>
+                      The score of the certificate of complete general secondary
+                      education (coefficient 0.1);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
+                    <Trans>
+                      The score of the mathematics subject test in the Ukrainian
+                      External Independent Evaluation (EIE) at the basic level
+                      (coefficient 0.4);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з української мови та літератури(базовий рівень,
-                    коефіцієнт 0, 25);
+                    <Trans>
+                      The score of the Ukrainian language and literature subject
+                      test in the Ukrainian External Independent Evaluation
+                      (EIE) at the basic level (coefficient 0.25);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з іноземної мови або фізики або хімії(базовий рівень,
-                    коефіцієнт 0, 2).
+                    <Trans>
+                      The score of the foreign language, physics, or chemistry
+                      subject test in the Ukrainian External Independent
+                      Evaluation (EIE) at the basic level (coefficient 0.2).
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    Вага балу за особливі успіхи(диплом МАН, призові місця в
-                    олімпіадах) і / або успішне закінчення Центру довузівської
-                    підготовки(ЦДП) ХНУРЕ– 0, 05(до 10 додаткових балів).
+                    <Trans>
+                      The weight of the score for special achievements (diploma
+                      of the All-Ukrainian Student Olympiad, prize places in
+                      Olympiads) and/or successful completion of the Preparatory
+                      Department of Kharkiv National University of Radio
+                      Electronics (KDPU) - 0.05 (up to 10 additional points).
+                    </Trans>
                   </span>
                 </li>
               </ul>
@@ -105,17 +134,23 @@ const RulesPage = () => {
               className="olimpics__image"
             />
             <div className="olimpics__title">
-              <h1 className="olimpics__suptitle"> Всеукраїнські Олімпіади </h1>
+              <h1 className="olimpics__suptitle">
+                {" "}
+                <Trans>All-Ukrainian Olympiads</Trans>{" "}
+              </h1>
               <p className="olimpics__text">
-                Учасникам Всеукраїнської олімпіади ХНУРЕ для професійної
-                орієнтації вступників на основі повної загальної середньої
-                освіти зі спеціальностей, яким надається особлива підтримка
-                Міністерства, а саме для вступу на спеціальність 186 Видавництво
-                та поліграфія, яка проводиться у ХНУРЕ відповідно до
-                Положення(Додаток 6 до Правил вступу), можуть нараховуватись
-                додаткові бали до оцінки сертифіката зовнішнього незалежного
-                оцінювання з одного відповідного предмета в обсязі від 1 до 20
-                балів.
+                <Trans>
+                  Participants of the All-Ukrainian Olympiad of Kharkiv National
+                  University of Radio Electronics (HNURE) for professional
+                  orientation of applicants based on complete general secondary
+                  education in specialties that receive special support from the
+                  Ministry, specifically for admission to the specialty 186
+                  Publishing and Printing conducted at HNURE in accordance with
+                  the Regulations (Appendix 6 to the Admission Rules), may be
+                  awarded additional points to the score of the External
+                  Independent Evaluation certificate in one corresponding
+                  subject, ranging from 1 to 20 points.
+                </Trans>
               </p>
             </div>
           </div>
@@ -125,55 +160,80 @@ const RulesPage = () => {
         <div className="container">
           <div className="coefficient__inner">
             <div className="coefficient__rating">
-              <h1 className="rating__title"> Конкурсний бал </h1>
+              <h1 className="rating__title">
+                {" "}
+                <Trans>Competitive score</Trans>{" "}
+              </h1>
               <p className="rating__text">
-                Остаточно конкурсний бал множиться на регіональний(РК),
-                галузевий(ГК), сільський(СК) та першочерговий(ПЧК) коефіцієнти
-                шляхом його множення на їх добуток.
+                <Trans>
+                  The Final competitive score is multiplied by regional (РК),
+                  sectoral (ГК), rural (СК), and priority (ПЧК) coefficients by
+                  multiplying it by their product.
+                </Trans>
                 <p className="rating__text"> </p>
                 <p className="rating__text">
-                  Якщо після домноження на коефіцієнти конкурсний бал перевищує
-                  200, то він встановлюється таким, що дорівнює 200.
+                  <Trans>
+                    If the competitive score exceeds 200 after multiplication by
+                    the coefficients, it is set to a maximum value of 200.
+                  </Trans>
                 </p>
                 <Link to="#" className="rating__link">
-                  Дізнатись більше
+                  <Trans>Learn more</Trans>
                 </Link>
               </p>
             </div>
             <div className="coeficcient__storage">
               <h1 className="storage__title">
-                За спеціальністю 186 Видавництво та поліграфія конкурсний бал
-                складає:
+                <Trans>
+                  The competitive score for the specialty 186 Publishing and
+                  Printing is composed of:
+                </Trans>
               </h1>
               <ul className="storage__list">
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    Бал атестата про повну загальну середню освіту(коефіцієнт 0,
-                    1);
+                    <Trans>
+                      Diploma of complete secondary education certificate
+                      (coefficient 0.1);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
+                    <Trans>
+                      The score of the mathematics subject test in the Ukrainian
+                      External Independent Evaluation (EIE) at the basic level
+                      (coefficient 0.4);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з української мови та літератури(базовий рівень,
-                    коефіцієнт 0, 25);
+                    <Trans>
+                      The score of the Ukrainian language and literature subject
+                      test in the Ukrainian External Independent Evaluation
+                      (EIE) at the basic level (coefficient 0.25);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    ЗНО з іноземної мови або фізики або хімії(базовий рівень,
-                    коефіцієнт 0, 2).
+                    <Trans>
+                      The score of the Ukrainian language and literature subject
+                      test in the Ukrainian External Independent Evaluation
+                      (EIE) at the basic level (coefficient 0.25);
+                    </Trans>
                   </span>
                 </li>
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
-                    Вага балу за особливі успіхи(диплом МАН, призові місця в
-                    олімпіадах) і / або успішне закінчення Центру довузівської
-                    підготовки(ЦДП) ХНУРЕ– 0, 05(до 10 додаткових балів).
+                    <Trans>
+                      The weight of the score for special achievements (diploma
+                      of the All-Ukrainian Student Olympiad, prize places in
+                      Olympiads) and/or successful completion of the Preparatory
+                      Department of Kharkiv National University of Radio
+                      Electronics (KDPU) - 0.05 (up to 10 additional points).
+                    </Trans>
                   </span>
                 </li>
               </ul>
@@ -184,35 +244,50 @@ const RulesPage = () => {
       <div className="abiturient">
         <div className="container">
           <div className="abiturient__title">
-            Абітурієнте!Якщо у тебе повна середня загальна освіта, ти можеш:
+            <Trans>
+              Dear applicant! If you have completed full general secondary
+              education, you can:
+            </Trans>
           </div>
           <div className="abiturient__inner">
             <ul className="abiturient__list">
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  Подати до 5 заяв на 5 спеціальностей у власному електронному
-                  кабінеті або особисто в Консультаційному центрі Приймальної
-                  комісії ХНУРЕ з 14 до 23 липня 2021 р., вказавши пріоритети
-                  свого вибору;
+                  <Trans>
+                    You can submit up to 5 applications for 5 specialties in
+                    your personal online account or in person at the
+                    Consultation Center of the Admissions Committee of Kharkiv
+                    National University of Radio Electronics (KhNURE) from July
+                    14th to July 23rd, 2021, indicating the priorities of your
+                    choice;
+                  </Trans>
                 </span>
               </li>
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  Скласти вступні випробування з 01 до 13 липня 2022 р.(за
-                  необхідності, якщо є на це підстави);
+                  <Trans>
+                    To take entrance exams from July 1st to July 13th, 2022 (if
+                    necessary, if there are grounds for it);
+                  </Trans>
                 </span>
               </li>
             </ul>
             <ul className="abiturient__list">
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  Бал атестата про повну загальну середню освіту(коефіцієнт 0,
-                  1);
+                  <Trans>
+                    Diploma of complete secondary education certificate
+                    (coefficient 0.1);
+                  </Trans>
                 </span>
               </li>
               <li className="abiturient__list__item">
                 <span className="abiturient__list__item__text">
-                  ЗНО з математики(базовий рівень, коефіцієнт 0, 4);
+                  <Trans>
+                    The score of the mathematics subject test in the Ukrainian
+                    External Independent Evaluation (EIE) at the basic level
+                    (coefficient 0.4);
+                  </Trans>
                 </span>
               </li>
             </ul>
@@ -222,37 +297,53 @@ const RulesPage = () => {
       <div className="bakalavr">
         <div className="container">
           <div className="bakalavr__title">
-            Абітурієнте!Якщо у тебе повна середня загальна освіта, ти можеш:
+            <Trans>
+              Dear applicant! If you have completed full general secondary
+              education, you can:
+            </Trans>{" "}
           </div>
           <div className="bakalavr__inner">
             <ul className="bakalavr__list">
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  Подати документи на вступ з 14 до 23 липня 2022 р.;
+                  <Trans>
+                    To submit documents for admission from July 14th to July
+                    23rd, 2022;
+                  </Trans>
                 </span>
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  Скласти вступний тест в Приймальній комісії ХНУРЕ з 24 по 30
-                  липня 2021 р.;
+                  <Trans>
+                    "To take the entrance test at the Admissions Committee of
+                    Kharkiv National University of Radio Electronics (KhNURE)
+                    from July 24th to July 30th, 2021;"
+                  </Trans>
                 </span>
               </li>
             </ul>
             <ul className="bakalavr__list">
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  Ознайомитися з рейтинговим списком 2 серпня 2021 р.;
+                  <Trans>
+                    To familiarize yourself with the ranking list on August 2nd,
+                    2021;
+                  </Trans>
                 </span>
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  Особисто принести оригінали документів до 17: 00 4 серпня 2021
-                  р.;
+                  <Trans>
+                    To personally bring the original documents until 17:00 on
+                    August 4th, 2021;
+                  </Trans>
                 </span>
               </li>
               <li className="bakalavr__list__item">
                 <span className="bakalavr__list__item__text">
-                  Зарахування не пізніше 6 серпня 2021 р.
+                  <Trans>
+                    Admission will be no later than August 6th, 2021.
+                  </Trans>
                 </span>
               </li>
             </ul>
@@ -265,10 +356,16 @@ const RulesPage = () => {
       <div className="ask">
         <div className="container">
           <div className="ask__title">
-            <h1 className="ask__suptitle"> Залишились питання ? </h1>
+            <h1 className="ask__suptitle">
+              {" "}
+              <Trans>Are there any remaining questions?</Trans>
+            </h1>
             <p className="ask__text">
-              Більш докладно про ці нововведення оголошено на сайті університету
-              радіоелектроніки в правилах вступу 2021 року– nure.ua.
+              <Trans>
+                More detailed information about these innovations is announced
+                on the website of the National University of Radio Electronics
+                in the admission rules for 2021 – nure.ua.
+              </Trans>
             </p>
           </div>
         </div>

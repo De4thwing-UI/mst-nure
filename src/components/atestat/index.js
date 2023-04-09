@@ -1,5 +1,6 @@
 import React from "react"
 import "./atestat.css"
+import { Trans } from "react-i18next"
 
 const Atestat = () => {
   return (
@@ -7,53 +8,70 @@ const Atestat = () => {
       <div className="atestat">
         <div className="container">
           <div className="atestat__title">
-            Вступ до ХНУРЕ на базі атестату середньої школи
+            <Trans>
+              Admission to Kharkiv National University of Radio Electronics
+              (KhNURE) based on a secondary school diploma
+            </Trans>
           </div>
           <div className="atestat__inner">
             <ul className="atestat__timeline">
               <li className="atestat__timeline__item">
                 <div className="atestat__item__text">
                   <h1 className="atestat__item__title">
-                    Крок 1. Електронна заява.
+                    <Trans>Step 1. Online application.</Trans>
                   </h1>
                   <p className="atestat__item__text">
-                    У 2021 році вступники, що вступають на базі документа про
-                    повну загальну середню освіту за ступенем «Бакалавр» на
-                    денну форму навчання з 14 по 23 липня подають до закладу
-                    вищої освіти заяви про вступ в електронній формі на сайті
-                    https://ez.osvitavsim.org.ua/
+                    <Trans>
+                      In 2021, applicants who are applying for Bachelor's degree
+                      programs based on a diploma of complete secondary
+                      education for full-time study are required to submit their
+                      applications for admission in electronic form on the
+                      website https://ez.osvitavsim.org.ua/ from July 14th to
+                      July 23rd
+                    </Trans>
                   </p>
                   <p className="atestat__item__text">
-                    Після реєстрації вступник отримає логін та пароль для
-                    доступу до особистого електронного кабінету.
+                    <Trans>
+                      After registration, the applicant will receive a login and
+                      password to access their personal online account.
+                    </Trans>
                   </p>
                   <p className="atestat__item__text">
-                    Подана вступником електронна заява буде відразу відображена
-                    у розділі Єдиної державної електронної бази з питань освіти
-                    – ЄДЕБО, до якого має доступ ХНУРЕ.
+                    <Trans>
+                      The electronic application submitted by the applicant will
+                      be immediately displayed in the section of the Unified
+                      State Electronic Database on Education - EDEBO, to which
+                      Kharkiv National University of Radio Electronics (KhNURE)
+                      has access.
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="atestat__timeline__item">
                 <div className="atestat__item__text">
                   <h1 className="atestat__item__title">
-                    Крок 2. Список рекомендованих
+                    <Trans>Step 2. List of recommended applicants</Trans>
                   </h1>
                   <p className="atestat__item__text">
-                    28 липня ознайомитись зі списком рекомендованих на сайті
-                    nure.ua
+                    <Trans>
+                      On July 28th, you can familiarize yourself with the list
+                      of recommended applicants on the website nure.ua
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="atestat__timeline__item">
                 <div className="atestat__item__text">
                   <h1 className="atestat__item__title">
-                    Крок 3. Подача документів
+                    <Trans>Step 3. Submission of documents</Trans>
                   </h1>
                   <p className="atestat__item__text">
-                    З 28 липня по 2 серпня 2021 року особисто подати оригінали
-                    документів до Приймальної комісії ХНУРЕ. Підготуйте комплект
-                    документів завчасно.
+                    <Trans>
+                      From July 28th to August 2nd, 2021, personally submit the
+                      original documents to the Admissions Committee of Kharkiv
+                      National University of Radio Electronics (KhNURE). Please
+                      prepare your documents in advance.
+                    </Trans>
                   </p>
                 </div>
               </li>
@@ -65,16 +83,22 @@ const Atestat = () => {
         <div className="container">
           <div className="junior__title">
             <h1 className="junior__suptitle">
-              Вступ до ХНУРЕ на базі диплома молодшого спеціаліста
+              <Trans>
+                Admission to Kharkiv National University of Radio Electronics
+                (KhNURE) based on a diploma of junior specialis
+              </Trans>
             </h1>
             <p className="junior__text">
-              Вступники можуть зараховуватись за державним замовленням лише в
-              разі вступу на ту саму або споріднену в межах галузі знань. При
-              цьому обсяг академічної різниці в дисциплінах, як правило, не може
-              перевищувати 20 кредитів, про що під час прийому заяви на вступ
-              письмово вказується на звороті заяви вступника заступником декана
-              факультету Комп’ютерних наук, на який подає заяву вступник, та
-              засвідчується підписом декана.
+              <Trans>
+                Applicants can be admitted on a state-funded basis only if they
+                apply for the same or related field of study within the same
+                field of knowledge. In this case, the academic difference in
+                disciplines should not exceed 20 credits, which is indicated in
+                writing on the reverse side of the applicant's application by
+                the deputy dean of the Faculty of Computer Science, to which the
+                applicant applies, and is certified with the signature of the
+                dean.
+              </Trans>
             </p>
           </div>
           <div className="junior__inner">
@@ -82,58 +106,79 @@ const Atestat = () => {
               <li className="junior__timeline__item">
                 <div className="junior__item__text">
                   <h1 className="junior__item__title">
-                    Крок 1. Подати заяву і документи з 14 по 23 липня.
+                    <Trans>
+                      Step 1. Submit an application and documents from July 14th
+                      to July 23rd.
+                    </Trans>
                   </h1>
                   <p className="junior__item__text">
-                    Документи необхідно подавати в паперовому вигляді.
+                    <Trans>Documents must be submitted in paper form.</Trans>
                   </p>
-                  <p className="junior_text">Дивитись комплект документів</p>
-                </div>
-              </li>
-              <li className="junior__timeline__item">
-                <div className="junior__item__text">
-                  <h1 className="junior__item__title">
-                    Крок 2. Скласти фахові випробування з 24 по 30 липня 2021
-                    року.
-                  </h1>
-                  <p className="junior__item__text">
-                    Необхідно скласти фахові випробування
+                  <p className="junior_text">
+                    <Trans>To view the list of required documents</Trans>
                   </p>
                 </div>
               </li>
               <li className="junior__timeline__item">
                 <div className="junior__item__text">
                   <h1 className="junior__item__title">
-                    Крок 3. Дочекатися рейтингового списку 2 серпня
+                    <Trans>
+                      Step 2. Take professional entrance exams from July 24 to
+                      July 30, 2021.
+                    </Trans>
                   </h1>
                   <p className="junior__item__text">
-                    Рейтинговий список вступників буде оприлюднений 2 серпня
-                    2021 року із зазначенням рекомендованих до зарахування на
-                    місця державного замовлення.
+                    <Trans>
+                      The required step is to pass professional exams
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="junior__timeline__item">
                 <div className="junior__item__text">
                   <h1 className="junior__item__title">
-                    Крок 4. Принести оригінали документів особисто.
+                    <Trans>
+                      Step 3. Wait for the ranking list on August 2nd.
+                    </Trans>
                   </h1>
                   <p className="junior__item__text">
-                    Після оприлюднення списку необхідно принести оригінали
-                    документів до 17:00 години 4 серпня, тим самим, виконавши
-                    вимоги до зарахування за державним замовленням.
+                    <Trans>
+                      The ranking list of applicants recommended for admission
+                      under the state quota will be published on August 2, 2021.
+                    </Trans>
+                  </p>
+                </div>
+              </li>
+              <li className="junior__timeline__item">
+                <div className="junior__item__text">
+                  <h1 className="junior__item__title">
+                    <Trans>Step 4. Bring original documents in person.</Trans>
+                  </h1>
+                  <p className="junior__item__text">
+                    <Trans>
+                      After the publication of the list, it is necessary to
+                      bring the original documents by 17:00 on August 4th, thus
+                      fulfilling the requirements for admission under the state
+                      order.
+                    </Trans>
                   </p>
                   <p className="junior__item__text">
-                    Зарахування вступників за державним замовленням – 6 серпня.
-                    Виконання вимог до зарахування на місця за кошти
-                    фізичних/юридичних осіб за денною формою навчання
-                    закінчується до 12:00 години 30 серпня, за заочною формою
-                    навчання – до 17.00 30 вересня.
+                    <Trans>
+                      Admission of applicants under the state order will take
+                      place on August 6th. Fulfillment of the requirements for
+                      admission on a fee-paying basis for individuals/legal
+                      entities in the daytime form of education ends at 12:00 on
+                      August 30th, and for the correspondence form of education
+                      - at 17:00 on September 30th.
+                    </Trans>
                   </p>
                   <p className="junior__item__">
-                    Зарахування вступників за кошти фізичних/юридичних осіб за
-                    денною формою навчання відбудеться 31 серпня, за заочною
-                    формою навчання – 1 жовтня.
+                    <Trans>
+                      Admission of applicants on a fee-paying basis for
+                      individuals/legal entities in the daytime form of
+                      education will take place on August 31st, and for the
+                      correspondence form of education - on October 1st.
+                    </Trans>
                   </p>
                 </div>
               </li>

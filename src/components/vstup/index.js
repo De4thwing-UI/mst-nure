@@ -1,83 +1,114 @@
 import React from "react"
 import "./vstup.css"
 import { StaticImage } from "gatsby-plugin-image"
+import { Trans } from "react-i18next"
 
 const Vstup = () => {
   return (
     <div>
       <div className="vstup">
         <div className="container">
-          <div className="vstup__title">Вступ до магістратури у 2022 році</div>
+          <div className="vstup__title">
+            <Trans>Admission to Master's program in 2022</Trans>
+          </div>
           <div className="vstup__inner">
             <ul className="vstup__timeline">
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 1. Зареєструватися
+                    <Trans>Step 1. Register</Trans>
                   </h1>
                   <p className="vstup__item__text">
-                    https://zno.testportal.com.ua/master/login – Кабінет
-                    учасника ЄФВВ/ЄВІ) для складання єдиного вступного іспиту
-                    (ЄВІ) з іноземної мови з 11 травня по 03 червня (о 18:00)
-                  </p>
-                </div>
-              </li>
-              <li className="vstup__timeline__item">
-                <div className="vstup__item__text">
-                  <h1 className="vstup__item__title">Крок 2. Вступний іспит</h1>
-                  <p className="vstup__item__text">
-                    Основна сесія єдиного вступного іспиту проводиться 30 червня
-                    (додаткова сесія проводиться в строки, встановлені
-                    Українським центром оцінювання якості освіти).
+                    <Trans>
+                      https://zno.testportal.com.ua/master/login – Participant's
+                      Cabinet for the Unified Entrance Exam (ЄФВВ/ЄВІ) for
+                      taking the Foreign Language Exam (ЄВІ) from May 11 to June
+                      3 (at 18:00)
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 3. Зареєструвати свій електронний кабінет з 01 липня.
+                    <Trans>Step 2. Entrance Exam</Trans>
                   </h1>
                   <p className="vstup__item__text">
-                    Подати заяву і необхідні документи з 15 липня по 23 липня
-                    через електронний кабінет.
+                    <Trans>
+                      The main session of the Unified Entrance Exam is held on
+                      June 30th (an additional session is conducted on dates
+                      determined by the Ukrainian Center for Assessment of
+                      Education Quality).
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 4. Фахові вступні випробування
+                    <Trans>
+                      Step 3. Register your electronic account from July 1st.
+                    </Trans>
                   </h1>
                   <p className="vstup__item__text">
-                    Для вступників, які вступають на основі ступеня вищої освіти
-                    (освітньо-кваліфікаційного рівня), і успішно склали єдиний
-                    вступний іспит, проводяться з 19 липня по 30 липня.
-                  </p>
-                  <p className="vstup__item__text">Дивитись конкурсні бали</p>
-                </div>
-              </li>
-              <li className="vstup__timeline__item">
-                <div className="vstup__item__text">
-                  <h1 className="vstup__item__title">
-                    Крок 5. Дочекатися рейтингового списку 2 серпня
-                  </h1>
-                  <p className="vstup__item__text">
-                    Рекомендації для зарахування за державним замовленням
-                    надаються не пізніше ніж 02 серпня.
+                    <Trans>
+                      Step 4. Submit your application and required documents
+                      from July 15th to July 23rd through your electronic
+                      account.
+                    </Trans>
                   </p>
                 </div>
               </li>
               <li className="vstup__timeline__item">
                 <div className="vstup__item__text">
                   <h1 className="vstup__item__title">
-                    Крок 6. Принести оригінали документів.
+                    <Trans>Step 4. Specialized entrance examinations</Trans>
                   </h1>
                   <p className="vstup__item__text">
-                    У період з 2 серпня (після оприлюднення списку) до 10 серпня
-                    необхідно принести оригінали документів, тим самим,
-                    виконавши вимоги до зарахування за державним замовленням.
+                    <Trans>
+                      For applicants who apply based on a higher education
+                      degree (educational-qualification level) and have
+                      successfully passed the unified entrance exam, the
+                      specialized entrance examinations are held from July 19th
+                      to July 30th.
+                    </Trans>
                   </p>
-                  <p className="vstup__item__text">Комплект документів</p>
+                  <p className="vstup__item__text">
+                    <Trans>Viewing competitive scores</Trans>
+                  </p>
+                </div>
+              </li>
+              <li className="vstup__timeline__item">
+                <div className="vstup__item__text">
+                  <h1 className="vstup__item__title">
+                    <Trans>
+                      Step 5. Wait for the ranking list on August 2nd
+                    </Trans>
+                  </h1>
+                  <p className="vstup__item__text">
+                    <Trans>
+                      Recommendations for enrollment on the state-funded quota
+                      are provided no later than August 2nd.
+                    </Trans>
+                  </p>
+                </div>
+              </li>
+              <li className="vstup__timeline__item">
+                <div className="vstup__item__text">
+                  <h1 className="vstup__item__title">
+                    <Trans>Step 6. Submit original documents.</Trans>
+                  </h1>
+                  <p className="vstup__item__text">
+                    <Trans>
+                      During the period from August 2 (after the publication of
+                      the list) to August 10, you need to submit the original
+                      documents, thus fulfilling the requirements for admission
+                      under the state order.
+                    </Trans>
+                  </p>
+                  <p className="vstup__item__text">
+                    <Trans>Set of documents</Trans>
+                  </p>
                 </div>
               </li>
             </ul>
@@ -88,17 +119,22 @@ const Vstup = () => {
             <div className="enrollment__inner">
               <div className="enrolment__title">
                 <h1 className="enrollment__suptitle">
-                  Зарахування вступників за державним замовленням – 12 серпня.
+                  <Trans>
+                    Admission of applicants under the state order - August 12th.
+                  </Trans>
                 </h1>
                 <p className="enrollment__text">
-                  Виконання вимог до зарахування на місця за кошти
-                  фізичних/юридичних осіб закінчується 30 серпня о 12:00.
-                  Переведення на вакантні місця державного та на місця за
-                  рахунок цільових пільгових державних кредитів осіб, які
-                  зараховані на навчання за кошти фізичних та/або юридичних осіб
-                  (відповідно до цих Правил та Умов), здійснюється не пізніше
-                  ніж 19 серпня. Зарахування вступників за кошти
-                  фізичних/юридичних осіб 31 серпня.
+                  <Trans>
+                    Fulfillment of requirements for admission to self-funded
+                    places for individuals or legal entities ends on August 30th
+                    at 12:00. Transfer to vacant places of the state and
+                    targeted preferential state loans for individuals admitted
+                    for tuition fees paid by individuals or legal entities (in
+                    accordance with these Rules and Conditions) is carried out
+                    no later than August 19th. Admission of applicants for
+                    tuition fees paid by individuals or legal entities is on
+                    August 31st.
+                  </Trans>
                 </p>
               </div>
               <StaticImage
