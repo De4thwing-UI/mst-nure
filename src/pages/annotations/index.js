@@ -5,14 +5,21 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
 const AnnotationsPage = () => {
   return (
     <div>
       <Header />
-      <Title> Анотації дисциплін </Title>
+      <Title>
+        {" "}
+        <Trans>Annotations of disciplines</Trans>{" "}
+      </Title>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> Вільний вибір бакалавр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>Free Choice Bachelor.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -21,7 +28,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технології анімації.
+                  <Trans>Animation Technologies.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -30,7 +37,9 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Основи технології та дизайну паковань.
+                  <Trans>
+                    Fundamentals of Packaging Technology and Design.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -39,7 +48,10 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Системи управління технологічного процесу підготовки видань.
+                  <Trans>
+                    Technological Process Management Systems for Publishing
+                    Preparation.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -48,7 +60,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Обробка аудіо інформації.
+                  <Trans>Audio Information Processing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -57,7 +69,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Обробка відео інформації.
+                  <Trans>Video Information Processing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -66,7 +78,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Поліграфічні матеріали.
+                  <Trans>Printing Materials.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -75,7 +87,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технології цифрового друку.
+                  <Trans>Digital Printing Technologies.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -84,7 +96,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технологія оперативних та спеціальних видів друку.
+                  <Trans>Technology of Offset and Specialty Printing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -93,7 +105,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Тривимірне моделювання.
+                  <Trans>3D Modeling.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -102,7 +114,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Візуальні комунікації.
+                  <Trans>Visual Communications.</Trans>
                 </a>
               </li>
             </ul>
@@ -113,7 +125,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Менеджмент в видавничо - поліграфічній справі.
+                  <Trans>Management in Publishing and Printing Industry.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -122,7 +134,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Основи маркетингу та рекламної діяльності.
+                  <Trans>Fundamentals of Marketing and Advertising.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -131,7 +143,9 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Основи редагування та коректури видань.
+                  <Trans>
+                    Fundamentals of Editing and Proofreading in Publishing.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -140,7 +154,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Патентознавство та авторське право.
+                  <Trans>Patent Studies and Copyright Law.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -149,7 +163,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Шрифтові технології.
+                  <Trans>Typography Technologies.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -158,7 +172,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Комп’ ютерні мережі.
+                  <Trans>Computer Networks.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -167,7 +181,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технології проєктування комп’ ютерних ігор.
+                  <Trans>Computer Game Design Technologies.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -176,7 +190,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Основи UI / UX.
+                  <Trans>Fundamentals of UI/UX.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -185,7 +199,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  Технології комп’ ютерної візуалізації.
+                  <Trans>Computer Visualization Technologies.</Trans>
                 </a>
               </li>
             </ul>
@@ -194,7 +208,10 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> Бакалавр вибір ВНЗ. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>Bachelor's Degree in University Selection.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -203,7 +220,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи графічного дизайну.
+                  <Trans>Fundamentals of Graphic Design.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -212,7 +229,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи теорії кольору та кольоровідтворення.
+                  <Trans>
+                    Fundamentals of Color Theory and Color Reproduction.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -221,7 +240,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Програмні засоби комп 'ютерних видавничих систем.
+                  <Trans>Software Tools for Computer Publishing Systems.</Trans>
                 </a>
               </li>
             </ul>
@@ -232,8 +251,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування і розрахунки технологічних процесів підготовки та
-                  виготовлення видань.
+                  <Trans>
+                    Design and Calculation of Technological Processes for
+                    Publishing Preparation and Production.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -242,7 +263,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Системи управління кольором.
+                  <Trans>Color Management Systems.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -251,7 +272,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Теоретичні основи растрування.
+                  <Trans>Theoretical Foundations of Halftoning.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -260,7 +281,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Художні основи проєктування видань.
+                  <Trans>Artistic Foundations of Publication Design.</Trans>
                 </a>
               </li>
             </ul>
@@ -269,7 +290,9 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> Бакалавр нормативні. </div>
+          <div className="annotations__title">
+            <Trans>Bachelor's Degree in Normative Sciences.</Trans>
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -278,7 +301,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Атестаційна робота бакалавра.
+                  <Trans>Bachelor's Thesis.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -287,7 +310,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Введення в спеціальність.
+                  <Trans>Introduction to the Specialty.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -296,7 +319,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Вузли та механізми поліграфічного устаткування.
+                  <Trans>Nodes and Mechanisms of Printing Equipment.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -305,7 +328,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Інженерна та комп 'ютерна графіка.
+                  <Trans>Engineering and Computer Graphics.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -314,7 +337,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Інформатика.
+                  <Trans>Informatics.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -323,7 +346,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Обробка графічної інформації.
+                  <Trans>Graphic Information Processing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -332,7 +355,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оброблення текстової інформації.
+                  <Trans>Text Information Processing.</Trans>
                 </a>
               </li>
             </ul>
@@ -343,7 +366,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи метрології стандартизації та управління якістю.
+                  <Trans>
+                    Fundamentals of Metrology, Standardization, and Quality
+                    Management.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -352,7 +378,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи технології поліграфічного виробництва.
+                  <Trans>Fundamentals of Print Production Technology.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -361,7 +387,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технічна механіка.
+                  <Trans>Technical Mechanics.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -370,12 +396,14 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Фотореєстраційні та формні процеси.
+                  <Trans>
+                    Photographic Registration and Forming Processes.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
                 <a href="#" target="_blank" className="annotations__link">
-                  Основи матеріалознавства.
+                  <Trans>Fundamentals of Materials Science.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -384,7 +412,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технічні засоби у видавничо - поліграфічній справі.
+                  <Trans>
+                    Technical Tools in Publishing and Printing Industry.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -393,7 +423,10 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> Магістр нормативні. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>The Master of Normative Affairs.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -402,7 +435,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи наукових досліджень та організація науки.
+                  <Trans>
+                    Fundamentals of Scientific Research and Science
+                    Organization.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -411,7 +447,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Системний аналіз та підтримка прийняття рішень.
+                  <Trans>System Analysis and Decision Support.</Trans>
                 </a>
               </li>
             </ul>
@@ -422,7 +458,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Моделювання технічних систем.
+                  <Trans>Modeling of Technical Systems.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -431,7 +467,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Математична статистика і опрацювання даних.
+                  <Trans>Mathematical Statistics and Data Processing.</Trans>
                 </a>
               </li>
             </ul>
@@ -440,7 +476,12 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> КТСВПВ бакалавр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>
+              Bachelor's in Computer Science and Software Engineering.
+            </Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -449,7 +490,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи WEB - технологій.
+                  <Trans>Fundamentals of Web Technologies.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -458,7 +499,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технологія та обладнання поліграфічних процесів.
+                  <Trans>Technology and Equipment of Printing Processes.</Trans>
                 </a>
               </li>
             </ul>
@@ -469,7 +510,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування комп’ ютерних видавничих систем та компонентів.
+                  <Trans>
+                    Design of Computer Publishing Systems and Components
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -478,7 +521,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технологія підготовки електронних видань.
+                  <Trans>
+                    Technology of Electronic Publishing Preparation.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -487,7 +532,10 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> КТСВПВ магістр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>Master's KTSVPV.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -496,7 +544,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка кросмедійних продуктів.
+                  <Trans>Design and Development of Cross-Media Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -505,7 +553,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Просування кросмедійних продуктів.
+                  <Trans>Promotion of Cross-Media Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -514,7 +562,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Захист інформації в поліграфії.
+                  <Trans>Information Security in Printing Industry.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -523,7 +571,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оцінка якості поліграфічної продукції.
+                  <Trans>Quality Evaluation of Printing Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -532,8 +580,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Розробка та моделювання бізнес - процесів поліграфічного
-                  виробництва.
+                  <Trans>
+                    Development and Modeling of Business Processes in Printing
+                    Production.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -542,8 +592,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Системи автоматизованого управління видавничими поліграфічними
-                  процесами.
+                  <Trans>
+                    Automated Management Systems for Publishing and Printing
+                    Processes.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -552,7 +604,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка інтерфейсів інтерактивних видань.
+                  <Trans>
+                    Design and Development of Interfaces for Interactive
+                    Publications.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -563,7 +618,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Управління проєкт єктами.
+                  <Trans>Project Management.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -572,7 +627,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Анімація в мобільних додатках.
+                  <Trans>Animation in Mobile Applications.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -581,7 +636,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технології розробки мультимедійних інформаційних продуктів.
+                  <Trans>
+                    Multimedia Information Product Development Technologies.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -590,7 +647,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Тестування та забезпечення якості мобільних додатків.
+                  <Trans>
+                    Testing and Quality Assurance of Mobile Applications.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -599,7 +658,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка мобільних додатків.
+                  <Trans>Design and Development of Mobile Applications.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -608,7 +667,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Новітні технології та матеріали.
+                  <Trans>Cutting-Edge Technologies and Materials.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -617,12 +676,14 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Internet - маркетинг.
+                  <Trans>Internet Marketing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
                 <a href="#" target="_blank" className="annotations__link">
-                  Організація та управління поліграфічним виробництвом.
+                  <Trans>
+                    Organization and Management of Printing Production.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -631,7 +692,10 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> ТДВ бакалавр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>Bachelor's in Business Administration.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -640,7 +704,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Експлуатація поліграфічного обладнання.
+                  <Trans>Operation of Printing Equipment.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -649,7 +713,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Основи проєктування електронних видань.
+                  <Trans>Fundamentals of Electronic Publication Design.</Trans>
                 </a>
               </li>
             </ul>
@@ -660,7 +724,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування поліграфічного виробництва.
+                  <Trans>Design of Printing Production.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -669,8 +733,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технологія та обладнання друкарських та післядрукарських
-                  процесів.
+                  <Trans>
+                    Technology and Equipment for Printing and Post-Printing
+                    Processes.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -679,7 +745,10 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> ТДВ магістр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>Master's in Business Administration.</Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -688,7 +757,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технології захисту друкованої продукції.
+                  <Trans>Technologies for Securing Printed Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -697,7 +766,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Управління проєктами.
+                  <Trans>Project Management.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -706,7 +775,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оперативні та спеціальні види друку.
+                  <Trans>Operational and Specialized Types of Printing.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -715,8 +784,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Організація та управління видавничо - поліграфічним
-                  виробництвом.
+                  <Trans>
+                    Organization and Management of Publishing and Printing
+                    Production.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -725,7 +796,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оцінка якості поліграфічної продукції.
+                  <Trans>Quality assessment of printing products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -734,8 +805,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Системи автоматизованого управління процесами поліграфічного
-                  виробництва.
+                  <Trans>
+                    Automated management systems for printing production
+                    processes.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -744,7 +817,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технології проєктування та виготовлення пакувань.
+                  <Trans>
+                    Design and manufacturing technologies for packaging.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -753,7 +828,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Просування кросмедійних продуктів.
+                  <Trans>Promotion of Cross-Media Products.</Trans>
                 </a>
               </li>
             </ul>
@@ -764,7 +839,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Розробка та моделювання видавничих технологічних процесів.
+                  <Trans>
+                    Development and modeling of publishing technological
+                    processes.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -773,7 +851,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка кросмедійних продуктів.
+                  <Trans>Design and Development of Cross-Media Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -782,7 +860,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка кросмедійних продуктів.
+                  <Trans>Design and Development of Cross-Media Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -791,7 +869,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Тестування та забезпечення якості мобільних додатків.
+                  <Trans>
+                    Testing and Quality Assurance of Mobile Applications.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -800,7 +880,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка інтерфейсів інтерактивних видань.
+                  <Trans>
+                    Design and Development of Interfaces for Interactive
+                    Publications.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -809,7 +892,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Новітні технології та матеріали.
+                  <Trans>Cutting-Edge Technologies and Materials.</Trans>
                 </a>
               </li>
             </ul>
@@ -818,7 +901,13 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> ТЕМВ бакалавр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>
+              Bachelor's degree in Engineering, Electronics, and
+              Microelectronics Technology
+            </Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -827,7 +916,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  WEB - технології.
+                  <Trans>Web technologies</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -836,8 +925,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Комп 'ютерні технології виготовлення реклами для друкованих та
-                  електронних ЗМІ.
+                  <Trans>
+                    Computer technologies for advertising production for print
+                    and electronic media.
+                  </Trans>
                 </a>
               </li>
             </ul>
@@ -848,7 +939,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування електронних мультимедійних видань.
+                  <Trans>Designing electronic multimedia publications.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -857,7 +948,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Технічні засоби медіатехнологій.
+                  <Trans>Technical tools of media technologies.</Trans>
                 </a>
               </li>
             </ul>
@@ -866,7 +957,12 @@ const AnnotationsPage = () => {
       </div>
       <div className="annotations">
         <div className="container">
-          <div className="annotations__title"> ТЕМВ магістр. </div>
+          <div className="annotations__title">
+            {" "}
+            <Trans>
+              Master's degree in Media Engineering and Multimedia Technologies.
+            </Trans>{" "}
+          </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
               <li className="annotations__list__item">
@@ -875,7 +971,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка мобільних додатків.
+                  <Trans>Design and Development of Mobile Applications.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -884,7 +980,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Анімація в мобільних додатках.
+                  <Trans>Animation in Mobile Applications.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -893,7 +989,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Internet - маркетинг.
+                  <Trans>Web marketing</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -902,7 +998,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка WEB - систем.
+                  <Trans>Web system design and development.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -911,7 +1007,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  WEB - аналітика та пошукова оптимізація.
+                  <Trans>Web analytics and search engine optimization.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -920,7 +1016,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Бази даних в мультимедійних системах.
+                  <Trans>Databases in Multimedia Systems</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -929,7 +1025,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  UI / UX мультимедійних продуктів.
+                  <Trans>UI/UX of Multimedia Products</Trans>
                 </a>
               </li>
             </ul>
@@ -940,7 +1036,9 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Тестування та забезпечення якості мобільних додатків.
+                  <Trans>
+                    Testing and Quality Assurance of Mobile Applications
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -949,7 +1047,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Управління проєктами.
+                  <Trans>Project Management.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -958,7 +1056,10 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Проєктування та розробка інтерфейсів інтерактивних видань.
+                  <Trans>
+                    Design and Development of Interfaces for Interactive
+                    Publications.
+                  </Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -967,7 +1068,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Оцінка якості поліграфічної продукції.
+                  <Trans>Quality Evaluation of Printing Products.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -976,7 +1077,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Новітні технології та матеріали.
+                  <Trans>Cutting-Edge Technologies and Materials.</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -985,7 +1086,7 @@ const AnnotationsPage = () => {
                   target="_blank"
                   className="annotations__link"
                 >
-                  Просування кросмедійних продуктів.
+                  <Trans>Promotion of Cross-Media Products.</Trans>
                 </a>
               </li>
             </ul>

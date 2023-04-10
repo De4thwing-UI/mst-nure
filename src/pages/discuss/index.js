@@ -5,39 +5,58 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
+
 const DiscussgPage = () => {
   return (
     <div>
       <Header />
-      <Title> Обговорення ОП </Title>
+      <Title>
+        {" "}
+        <Trans>Discussion of OP</Trans>{" "}
+      </Title>
       <div className="discuss">
         <div className="container">
-          <div className="discuss__title"> Обговорення освітніх програм </div>
+          <div className="discuss__title">
+            {" "}
+            <Trans>Discussion of educational programs</Trans>{" "}
+          </div>
           <div className="discuss__inner">
             <div className="discuss__text">
               <p className="discuss__text__item">
-                Кафедрою МСТ розпочато щорічний процес громадського обговорення
-                освітніх програм.
+                <Trans>
+                  The Department of MST has initiated the annual process of
+                  public discussion of educational programs.
+                </Trans>
               </p>
               <p className="discuss__text__item">
-                Стратегія реформування вищої освіти передбачає створення системи
-                моніторингу та постійного поліпшення якості вищої освіти.Це
-                відповідає рекомендаціям і стандартам Європейського простору
-                вищої освіти, враховує кращі вітчизняні та світові
-                практики.надсилати на електронну адресу кафедри МСТ: d_mst
-                @nure.ua
+                <Trans>
+                  The strategy for higher education reform includes the
+                  establishment of a system for monitoring and continuous
+                  improvement of the quality of higher education. This aligns
+                  with the recommendations and standards of the European Higher
+                  Education Area, taking into account the best domestic and
+                  international practices. Please send your feedback to the
+                  Department of MST at the email address: d_mst@nure.ua
+                </Trans>
               </p>
               <p className="discuss__text__item">
-                Ключовим завданням такої реформи є залучення зовнішніх та
-                внутрішніх стейкхолдерів до розроблення освітніх програм.
+                <Trans>
+                  The key task of such a reform is to involve external and
+                  internal stakeholders in the development of educational
+                  programs.
+                </Trans>
               </p>
               <p className="discuss__text__item">
-                Пропозиції та зауваження просимо надсилати на електронну адресу
-                кафедри МСТ: <span> d_mst @nure.ua </span>
+                <Trans>
+                  Suggestions and comments are requested to be sent to the email
+                  address of the MST Department:
+                </Trans>{" "}
+                <span> d_mst @nure.ua </span>
               </p>
             </div>
             <div className="discuss__title">
-              Проєкти навчальних планів і програм для обговорення
+              <Trans>Draft educational plans and programs for discussion</Trans>
             </div>
             <div className="discuss__text">
               <ul className="discuss__list">
@@ -47,8 +66,11 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Навчальний план за освітньо - професійною програмою
-                    "Технології друкованих видань" другого рівня вищої освіти
+                    <Trans>
+                      Curriculum for the educational and professional program'
+                      Printed Publication Technologies' at the second level of
+                      higher education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -57,9 +79,12 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Навчальний план за освітньо - професійною програмою
-                    "Комп’ютерні технології та системи видавничо-поліграфічних
-                    виробництв " другого рівня вищої освіти
+                    <Trans>
+                      Curriculum for the educational and professional program
+                      'Computer Technologies and Publishing-Polygraphic
+                      Productions Systems' at the second level of higher
+                      education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -68,9 +93,11 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Навчальний план за освітньо - професійною програмою
-                    "Технології електронних мультимедійних видань" другого рівня
-                    вищої освіти
+                    <Trans>
+                      Curriculum for the educational and professional program
+                      'Electronic Multimedia Publication Technologies' at the
+                      second level of higher education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -79,15 +106,17 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Навчальний план за освітньо - професійною програмою
-                    "Видавничо-поліграфічна справа" першого(бакалаврського)
-                    рівня вищої освіти
+                    <Trans>
+                      Curriculum for the educational and professional program
+                      'Publishing and Printing Industry' at the first
+                      (bachelor's) level of higher education.
+                    </Trans>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="discuss__title">
-              Проєкти освітніх програм для обговорення
+              <Trans>Draft educational program proposals for discussion</Trans>
             </div>
             <div className="discuss__text">
               <ul className="discuss__list">
@@ -97,8 +126,10 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Освітньо - професійна програма "Технології друкованих
-                    видань" другого рівня вищої освіти
+                    <Trans>
+                      Educational and professional program 'Printed Publication
+                      Technologies' at the second level of higher education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -107,9 +138,11 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Освітньо - професійна програма "Комп’ютерні технології та
-                    системи видавничо - поліграфічних виробництв " другого рівня
-                    вищої освіти
+                    <Trans>
+                      Educational and professional program 'Computer
+                      Technologies and Publishing-Polygraphic Productions
+                      Systems' at the second level of higher education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -118,8 +151,11 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Освітньо - професійна програма "Технології електронних
-                    мультимедійних видань " другого рівня вищої освіти
+                    <Trans>
+                      Educational and professional program 'Electronic
+                      Multimedia Publication Technologies' at the second level
+                      of higher education.
+                    </Trans>
                   </a>
                 </li>
                 <li className="discuss__list__item">
@@ -128,8 +164,11 @@ const DiscussgPage = () => {
                     className="discuss__list__link"
                     target="_blank"
                   >
-                    Освітньо - професійна програма "Видавничо-поліграфічна
-                    справа" першого(бакалаврського) рівня вищої освіти
+                    <Trans>
+                      Educational and professional program 'Publishing and
+                      Printing Business' at the first (bachelor's) level of
+                      higher education.
+                    </Trans>
                   </a>
                 </li>
               </ul>

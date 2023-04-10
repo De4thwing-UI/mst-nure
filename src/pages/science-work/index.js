@@ -5,114 +5,128 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
-
+import { Trans } from "react-i18next"
 const ScienceworkPage = () => {
   const tables = [
     {
       number: "01",
-      measures: "Ніч науки",
-      term: "Вересень, 2021, м. Харків",
-      responsible: "Зелений О.П.",
+      measures: "Science Night",
+      term: "September 2021, Kharkiv city",
+      responsible: "Zeleny O.P.",
     },
     {
       number: "02",
-      measures: "Український студентський фестиваль реклами",
-      term: "Листопад 2021, м. Київ",
-      responsible: "Бокарєва Ю.С.",
+      measures: "Ukrainian Student Advertising Festival",
+      term: "November 2021, Kyiv city",
+      responsible: "Bokareva Yu.S.",
     },
     {
       number: "03",
       measures:
-        "Міжнародний конкурс студентських наукових робіт з поліграфії, видавничої справи «Молодь і поліграфія»",
-      term: "Листопад 2021, м. Київ",
-      responsible: "Бокарєва Ю.С.",
+        "International Student Scientific Competition in Printing, Publishing and Graphic Arts 'Youth and Printing'",
+      term: "November 2021, Kyiv city",
+      responsible: "Bokareva Yu.S.",
     },
     {
       number: "04",
-      measures: "Олімпіада з курсу «Інженерна графіка»",
-      term: "Грудень 2021, м. Харків, ХНУРЕ",
-      responsible: "Челомбітько В.Ф.",
+      measures: "Olympiad on the course 'Engineering Graphics'",
+      term: "December 2021, Kharkiv city, NURE",
+      responsible: "Chelombitko V.F.",
     },
     {
       number: "05",
-      measures: "Міжнародний конкурс упаковки «Упаковка майбутнього 2021»",
+      measures: "International Packaging Design Competition 'Packaging of the Future 2021'",
       term: "Грудень, 2021-Січень, 2022, м. Київ",
-      responsible: "Бокарєва Ю.С.",
+      responsible: "Bokareva Yu.S.",
     },
     {
       number: "06",
       measures:
-        "Всеукраїнський конкурс студентських наукових робіт з галузі науки «Прикладна геометрія, інженерна графіка та ергономіка»",
-      term: "Січень, 2022, м. Харків, ХПІ",
-      responsible: "Челомбітько В.Ф.",
+        "All-Ukrainian Competition of Student Scientific Works in the Field of Applied Geometry, Engineering Graphics, and Ergonomics",
+      term: "January 2022, Kharkiv city, Kharkiv Polytechnic Institute",
+      responsible: "Chelombitko V.F.",
     },
     {
       number: "07",
       measures:
-        "Міжнародний молодіжний форум «Радіоелектроніка і молодь в ХХІ ст.»»",
-      term: "Квітень, 2022, м. Харків, ХНУРЕ",
-      responsible: "Вовк О.В.",
+        "International Youth Forum 'Radio Electronics and Youth in the 21st Century'",
+      term: "April 2022, Kharkiv city, NURE",
+      responsible: "Vovk O.V.",
     },
     {
       number: "08",
       measures:
-        "Виставка технічної творчості молоді на Міжнародного молодіжного форуму «Радіоелектроніка і молодь в ХХІ ст.»",
-      term: "Квітень, 2022, м. Харків, ХНУРЕ",
-      responsible: "Вовк О.В.",
+        "Exhibition of Technical Creativity of Youth at the International Youth Forum 'Radio Electronics and Youth in the 21st Century'",
+      term: "April 2022, Kharkiv city, NURE",
+      responsible: "Vovk O.V.",
     },
     {
       number: "09",
       measures:
-        "Міжнародна студентська наукова конференція «Друкарство молоде»",
-      term: "Квітень, 2022, м. Київ, ВПІ НТУУ «КПІ»",
-      responsible: "Вовк О.В.",
+        "International Student Scientific Conference 'Printing is Young'",
+      term: "April 2022, Kyiv city, Faculty of Printing and Publishing, KPI",
+      responsible: "Vovk O.V.",
     },
     {
       number: "10",
       measures:
-        "Всеукраїнський конкурс студентських наукових робіт з природничих, технічних і гуманітарних наук 2021-2022 н.р.",
-      term: "Квітень, 2022, м. Київ, ВПІ НТУУ «КПІ»",
-      responsible: "Вовк О.В.",
+        "All-Ukrainian Competition of Student Scientific Works in Natural, Technical, and Humanities Sciences for the 2021-2022 academic year",
+      term: "April 2022, Kyiv city, Faculty of Printing and Publishing, KPI",
+      responsible: "Vovk O.V.",
     },
     {
       number: "11",
       measures:
-        "Всеукраїнський конкурс студентських наукових робіт по спеціальності 186 «Видавництво та поліграфія»",
-      term: "Квітень, 2022, м. Київ, ВПІ НТУУ «КПІ»",
-      responsible: "Вовк О.В.",
+        "All-Ukrainian Competition of Student Scientific Works in the field of specialty 186 'Publishing and Printing'",
+      term: "April 2022, Kyiv city, Faculty of Printing and Publishing, KPI",
+      responsible: "Vovk O.V.",
     },
     {
       number: "12",
       measures:
-        "VII Міжнародна науково-технічна конференція «Поліграфічні, мультимедійні та web-технології».Молодіжна школа-семінар",
-      term: "Травень, 2022, м. Харків, ХНУРЕ",
-      responsible: "Вовк О.В.",
+        "VII International Scientific and Technical Conference 'Printing, Multimedia, and Web Technologies' with Youth School-Seminar",
+      term: "May 2022, Kharkiv, Ukraine, NURE",
+      responsible: "Vovk O.V.",
     },
   ]
   return (
     <div>
       <Header />
-      <Title> Науково - дослідницька робота </Title>
+      <Title>
+        {" "}
+        <Trans>Scientific - research work</Trans>{" "}
+      </Title>
       <div className="science-work">
         <div className="container">
           <div className="science-work__title">
-            План кафедри медіасистем та технології з науково - дослідної роботи
-            студентів на 2021 / 2022 Навчальний рік
+            <Trans>
+              Plan of the Department of Media Systems and Technologies for
+              Student Research Work for the 2021/2022 Academic Year
+            </Trans>
           </div>
           <div className="science-work__inner">
             <table className="science-work__table">
               <tr className="science-work__item">
                 <th className="science-work__cell"> № </th>
-                <th className="science-work__cell"> Заходи </th>
-                <th className="science-work__cell"> Термін виконання </th>
-                <th className="science-work__cell"> Відповідальний </th>
+                <th className="science-work__cell">
+                  {" "}
+                  <Trans>Activities</Trans>{" "}
+                </th>
+                <th className="science-work__cell">
+                  {" "}
+                  <Trans>Execution period or timeframe</Trans>{" "}
+                </th>
+                <th className="science-work__cell">
+                  {" "}
+                  <Trans>Responsible</Trans>{" "}
+                </th>
               </tr>
               {tables.map((table, index) => (
                 <tr className="science-work__item" key={index.toString()}>
-                  <th className="science-work__column"> {table.number} </th>
-                  <th className="science-work__column"> {table.measures} </th>
-                  <th className="science-work__column"> {table.term} </th>
-                  <th className="science-work__column">{table.responsible}</th>
+                  <th className="science-work__column"> <Trans>{table.number}</Trans>  </th>
+                  <th className="science-work__column"> <Trans>{table.measures}</Trans> </th>
+                  <th className="science-work__column"> <Trans>{table.term}</Trans> </th>
+                  <th className="science-work__column"><Trans>{table.responsible}</Trans></th>
                 </tr>
               ))}
             </table>

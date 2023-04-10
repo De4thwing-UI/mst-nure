@@ -5,116 +5,135 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
 
 const StudentchoisePage = () => {
   return (
     <div>
       <Header />
-      <Title> Вибір студента </Title>
+      <Title>
+        {" "}
+        <Trans>Student's choice</Trans>{" "}
+      </Title>
       <div className="student-choise">
         <div className="container">
           <div className="student-choise__inner">
             <div className="student-choise__item">
               <h1 className="student-choise__item__title">
-                Вступ до спеціальності
+                <Trans>Admission to a specialty</Trans>
               </h1>
-              <p className="student-choise__item__text"> теми рефератів </p>
+              <p className="student-choise__item__text">
+                {" "}
+                <Trans>topics for term papers</Trans>{" "}
+              </p>
             </div>
             <div className="student-choise__item">
               <h1 className="student-choise__item__title">
-                Вступ до спеціальності
+                <Trans>Admission to a specialty</Trans>
               </h1>
               <p className="student-choise__item__text">
                 <a
                   href="https://drive.google.com/file/d/1DwZHlyR2IflsjCRXEyqzCYws4B0J2nKc/view"
                   target="_blank"
                 >
-                  питання до Тесту1
+                  <Trans>questions for Test 1.</Trans>
                 </a>
               </p>
             </div>
           </div>
-          <div className="student-choise__title"> Курсове проєктування </div>
-          <div className="student-choise__course"> 2 курс </div>
+          <div className="student-choise__title">
+            {" "}
+            <Trans>Сourse project</Trans>{" "}
+          </div>
+          <div className="student-choise__course">
+            {" "}
+            <Trans>2 course</Trans>{" "}
+          </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Художні основи проєктування видань
+              <Trans>Artistic principles of publication design.</Trans>
             </h1>
             <p className="student-choise__course__tems">
-              Вибір теми:
+              <Trans>Choosing a topic:</Trans>
               <a
                 href="https://catalogue.nure.ua/login"
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально - методичне забезпечення
+                <Trans>Educational and methodological support.</Trans>
               </a>
             </p>
             <h1 className="student-choise__course__title">Технічна механіка</h1>
             <p className="student-choise__course__tems">
-              Вибір теми:
+              <Trans>Choosing a topic:</Trans>
               <a
                 href="https://catalogue.nure.ua/login"
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально - методичне забезпечення
+                <Trans>Educational and methodological support.</Trans>
               </a>
             </p>
           </div>
           <div className="student-choise__course"> 3 курс </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проєктів
+              <Trans>
+                Printing and post-printing project technology and equipment
+              </Trans>
             </h1>
             <p className="student-choise__course__tems">
-              Вибір теми:
+              <Trans>Choosing a topic:</Trans>
               <a
                 href="https://catalogue.nure.ua/login"
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально - методичне забезпечення
-              </a>
-            </p>
-            <h1 className="student-choise__course__title">Web - технології</h1>
-            <p className="student-choise__course__tems">
-              Вибір теми:
-              <a
-                href="https://catalogue.nure.ua/login"
-                target="_blank"
-                className="student-choise__link"
-              >
-                Навчально - методичне забезпечення
+                <Trans>Educational and methodological support.</Trans>
               </a>
             </p>
             <h1 className="student-choise__course__title">
-              Технологія підготовки електронних видань
+              <Trans>Web technologies</Trans>
             </h1>
             <p className="student-choise__course__tems">
-              Вибір теми:
+              <Trans>Choosing a topic:</Trans>
               <a
                 href="https://catalogue.nure.ua/login"
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально - методичне забезпечення
+                <Trans>Educational and methodological support.</Trans>
+              </a>
+            </p>
+            <h1 className="student-choise__course__title">
+              <Trans>Technology of Electronic Publishing Preparation.</Trans>{" "}
+            </h1>
+            <p className="student-choise__course__tems">
+              <Trans>Choosing a topic:</Trans>
+              <a
+                href="https://catalogue.nure.ua/login"
+                target="_blank"
+                className="student-choise__link"
+              >
+                <Trans>Educational and methodological support.</Trans>
               </a>
             </p>
           </div>
           <div className="student-choise__course"> 4 курс </div>
           <div className="student-choise__course__inner">
             <h1 className="student-choise__course__title">
-              Технологія та обладнання друкарських та післядрукарських проєктів
+              <Trans>
+                Printing and post-printing project technology and equipment
+              </Trans>
             </h1>
             <p className="student-choise__course__tems">
-              Вибір теми:
+              <Trans>Choosing a topic:</Trans>
               <a
                 href="https://catalogue.nure.ua/login"
                 target="_blank"
                 className="student-choise__link"
               >
-                Навчально - методичне забезпечення
+                <Trans>Educational and methodological support.</Trans>
               </a>
             </p>
           </div>
