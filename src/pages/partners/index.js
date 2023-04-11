@@ -5,14 +5,20 @@ import Header from "src/components/header"
 import Footer from "src/components/footer"
 import News from "src/components/lastnews"
 import Title from "src/components/title"
+import { Trans } from "react-i18next"
+
 const PartnersPage = () => {
   return (
     <div>
       <Header />
-      <Title>Партнери</Title>
+      <Title>
+        <Trans>Partners</Trans>
+      </Title>
       <div className="partners">
         <div className="container">
-          <div className="partners__title">Середні спеціальні заклади</div>
+          <div className="partners__title">
+            <Trans>Vocational schools</Trans>
+          </div>
           <ul className="partners__inner">
             <li className="partners__item">
               <a
@@ -20,7 +26,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Запорізька державна інженерна академія
+                <Trans>Zaporizhzhia State Engineering Academy</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -29,7 +35,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Черкаський художньо-технічний коледж
+                <Trans>Cherkasy Art and Technical College</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -38,7 +44,10 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Харківський поліграфічний центр професійно-технічної освіти
+                <Trans>
+                  Kharkiv Polygraphic Center for Vocational and Technical
+                  Education
+                </Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -47,7 +56,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Київське вище професійне поліграфічне училище
+                <Trans>Kyiv Higher Vocational Polygraphic School</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -56,8 +65,10 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Дніпропетровський центр професійно-технічної освіти з поліграфії
-                та інформаційних технологій
+                <Trans>
+                  Dnipro Center for Vocational and Technical Education in
+                  Printing and Information Technologies
+                </Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -66,7 +77,9 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Запорізький центр професійно-технічної освіти
+                <Trans>
+                  Zaporizhia Center for Vocational and Technical Education
+                </Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -75,16 +88,18 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Хмельницьке вище професійне училище №25
+                <Trans>Khmelnytskyi Higher Vocational School No. 25</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="" className="partners__link" target="_blank">
-                Донецький поліграфічний ліцей
+                <Trans>Donetsk Polygraphic Lyceum</Trans>
               </a>
             </li>
           </ul>
-          <div className="partners__title">Вищі навчальні заклади</div>
+          <div className="partners__title">
+            <Trans>Higher education institutions</Trans>
+          </div>
           <ul className="partners__inner">
             <li className="partners__item">
               <a
@@ -92,7 +107,10 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                НТУУ "КПІ" Видавничо-поліграфічний інститут
+                <Trans>
+                  National Technical University of Ukraine 'Kyiv Polytechnic
+                  Institute' Publishing and Printing Institute
+                </Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -101,7 +119,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Українська академія друкарства
+                <Trans>Ukrainian Academy of Printing</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -110,7 +128,7 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Національний університет "Львівська політехніка"
+                <Trans>Lviv Polytechnic National University</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -119,36 +137,45 @@ const PartnersPage = () => {
                 className="partners__link"
                 target="_blank"
               >
-                Харківський національний економічний університет ім. С. Кузнеця
+                <Trans>
+                  Kharkiv National University of Economics named after S.
+                  Kuznets
+                </Trans>
               </a>
             </li>
           </ul>
-          <div className="partners__title">Підприємства</div>
+          <div className="partners__title">
+            <Trans>Enterprises</Trans>
+          </div>
           <div className="partners__text">
             <p className="partners__text__item">
-              Початок взаємовідношень студентів з підприємствами починається з 1
-              курсу. Студенти 1 курсу за планом дисципліни «Вступ до
-              спеціальності» ходять на ознайомчі екскурсії на поліграфічні
-              підприємства Харкова.
+              <Trans>
+                The beginning of student relations with enterprises starts from
+                the 1st year. According to the curriculum of the course
+                'Introduction to the Specialty,' 1st-year students go on
+                informative excursions to printing enterprises in Kharkiv.
+              </Trans>
             </p>
             <p className="partners__text__item">
-              З 2 по 5 курси на підприємствах проводяться лабораторні роботи та
-              практичні заняття зі спеціальних дисциплін: «Основи технології
-              поліграфічного виробництва», «Технологія і устаткування
-              поліграфічних процесів» - Книжкова фабрика «Торнадо» (ПП
-              «Юнісофт»), «Технологія оперативних і спеціальних видів друку», «
-              Фотореєстраційні та формні процеси», «Вузли і механізми
-              поліграфічного устаткування» - НДІ «Лазерних технологій»,
-              Харківський поліграфічний центр професійно-технічної освіти,
-              «Фотореєстраційні та формні процеси», «Системи управління
-              кольором» - ТОВ «Бурунін і Ко», «Обробка відеоінформації» -
-              Телевізійний центр ХНУРЕ та ін.
+              <Trans>
+                From the 2nd to the 5th year, laboratory work and practical
+                classes on specialized subjects such as 'Fundamentals of
+                Printing Technology,' 'Technology and Equipment of Printing
+                Processes' are conducted at the Printing Factory 'Tornado' (PP
+                'Unisoft'), 'Technology of Operational and Special Printing,'
+                'Photographic and Forming Processes,' 'Nodes and Mechanisms of
+                Printing Equipment' at the Institute of Laser Technologies,
+                Kharkiv Printing Center of Vocational and Technical Education,
+                'Photographic and Forming Processes,' 'Color Management Systems'
+                at LLC 'Burunin & Co,' 'Video Information Processing' at the
+                Television Center of KhNURE, and others.
+              </Trans>
             </p>
           </div>
           <ul className="partners__inner">
             <li className="partners__item">
               <a href="http://www.factor.ua/" className="partners__link">
-                ТОВ «Фактор–друк»
+                <Trans> «Factor - Print» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -156,12 +183,12 @@ const PartnersPage = () => {
                 href="http://www.format-kharkov.com.ua/"
                 className="partners__link"
               >
-                РА «Формат-Харків»
+                <Trans>«Factor - Print» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://www.goldenpages.ua/" className="partners__link">
-                ТОВ «Золоті сторінки»
+                <Trans>«Golden Pages» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -169,7 +196,7 @@ const PartnersPage = () => {
                 href="http://mst.nure.ua/reproline.org"
                 className="partners__link"
               >
-                ТОВ «Репролайн»
+                <Trans>«Reproline» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -177,32 +204,35 @@ const PartnersPage = () => {
                 href="http://www.niilt.kharkov.com/"
                 className="partners__link"
               >
-                АТ «НДІ Лазерних технологій»
+                <Trans>
+                  «Research and Development Institute of Laser Technologies»
+                  Joint Stock Company
+                </Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://burunin.com.ua/" className="partners__link">
-                ТОВ «Бурунін і Ко»
+                <Trans>«Burunin and Co» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://www.ranok.com.ua/" className="partners__link">
-                ТОВ «Видавництво «Ранок»
+                <Trans>LLC Publishing House 'Ranok'</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="#" className="partners__link">
-                ТОВ «Астрон+»
+                <Trans>«Astron Plus» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://madrid.in.ua/" className="partners__link">
-                ТОВ «Типографія «Мадрід»
+                <Trans>«Madrid Printing» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://tube-plant.com/" className="partners__link">
-                ТОВ «Тубний завод»
+                <Trans>«Tubnyi Zavod» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -210,7 +240,7 @@ const PartnersPage = () => {
                 href="http://www.qualium-systems.com/"
                 className="partners__link"
               >
-                ТОВ «Кволіум-системз»
+                <Trans>«Kvolium-Systems» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
@@ -218,113 +248,154 @@ const PartnersPage = () => {
                 href="http://www.qualium-systems.com/"
                 className="partners__link"
               >
-                ПП «Юнісофт»
+                <Trans>«Unisoft» PP</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://aladdin-print.ua/" className="partners__link">
-                ПП «Aladdin-print»
+                <Trans>«Aladdin-print» PP</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://wu.ua/" className="partners__link">
-                ТОВ «Web Ukraine»
+                <Trans>«Web Ukraine» LLC</Trans>
               </a>
             </li>
             <li className="partners__item">
               <a href="http://dnzpoligraf.com.ua/" className="partners__link">
-                Харківський поліграфічний центр професійно-технічної освіти
+                <Trans>
+                  Kharkiv Polygraphic Center for Vocational and Technical
+                  Education
+                </Trans>
               </a>
             </li>
           </ul>
-          <div className="partners__title">Міжнародне співробітництво</div>
+          <div className="partners__title">
+            <Trans>International cooperation</Trans>
+          </div>
           <div className="partners__text">
             <p className="partners__text__item">
-              Одним з основних напрямків роботи кафедри МСТ є міжнародне
-              співробітництво з університетами Європи, а також Північної
-              Америки. Цей напрямок роботи дозволяє контролювати та підвищувати
-              якість освіти.
+              <Trans>
+                One of the main directions of work of the MST Department is
+                international cooperation with universities in Europe and North
+                America. This direction of work allows for monitoring and
+                improving the quality of education.
+              </Trans>
             </p>
             <p className="partners__text__item">
-              Обмін навчальними планами і програмами, спільні наукові
-              дослідження і розробки, підготовка спільних публікацій і
-              доповідей, стажування викладачів, співробітників і аспірантів
-              кафедри, обмін студентами є основними формами роботи в даному
-              напрямку.
+              <Trans>
+                The main forms of work in this direction include exchange of
+                educational plans and programs, joint scientific research and
+                development, preparation of joint publications and
+                presentations, internships for faculty, staff, and graduate
+                students of the department, as well as student exchange
+                programs.
+              </Trans>
             </p>
             <p className="partners__text__item">
-              В даний час діє програма «Подвійного диплому» з Вищою школою
-              економіки м. Бидгощ (Польща). Ця програма дозволяє нашим студентам
-              отримати диплом магістра нашого університету і диплом магістра
-              європейського зразка.
+              <Trans>
+                Currently, there is a Double Degree program in place with the
+                Higher School of Economics in Bydgoszcz, Poland. This program
+                allows our students to obtain a master's degree from our
+                university and a master's degree of European standard.
+              </Trans>
             </p>
             <p className="partners__text__item">
-              На кафедрі МСТ діють договори про науково-технічне співробітництво
-              з наступними зарубіжними навчальними закладами:
+              <Trans>
+                The Department of International Cooperation at the MST
+                department has signed scientific and technical cooperation
+                agreements with the following international educational
+                institutions:
+              </Trans>
             </p>
 
             <ul className="partners__inner__text    ">
               <li className="partners__item">
                 <span className="partners__item__text">
-                  Угода про співробітництво між ХНУРЕ та Штутгартським
-                  медіа-університетом. Студенти мають можливість пройти навчання
-                  за програмою мобільності за наступними курсами: «Технологія
-                  друкованих видань», «Створення аудіо- та відеоконтенту»,
-                  «Міжнародний менеджмент в медіаіндустрії».
+                  <Trans>
+                    Угода про співробітництво між ХНУРЕ та Штутгартським медіа -
+                    університетом.Студенти мають можливість пройти навчання за
+                    програмою мобільності за наступними курсами: «Технологія
+                    друкованих видань», «Створення аудіо - та відеоконтенту»,
+                    «Міжнародний менеджмент в медіаіндустрії».
+                  </Trans>
                 </span>
               </li>
               <li className="partners__item">
                 <span className="partners__item__text">
-                  Договір про наукове і навчальне співробітництво між
-                  Санкт-Петербурзьким університетом технології та дизайну і
-                  ХНУРЕ. Проводяться спільні науково-практичні конференції.
+                  <Trans>
+                    The agreement on scientific and educational cooperation
+                    between St. Petersburg State University of Technology and
+                    Design and Kharkiv National University of Radio Electronics
+                    (NURE) includes joint scientific and practical conferences
+                    being held.
+                  </Trans>
                 </span>
               </li>
               <li className="partners__item">
                 <span className="partners__item__text">
-                  Угода про зміцнення зв'язків, розширення обміну досвідом
-                  підготовки фахівців в галузі видавничої справи та поліграфії і
-                  впровадження в навчальний процес інноваційних форм і методів
-                  навчання між вузами: НТУУ «КПІ», ХНУРЕ, Білоруським державним
-                  технологічним університетом, Ташкентським інститутом
-                  текстильної та легкої промисловості, Казахським національним
-                  технічним університетом, Киргизьким технічним університетом,
-                  Таджицьким технічним університетом, Московським державним
-                  університетом друку.
+                  <Trans>
+                    Agreement on strengthening ties, expanding exchange of
+                    experience in the field of publishing and printing, and
+                    implementing innovative forms and methods of education
+                    between universities: National Technical University of
+                    Ukraine 'Kyiv Polytechnic Institute' (NTUU 'KPI'), Kharkiv
+                    National University of Radio Electronics (NURE), Belarusian
+                    State Technological University, Tashkent Institute of
+                    Textile and Light Industry, Kazakh National Technical
+                    University, Kyrgyz Technical University, Tajik Technical
+                    University, Moscow State University of Printing.
+                  </Trans>
                 </span>
               </li>
             </ul>
             <p className="partner__text__item">
-              - Угода про співробітництво між ХНУРЕ та Вищою школою економіки м.
-              Бидгощ (Польща). В рамках даної угоди в 2017-2018 році
-              здійснюється спільна робота над проектом «Сколівщина туристична»,
-              мета якого створити мультимедійний додаток (з елементами
-              геоінформатики) для десктопних і мобільних пристроїв.
+              <Trans>
+                Agreement on cooperation between Kharkiv National University of
+                Radio Electronics (NURE) and Higher School of Economics in
+                Bydgoszcz (Poland). Within the framework of this agreement,
+                joint work on the project 'Tourism in Skole' is carried out in
+                2017-2018, with the aim of creating a multimedia application
+                (with elements of geoinformatics) for desktop and mobile
+                devices.
+              </Trans>
             </p>
             <p className="partner__text__item">
-              З 16.05 по 22.05 2017 року делегація у складі: Світлани Кашуби
-              (професора WSG, директора Європейського інституту, м. Бидгощ,
-              Польща), Марека Шамота (професора, директора кафедри креативної
-              промисловості «Поліграфічні, мультимедійні та Web-технології» в
-              WSG), Оксани Бєлякової (заступника директора представництва
-              Польської академії наук в м. Києві) брала участь у ІІ Міжнародній
-              науково-технічній конференції «Поліграфічні, мультимедійні та
-              web-технології».
+              <Trans>
+                From May 16 to May 22, 2017, a delegation consisting of Svitlana
+                Kashuba (Professor at WSG, Director of the European Institute,
+                Bydgoszcz, Poland), Marek Shamota (Professor, Director of the
+                Department of Creative Industries 'Printing, Multimedia and Web
+                Technologies' at WSG), and Oksana Bieliakova (Deputy Director of
+                the Representative Office of the Polish Academy of Sciences in
+                Kyiv) participated in the 2nd International Scientific and
+                Technical Conference 'Printing, Multimedia and Web
+                Technologies'.
+              </Trans>
             </p>
             <p className="partner__text__item">
-              В рамках цієї конференції на пленарному засіданні професором М.
-              Шамотом було зроблено доповідь на тему «Сучасна аудіовізуальна
-              культура в розрізі партнерських відносин між Україною та Польщею».
+              <Trans>
+                During this conference, Professor M. Shamota delivered a report
+                entitled 'Contemporary Audiovisual Culture in the Context of
+                Partnership Relations between Ukraine and Poland' during a
+                plenary session.
+              </Trans>
             </p>
             <p className="partner__text__item">
-              Також в рамках цієї конференції було проведено відеоконференцію з
-              університетом м. Гуанахуато (Мексика). З обох сторін були зроблені
-              цікаві доклади.
+              <Trans>
+                As part of this conference, a video conference was conducted
+                with the University of Guanajuato (Mexico). Interesting
+                presentations were made from both sides.
+              </Trans>
             </p>
             <p className="partner__text__item">
-              Студенти кафедри МСТ взяли активну участь у III Міжнародній
-              виставці «Світ очима молодих», що проходила в галереї під Брдо, м.
-              Бидгощ, Польща (18 експонатів).
+              <Trans>
+                Students from the Department of Media and Screen Technologies
+                actively participated in the III International Exhibition 'The
+                World through the Eyes of the Youth' held at the gallery under
+                Brdo, in Bydgoszcz, Poland. They exhibited 18 works at the
+                exhibition.
+              </Trans>
             </p>
           </div>
         </div>
