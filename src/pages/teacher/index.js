@@ -200,7 +200,7 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                1 <p className="features__text"> <Trans>Doctor of Science</Trans> </p>{" "}
+                 <p className="features__text"> <Trans>Doctor of Science</Trans> </p>{" "}
               </div>{" "}
             </div>{" "}
             <div className="features__item">
@@ -230,7 +230,7 @@ const TeachersPage = () => {
                 <a href={teacher.link} target="_blank">
                   <h1 className="teachers__item__title"> <Trans>{teacher.name}</Trans> </h1>{" "}
                 </a>{" "}
-                <p className="teachers__item__text"> <Trans> {teacher.position} </Trans> </p>{" "}
+                <p className="teachers__item__text"> <Trans>{teacher.position}</Trans> </p>{" "}
               </div>
             ))}{" "}
           </div>{" "}
