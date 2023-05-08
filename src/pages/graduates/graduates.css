@@ -24,6 +24,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
 }
 
 .graduates__item__image {
@@ -49,4 +50,5 @@ a {
     line-height: 24px;
     color: #7676A7;
     margin-top: 8px;
+    margin-bottom: 8px;
 }

@@ -21,15 +21,21 @@ const News = () => {
         <div className="news__inner">
           <div className="news__item">
             <StaticImage
-              src="../../images/news/news_image1.png"
+              src="../../images/news/news_image11.png"
               alt="News"
               className="news__image"
             />
             <h1 className="news__item__title">
-              <Trans>On March 1, an open day was held</Trans>
+              <Trans>
+                <Trans>Meeting with the PC of NURE</Trans>
+              </Trans>
             </h1>
             <div className="news__item__text">
-              <Trans>March 1, the first day of spring!</Trans>
+              <Trans>
+                Are you already in the process of writing your bachelor's
+                thesis? Do you want to continue your education in the top-ranked
+                university?
+              </Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">
@@ -40,15 +46,20 @@ const News = () => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../../images/news/news_image2.png"
+              src="../../images/news/news_image12.png"
               alt="News"
               className="news__image"
             />
             <h1 className="news__item__title">
-              <Trans>On March 1, an open day was held</Trans>
+              <Trans>Meeting with the PC of NURE Bachelor's Program</Trans>
             </h1>
             <div className="news__item__text">
-              <Trans>March 1, the first day of spring!</Trans>
+              <Trans>
+                This is such an important stage in your life - applying to your
+                dream university - and there is so little time left. We
+                understand how difficult and challenging it can be, so we are
+                here to help you.
+              </Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">
@@ -59,15 +70,19 @@ const News = () => {
           </div>
           <div className="news__item">
             <StaticImage
-              src="../../images/news/news_image3.png"
+              src="../../images/news/news_image13.png"
               alt="News"
               className="news__image"
             />
             <h1 className="news__item__title">
-              <Trans>On March 1, an open day was held</Trans>
+              <Trans>Hotline of NURE</Trans>
             </h1>
             <div className="news__item__text">
-              <Trans>March 1, the first day of spring!</Trans>
+              <Trans>
+                Every year, the admission campaign raises numerous questions
+                among our applicants. We understand you perfectly well, so we
+                strive to provide comprehensive assistance.
+              </Trans>
             </div>
             <div className="news__border"> &emsp; </div>
             <div className="news__item__link">

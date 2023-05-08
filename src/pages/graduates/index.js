@@ -31,41 +31,61 @@ const GraduatePage = () => {
       name: "Gapich Anton",
       photo: GapichImg,
       position: "VPVPS-18-2",
+      link: "https://www.linkedin.com/in/anton-gapich-511455180/",
+      social: "Linkedin",
+      employee: "UI/UX designer - TheRoom design boutique",
     },
     {
-      name: "Levi Ackerman",
+      name: "Natalia S. Gurieva",
       photo: LeviImg,
-      position: "VPVPS-16-1",
+      link: "https://www.facebook.com/natalia.gurieva.7",
+      social: "Facebook",
+      employee:
+        "Professor, PhD in Information Technology, Department of Art and Management, Division of Engineering, University of Guanajuato,",
     },
     {
-      name: "Andriy Yarmolenko",
+      name: "Kateryna Kobylnyk",
       photo: YarmolaImg,
-      position: "VPVPS-18-2",
+      position:
+        "She is engaged in scientific research in the field of information technology. She is the author of over 50 scientific publications, including those abroad.",
     },
     {
-      name: "Roman Yaremchuk",
+      name: "Ivan Dmytrovych Golyakov",
       photo: YaremchukImg,
-      position: "VPVPS-17-3",
+      position:
+        "I graduated from Kharkiv National University of Radio Electronics in 2014. Before finishing my studies, I founded a startup and a design studio. I worked as a Digital Designer at the creative agency Arriba! and as an Interaction Designer at Global Logic. I have won numerous awards for design and advertising both in Ukraine and abroad. I taught graphic design at the advertising and design school 'Bagazh'. I studied Digital Experience Design at Hyper Island in Manchester and received a Master of Arts degree in the UK. I have conducted many workshops and lectures on design, teamwork, and facilitation. In 2018, I completed a Growth Marketing course in Amsterdam and became a co-founder of the worldwide online school for Motion Design, motiondesign.school",
+      link: "https://www.facebook.com/holiakov",
+      social: "Facebook",
     },
     {
-      name: "Zlatan Ibrahimovich",
+      name: "Oksana Fedorenko",
       photo: IbraImg,
-      position: "VPVPS-16-4",
+      position:
+        "I graduated from Kharkiv National University of Radio Electronics in 2014. My career history includes the following: October 2013 to April 2014 - Astron+ LLC, position: prepress engineer. Since May 2014 - Walstead Starachowice (formerly RR Donnelley Starachowice), Poland, position: Colour Specialist.",
+      social: "Facebook",
+      link: "https://www.linkedin.com/in/oksana-fedorenko-a9434176/",
     },
     {
-      name: "Taras Romanyuk",
+      name: "Kateryna Gorokhova",
       photo: RomanukImg,
-      position: "VPVPS-18-1",
+      position:
+        "1-й Associate Manager at Netlight Consulting AB Hamburg Germany",
+      social: "Facebook",
+      link: "https://www.facebook.com/katerina.gorokhova",
     },
     {
-      name: "Jotaro Kujo",
+      name: "Alina Dmytrenko",
       photo: KudzoImg,
-      position: "VPVPS-18-2",
+      position: "1st Designer – All Stars DC",
+      social: "Facebook",
+      link: "https://www.facebook.com/alina.dmitrenko.96",
     },
     {
-      name: "Oleksandr Zinchenko",
+      name: "Ganna Sereda",
       photo: ZinaImg,
-      position: "VPVPS-18-2",
+      position: "Vector Illustrator at Graphic Designer",
+      social: "Facebook",
+      link: "https://www.facebook.com/seredaganna",
     },
   ]
   const works = [
@@ -151,8 +171,24 @@ const GraduatePage = () => {
                   alt="1"
                   className="graduates__item__image"
                 />
-                <h1 className="graduates__item__title"> <Trans> {graduate.name}</Trans> </h1>{" "}
-                <p className="graduates__item__text"> <Trans>{graduate.position}</Trans></p>{" "}
+                <h1 className="graduates__item__title">
+                  {" "}
+                  <Trans>{graduate.name}</Trans>{" "}
+                </h1>{" "}
+                <p className="graduates__item__text">
+                  {" "}
+                  <Trans>{graduate.position}</Trans>
+                </p>{" "}
+                <p className="graduates__item__text">
+                  {" "}
+                  <Trans>{graduate.employee}</Trans>
+                </p>{" "}
+                <a href={graduate.link} target="_blank">
+                  <p className="graduates__item__text">
+                    {" "}
+                    <Trans>{graduate.social}</Trans>
+                  </p>{" "}
+                </a>
               </div>
             ))}{" "}
           </div>{" "}

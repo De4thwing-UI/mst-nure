@@ -94,12 +94,7 @@ const TeachersPage = () => {
       position: "Docent",
       link: "https://nure.ua/staff/mikola-dmitrovich-yevstratov",
     },
-    {
-      name: "Kolesnikova T.A.",
-      photo: KolesnikovaImg,
-      position: "Docent",
-      link: "https://nure.ua/staff/tetyana-anatoliyivna-kolesnikova",
-    },
+
     {
       name: "Chelombitko V.F.",
       photo: ChelombitkoImg,
@@ -112,12 +107,7 @@ const TeachersPage = () => {
       position: "Docent",
       link: "https://nure.ua/staff/ganna-volodimirivna-byelcheva",
     },
-    {
-      name: "Dorofeeva Yu.S.",
-      photo: DorofeevaImg,
-      position: "Docent",
-      link: "https://nure.ua/staff/yuliya-semenivna-gubnitska",
-    },
+
     {
       name: "Tabakova I.S.",
       photo: TabakovaImg,
@@ -142,24 +132,14 @@ const TeachersPage = () => {
       position: "Senior Lecturer ",
       link: "https://nure.ua/staff/yuliya-sergiyivna-bokaryeva",
     },
-    {
-      name: "Guba M.I.",
-      photo: GubaImg,
-      position: "Senior Lecturer ",
-      link: "https://nure.ua/staff/mikola-ivanovich-guba",
-    },
+
     {
       name: "Yatsenko L.O.",
       photo: YacenkoImg,
       position: "Senior Lecturer ",
       link: "https://nure.ua/staff/larisa-oleksandrivna-yatsenko",
     },
-    {
-      name: "Likhachev S.O.",
-      photo: LihachovImg,
-      position: "Assistant",
-      link: "https://nure.ua/staff/sergiy-oleksandrovich-lihachov",
-    },
+
     {
       name: "Парамонов А.К.",
       photo: ParamonovImg,
@@ -190,7 +170,11 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                24 <p className="features__text"> <Trans>Teachers</Trans> </p>{" "}
+                24{" "}
+                <p className="features__text">
+                  {" "}
+                  <Trans>Teachers</Trans>{" "}
+                </p>{" "}
               </div>{" "}
             </div>{" "}
             <div className="features__item">
@@ -200,7 +184,10 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                 <p className="features__text"> <Trans>Doctor of Science</Trans> </p>{" "}
+                <p className="features__text">
+                  {" "}
+                  <Trans>Doctor of Science</Trans>{" "}
+                </p>{" "}
               </div>{" "}
             </div>{" "}
             <div className="features__item">
@@ -210,7 +197,11 @@ const TeachersPage = () => {
                 alt="Teachers"
               />
               <div className="features__title">
-                16 <p className="features__text"> <Trans>Candidates of Sciences</Trans> </p>{" "}
+                16{" "}
+                <p className="features__text">
+                  {" "}
+                  <Trans>Candidates of Sciences</Trans>{" "}
+                </p>{" "}
               </div>{" "}
             </div>{" "}
           </div>{" "}
@@ -228,9 +219,15 @@ const TeachersPage = () => {
                   alt="teachers__photo"
                 />
                 <a href={teacher.link} target="_blank">
-                  <h1 className="teachers__item__title"> <Trans>{teacher.name}</Trans> </h1>{" "}
+                  <h1 className="teachers__item__title">
+                    {" "}
+                    <Trans>{teacher.name}</Trans>{" "}
+                  </h1>{" "}
                 </a>{" "}
-                <p className="teachers__item__text"> <Trans>{teacher.position}</Trans> </p>{" "}
+                <p className="teachers__item__text">
+                  {" "}
+                  <Trans>{teacher.position}</Trans>{" "}
+                </p>{" "}
               </div>
             ))}{" "}
           </div>{" "}
