@@ -50,17 +50,14 @@ export const HeaderSm = () => {
           link: "https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf",
         },
         {
-          displayName: "Силлабуси дисциплин",
-          link: "https://drive.google.com/drive/folders/1B91OGarzXYz8Inyn5AKPDTIa48Qs_duo",
+          displayName: "Силабуси дисциплин",
+          link: "https://nure.ua/branch/navchalniy-viddil/informacijni-povidomlennja-navchalnogo-viddilu/grafiki-navchalnogo-procesu-2022-2023-n-r",
         },
         {
           displayName: "Графіки учбового процесса",
           link: "https://cist.nure.ua/ias/app/tt/f?p=778:2:4427815546178203",
         },
-        {
-          displayName: "Вибір дисциплін студентом",
-          link: "https://nure.ua/department/kafedra-mediasistem-ta-tehnologiy-mst/vibirkovi-osvitni-komponenti-na-kafedri-mst",
-        },
+
       ],
     },
     {
@@ -68,7 +65,6 @@ export const HeaderSm = () => {
       open: false,
       hide: false,
       subItems: [
-        { displayName: "Лабараторія", link: "/teacher" },
         { displayName: "Наукові напрями", link: "/directions" },
         {
           displayName: "Студентська наука",

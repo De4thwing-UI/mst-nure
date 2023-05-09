@@ -17,6 +17,11 @@ const Conferences = () => {
         },
         {
           title:
+            "International scientific and technical conference «Printing, multimedia and web technologies»",
+          city: "C. Kharkiv",
+        },
+        {
+          title:
             "International scientific and technical conference of students and postgraduates «Young Printing»",
           city: "C. Kyiv",
         },
@@ -42,8 +47,8 @@ const Conferences = () => {
         },
         {
           title:
-          "International scientific and technical conference of students and postgraduates «Young Printing»",
-        city: "C. Kyiv",
+            "International scientific and technical conference of students and postgraduates «Young Printing»",
+          city: "C. Kyiv",
         },
       ],
     },
@@ -52,13 +57,13 @@ const Conferences = () => {
       children: [
         {
           title:
-          "International Youth Forum «Radio Electronics and Youth in the 21 st Century»",
-        city: "C. Kharkiv",
+            "International Youth Forum «Radio Electronics and Youth in the 21 st Century»",
+          city: "C. Kharkiv",
         },
         {
           title:
-          "International scientific and technical conference of students and postgraduates «Young Printing»",
-        city: "C. Kyiv",
+            "International scientific and technical conference of students and postgraduates «Young Printing»",
+          city: "C. Kyiv",
         },
       ],
     },
@@ -88,6 +93,7 @@ const Conferences = () => {
       <div className="container">
         <div className="conferences__menu">
           <div className="conferences__menu__inner">
+            {" "}
             {scienceTypes.map((item, index) => (
               <div key={index.toString()} className="conferences__menu__item">
                 <button
@@ -98,30 +104,31 @@ const Conferences = () => {
                   }
                   onClick={() => handleScienceTypeChange(item.name)}
                 >
-                  <Trans>{item.name}</Trans>
-                </button>
+                  <Trans>{item.name}</Trans>{" "}
+                </button>{" "}
               </div>
-            ))}
-          </div>
-        </div>
+            ))}{" "}
+          </div>{" "}
+        </div>{" "}
         <div className="conferences__inner">
+          {" "}
           {displayItems.map((conference, index) => (
             <div className="conferences__item" key={index.toString()}>
               <div className="conferences__item__title">
-                <Trans>{conference.title}</Trans>
-              </div>
+                <Trans>{conference.title}</Trans>{" "}
+              </div>{" "}
               <div className="conferences__item__city">
-                <Trans>{conference.city}</Trans>
-              </div>
+                <Trans>{conference.city}</Trans>{" "}
+              </div>{" "}
             </div>
-          ))}
-        </div>
+          ))}{" "}
+        </div>{" "}
         <Pagination
           items={scienceItems.length}
           limit={2}
           handlePageChange={handlePageChange}
-        />
-      </div>
+        />{" "}
+      </div>{" "}
     </div>
   )
 }

@@ -13,6 +13,10 @@ const Disertations = () => {
       title: "Kostarev D.B.",
       text: "«Models, methods and tools for building automated learning systems», scientific supervisor V.P. Tkachenko. - 2009.",
     },
+    {
+      title: "Levykin I.V.",
+      text: "METHODS, MODELS AND INFORMATION TECHNOLOGIES OF MANAGEMENT OF INTERSUBSTITUTE BUSINESS PROCESSES OF THE ENTERPRISE",
+    },
   ]
 
   const limit = 2
@@ -29,7 +33,7 @@ const Disertations = () => {
         <div className="disertation__title">
           <h1 className="disertation__title__text">
             <Trans>
-              Candidate theses have been prepared and defended in recent years{" "}
+              Candidate theses have been prepared and defended in recent years
             </Trans>
           </h1>
         </div>

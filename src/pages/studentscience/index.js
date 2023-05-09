@@ -15,7 +15,9 @@ const StudentsciencePage = () => {
   return (
     <div>
       <Header />
-      <Title><Trans>Student science</Trans></Title>
+      <Title>
+        <Trans>Student science</Trans>
+      </Title>
       <div className="sudentscience">
         <Studentscience />
         <Research />
@@ -29,7 +31,10 @@ const StudentsciencePage = () => {
               />
               <div className="measures__title">
                 <h1 className="measures__text">
-                 <Trans>Our students annually participate in such student scientific and practical events</Trans>
+                  <Trans>
+                    Our students annually participate in such student scientific
+                    and practical events
+                  </Trans>
                 </h1>
               </div>
             </div>

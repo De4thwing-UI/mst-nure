@@ -18,21 +18,29 @@ const Science = () => {
       text: "Leaders: Prof. V.P. Tkachenko, Prof. Levykin I.V.",
     },
     {
-      title:"Problems of digital image processing and color reproduction in polygraphy, computer graphics",
-      text: "Leaders: prof. Yehorova I.M.",
+      title:
+        "Problems of digital image processing and color reproduction in polygraphy, computer graphics",
+      text: "Teacher:prof. Kulishova N.E.",
     },
   ]
   return (
     <div className="directions">
       <div className="container">
         <div className="directions__title">
-          <h1 className="directions__title__text"> <Trans>Scientific directions of the department</Trans> </h1>
+          <h1 className="directions__title__text">
+            {" "}
+            <Trans>Scientific directions of the department</Trans>{" "}
+          </h1>
         </div>
         <div className="directions__inner">
           {directions.map((direction, index) => (
             <div className="directions__item" key={index.toString()}>
-              <div className="directions__item__title"><Trans>{direction.title}</Trans></div>
-              <div className="directions__item__text"><Trans>{direction.text}</Trans></div>
+              <div className="directions__item__title">
+                <Trans>{direction.title}</Trans>
+              </div>
+              <div className="directions__item__text">
+                <Trans>{direction.text}</Trans>
+              </div>
             </div>
           ))}
         </div>

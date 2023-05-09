@@ -43,7 +43,7 @@
     "Specialties": "Спеціальності",
     "Educational programs": "Освітні програми",
     "Forms of education": "Форми освіти",
-    "Syllabus of disciplines": "Силлабуси дисциплин",
+    "Sylabus of disciplines": "Силабуси дисциплин",
     "Training schedules": "Графіки навчального процесу",
     "Election of disciplines by students": " Обрання дисциплін студентом",
     "Science": "Наука",
@@ -73,7 +73,7 @@
     "Deineko Zh. V.": "Дейнеко Ж. В.",
     "Yehorova I.M.": "Єгорова І.М.",
     "Kulishova N.E.": "Кулішова Н.Є.",
-    "Levykin I.V.": "Levykin I.V.",
+    "Levykin I.V.": "Левикін І.В.",
     "Manakov V.P.": "Манаков В.П.",
     "Tkachenko V.P.": "Ткаченко В.П.",
     "Bizyuk A.V.": "Бізюк А.В.",
@@ -194,6 +194,7 @@
     "Teachers: Assoc. Chelombitko V.F., Assoc. Deineko Zh.V.": "Викладачі: доц. Челомбітько В.Ф, доц. Дейнеко Ж.В.",
     "Protection of information in electronic and printed publications": "Захист інформації в електронних і друкованих виданнях",
     "Teacher: prof. Bizyuk A.V.": "Викладач: проф. Бізюк А.В.",
+    "Teacher:prof. Kulishova N.E.": "Керівник: проф. Кулішова Н.Є.",
     "We hope for fruitful cooperation! We are waiting for your applications.": "Сподіваємося на плідну співпрацю! Чекаємо Ваших заявок.",
     "Dear managers of printing, publishing, advertising enterprises, firms, organizations! The department opens a page for forming applications with enterprises - customers of printing and publishing products.": "Шановні керівники поліграфічних, видавничих, рекламних підприємств, фірм, організацій!Кафедра відкриває сторінку формування заявок з підприємствами - замовниками поліграфічної та видавничої продукції.",
     "Project name": "Назва проекту",
@@ -565,5 +566,7 @@
     "Alina Dmytrenko": "Аліна Дмитренко",
     "1st Designer – All Stars DC": "1-й Дизайнер – All Stars DC",
     "Ganna Sereda": "Анна Середа",
-    "Vector Illustrator at Graphic Designer": "Векторний ілюстратор і графічний дизайнер"
+    "Vector Illustrator at Graphic Designer": "Векторний ілюстратор і графічний дизайнер",
+    "METHODS, MODELS AND INFORMATION TECHNOLOGIES OF MANAGEMENT OF INTERSUBSTITUTE BUSINESS PROCESSES OF THE ENTERPRISE": "МЕТОДИ, МОДЕЛІ ТА ІНФОРМАЦІЙНІ ТЕХНОЛОГІЇ УПРАВЛІННЯ НАСКРІЗНИМИ БІЗНЕС-ПРОЦЕСАМИ ПІДПРИЄМСТВА",
+    "International scientific and technical conference «Printing, multimedia and web technologies»": "Міжнародна науково-технічна конференція «Поліграфічні, мультимедійні та web-технології», м. Харків."
 }
