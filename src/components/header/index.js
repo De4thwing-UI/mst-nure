@@ -3,6 +3,8 @@ import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next"
 import { StaticImage } from "gatsby-plugin-image"
 import "./header.css"
 import HeaderSm from "src/components/header-sm"
+import BtnScrollUp from "src/components/BtnScrollUp"
+
 
 const Header = () => {
   const { languages, changeLanguage } = useI18next()
@@ -171,6 +173,7 @@ const Header = () => {
               ))}
             </ul>
           </div>
+          <BtnScrollUp />
         </div>
       </div>
     </header>

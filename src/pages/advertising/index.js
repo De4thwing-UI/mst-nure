@@ -21,13 +21,18 @@ const AdvertisingPage = () => {
   return (
     <div>
       <Header />
-      <Title><Trans>Our advertising</Trans></Title>
+      <Title>
+        <Trans>Our advertising</Trans>
+      </Title>
       <div className="advertising">
         <div className="container">
           <div className="advertising__inner">
             {advertisings.map((advertising, index) => (
               <div className="advertising__item" key={index.toString()}>
                 <iframe
+                  controls
+                  preload="none"
+                  poster="1.png"
                   width="630"
                   height="352"
                   src={advertising.link}
