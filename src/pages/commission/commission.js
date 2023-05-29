@@ -14,47 +14,72 @@ import VinichenkoImg from "src/images/commission/5.png"
 import GordeevImg from "src/images/commission/6.png"
 import BorysenkoImg from "src/images/commission/7.png"
 import BorysovImg from "src/images/commission/8.png"
+import OneImg from "src/images/commission/11.png"
+import TwoImg from "src/images/commission/12.png"
+import ThreeImg from "src/images/commission/13.png"
+import FourImg from "src/images/commission/14.png"
+
 
 const CommissionPage = () => {
   const commissions = [
     {
-      name: "Гордієнко І.Б.",
+      name: "Ігор Рубан",
       photo: GordyenkoImg,
-      role: "Голова комісії",
+      role: "Голова приймальної комісії,",
     },
     {
-      name: "Джонсонюк Д. С.",
+      name: "Андрій Єрохін",
       photo: GonsonykImg,
-      role: "Член комісії",
+      role: "Заступник голови комісії",
     },
     {
-      name: "Антонюк В.С.",
+      name: "Кирій Валентина",
       photo: AntonykImg,
       role: "Член комісії",
     },
     {
-      name: "Андреєв С.В.",
+      name: "Аркадій Снігуров",
       photo: AndreevImg,
       role: "Член комісії",
     },
     {
-      name: "Винниченко Р.Т.",
+      name: "Олексій Лановий",
       photo: VinichenkoImg,
       role: "Член комісії",
     },
     {
-      name: "Гордеєв Ж.Р.",
+      name: "Олег Золотухін",
       photo: GordeevImg,
       role: "Член комісії",
     },
     {
-      name: "Борисенко М.Р.",
+      name: "Олег Дацок",
       photo: BorysenkoImg,
       role: "Член комісії",
     },
     {
-      name: "Борисов. П.Д.",
+      name: "Євгенія Федоренко",
       photo: BorysovImg,
+      role: "Член комісії",
+    },
+    {
+      name: "Діана Руденко",
+      photo: OneImg,
+      role: "Член комісії",
+    },
+    {
+      name: "Сичова Оксана",
+      photo: TwoImg,
+      role: "Член комісії",
+    },
+    {
+      name: "Віталій Ткачов",
+      photo: ThreeImg,
+      role: "Член комісії",
+    },
+    {
+      name: "Сергій Китаєнко",
+      photo: FourImg,
       role: "Член комісії",
     },
   ]

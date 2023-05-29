@@ -5,7 +5,6 @@ import "./header.css"
 import HeaderSm from "src/components/header-sm"
 import BtnScrollUp from "src/components/BtnScrollUp"
 
-
 const Header = () => {
   const { languages, changeLanguage } = useI18next()
 
@@ -69,7 +68,7 @@ const Header = () => {
                   className="nav__dropdown__link"
                   target="_blank"
                 >
-                  <Trans>Syllabus of disciplines</Trans>{" "}
+                  <Trans>Sylabus of disciplines</Trans>{" "}
                 </a>
                 <a
                   href="https://nure.ua/branch/navchalniy-viddil/informacijni-povidomlennja-navchalnogo-viddilu/grafiki-navchalnogo-procesu-2022-2023-n-r"
@@ -77,8 +76,7 @@ const Header = () => {
                   target="_blank"
                 >
                   <Trans>Training schedules</Trans>{" "}
-                </a>
-                {" "}
+                </a>{" "}
               </div>
             </a>
             <a href="#" className="nav__link">

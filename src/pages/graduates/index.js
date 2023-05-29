@@ -28,7 +28,6 @@ import ThirthinImg from "src/images/works/13.jpg"
 import FourthinImg from "src/images/works/14.jpg"
 import FifteenImg from "src/images/works/15.jpg"
 
-
 const GraduatePage = () => {
   const graduates = [
     {
@@ -236,11 +235,11 @@ const GraduatePage = () => {
                   />
                   <h1 className="graduate__works__item__title">
                     {" "}
-                    {work.name}{" "}
+                    <Trans>{work.name}</Trans>{" "}
                   </h1>{" "}
                   <div className="graduate__works__item__text">
                     {" "}
-                    {work.position}{" "}
+                    <Trans>{work.position}</Trans>{" "}
                   </div>{" "}
                 </div>
               ))}{" "}

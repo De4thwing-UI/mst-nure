@@ -6,11 +6,23 @@ import News from "src/components/lastnews"
 import Pagination from "src/components/pagination"
 import Title from "src/components/title"
 import "./works.css"
-import { Trans } from "react-i18next"
+import { Trans, useTranslation } from "react-i18next"
 
 const WorksPage = ({ data }) => {
   debugger
   const works = [
+    {
+      name: "Maryna Kononenko",
+      position: "Business card",
+    },
+    {
+      name: "Andrii Gordienko",
+      position: "Poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
+    },
     {
       name: "Anton Gapich",
       position: "Illustration",
@@ -32,20 +44,64 @@ const WorksPage = ({ data }) => {
       position: "Website",
     },
     {
-      name: "Anton Gapich",
-      position: "Website",
+      name: "Maryna Kononenko",
+      position: "Брендінг",
     },
     {
-      name: "Anna Muzychuk",
-      position: "Website",
+      name: "Maryna Kononenko",
+      position: "Брендінг",
     },
     {
-      name: "Andriy Yarmolenko",
-      position: "Illustration",
+      name: "Maryna Kononenko",
+      position: "Брендінг",
     },
     {
-      name: "Dmytro Melnichenko",
-      position: "Website",
+      name: "Maryna Kononenko",
+      position: "Брендінг",
+    },
+    {
+      name: "Maryna Kononenko",
+      position: "Брендінг",
+    },
+    {
+      name: "Maryna Kononenko",
+      position: "Business card",
+    },
+    {
+      name: "Andrii Gordienko",
+      position: "Poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
+    },
+    {
+      name: "Maryna Kononenko",
+      position: "Брендінг",
+    },
+    {
+      name: "Ліценко Марія",
+      position: "Брендінг",
+    },
+    {
+      name: "Андрєєва Жанна",
+      position: "Брендінг",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      position: "Social poster",
     },
   ].map(({ name, position }, index) => ({
     name,
@@ -53,7 +109,7 @@ const WorksPage = ({ data }) => {
     photo: data.allFile.edges[index].node.publicURL,
   }))
 
-  const limit = 3
+  const limit = 9
   const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
 
   const handlePageChange = page => {
@@ -65,7 +121,7 @@ const WorksPage = ({ data }) => {
     <div>
       <Header />
       <Title>
-        <Trans>Student`s Works</Trans>
+        <Trans>Students' works</Trans>
       </Title>
       <div className="works">
         <div className="container">
