@@ -38,9 +38,11 @@ const AdvertisingPage = () => {
                   src={advertising.link}
                   title="YouTube video player"
                   frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                   className="advertising__video"
+                  data-layer="4"
+                  tabindex="-1"
                 ></iframe>
               </div>
             ))}

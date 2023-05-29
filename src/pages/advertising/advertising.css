@@ -10,6 +10,6 @@
 }
 
 .advertising__video {
-    background: url(src/images/advertising/1.png);
+    background-image: url(src/images/advertising/1.png);
     padding: 0;
 }

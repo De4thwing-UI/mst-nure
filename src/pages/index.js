@@ -94,7 +94,6 @@ const IndexPage = () => {
       {/* News */} <News /> {/* Specification */} <Specialities />
       {/* Magistracy */} <Magistracy /> {/* works */} <Works />
       {/* Employment */} <Employment />
-      
       <Footer />
     </div>
   )

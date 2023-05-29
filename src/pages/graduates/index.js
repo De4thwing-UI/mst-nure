@@ -24,6 +24,10 @@ import SixImg from "src/images/works/6.png"
 import SevenImg from "src/images/works/7.png"
 import EightImg from "src/images/works/8.png"
 import NineImg from "src/images/works/9.png"
+import ThirthinImg from "src/images/works/13.jpg"
+import FourthinImg from "src/images/works/14.jpg"
+import FifteenImg from "src/images/works/15.jpg"
+
 
 const GraduatePage = () => {
   const graduates = [
@@ -89,6 +93,21 @@ const GraduatePage = () => {
     },
   ]
   const works = [
+    {
+      name: "Maryna Kononenko",
+      photo: ThirthinImg,
+      position: "Business card",
+    },
+    {
+      name: "Andrii Gordienko",
+      photo: FourthinImg,
+      position: "Poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      photo: FifteenImg,
+      position: "Social poster",
+    },
     {
       name: "Gapich Anton",
       photo: FirstImg,

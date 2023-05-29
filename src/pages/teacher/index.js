@@ -115,7 +115,7 @@ const TeachersPage = () => {
       link: "https://nure.ua/staff/irina-stanislavivna-tabakova",
     },
     {
-      name: "Zeleny O.P",
+      name: "Zeleny O.P.",
       photo: ZelenyyImg,
       position: "Senior Lecturer ",
       link: "https://nure.ua/staff/oleksandr-pavlovich-zeleniy",
@@ -145,12 +145,6 @@ const TeachersPage = () => {
       photo: ParamonovImg,
       position: "Assistant",
       link: "https://nure.ua/staff/anton-kostyantinovich-paramonov",
-    },
-    {
-      name: "Краєвська Н.О.",
-      photo: KraevskaImg,
-      position: "Assistant",
-      link: "https://nure.ua/staff/natalija-oleksandrivna-kraievska",
     },
   ]
   return (

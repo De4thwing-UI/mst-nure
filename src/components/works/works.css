@@ -33,6 +33,7 @@
      box-shadow: 0px 4px 5px rgba(138, 138, 138, 0.14);
      border-radius: 2px;
      height: 358px;
+     max-height: 524px;
  }
  
  .works__link-sm {
@@ -50,6 +51,7 @@
  
  .works__image {
      margin: 0;
+     max-height: 246px;
  }
  
  .works__item__text {

@@ -14,11 +14,29 @@ import NineImg from "src/images/works/9.png"
 import TenImg from "src/images/works/10.png"
 import ElevenImg from "src/images/works/11.jpg"
 import TwelveImg from "src/images/works/12.jpg"
+import ThirthinImg from "src/images/works/13.jpg"
+import FourthinImg from "src/images/works/14.jpg"
+import FifteenImg from "src/images/works/15.jpg"
 
 import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next"
 
 const Works = () => {
   const works = [
+    {
+      name: "Maryna Kononenko",
+      photo: ThirthinImg,
+      position: "Business card",
+    },
+    {
+      name: "Andrii Gordienko",
+      photo: FourthinImg,
+      position: "Poster",
+    },
+    {
+      name: "Natalya Zmiivska",
+      photo: FifteenImg,
+      position: "Social poster",
+    },
     {
       name: "Tatyana Isayenko",
       photo: TenImg,
