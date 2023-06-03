@@ -13,7 +13,7 @@
 }
 
 .competition__suptitle {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -22,12 +22,12 @@
 }
 
 .competition__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #7676A7;
+    color: #7676a7;
 }
 
 
@@ -49,23 +49,22 @@
 /*rating*/
 
 .rating__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
     color: #393982;
     max-width: 521px;
-    padding-right: 120px;
 }
 
 .rating__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #7676A7;
+    color: #7676a7;
     width: 522px;
 }
 
@@ -78,7 +77,7 @@
 /*storage*/
 
 .storage__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -92,17 +91,17 @@
 }
 
 .storage__list__item {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #7676A7;
+    color: #7676a7;
     max-width: 522px;
 }
 
 .storage__list__item__text {
-    color: #7676A7;
+    color: #7676a7;
     max-width: 522px;
 }
 
@@ -110,7 +109,7 @@
 /*olimpics*/
 
 .olimpics {
-    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+    background: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
     padding: 80px 0;
 }
 
@@ -128,7 +127,7 @@
 }
 
 .olimpics__suptitle {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -138,12 +137,68 @@
 }
 
 .olimpics__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    color: #7676A7;
+    color: #7676a7;
+    max-width: 576px;
+}
+
+
+/*nmt*/
+
+.nmt {
+    background: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
+    padding: 80px 0;
+}
+
+.nmt__inner {
+    display: flex;
+}
+
+.steps__image {
+    max-width: 521px;
+    max-height: 347px;
+}
+
+.etaps__image {
+    max-width: 521px;
+    max-height: 608px;
+}
+
+.docs__image {
+    max-width: 521px;
+    max-height: 276px;
+}
+
+.nmt__image {
+    width: 420px;
+    height: 420px;
+}
+
+.nmt__title {
+    margin-right: 126px;
+}
+
+.nmt__suptitle {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #393982;
+    max-width: 521px;
+}
+
+.nmt__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676a7;
     max-width: 576px;
 }
 
@@ -151,7 +206,7 @@
 /*abiturient*/
 
 .abiturient {
-    background: linear-gradient(163.45deg, #FFFFFF 12.08%, #F2F6FE 89.18%);
+    background: linear-gradient(163.45deg, #ffffff 12.08%, #f2f6fe 89.18%);
     padding: 80px 0;
 }
 
@@ -164,7 +219,7 @@
 }
 
 .abiturient__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -178,7 +233,7 @@
 
 .abiturient__inner {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .abiturient__list li {
@@ -191,17 +246,17 @@
 }
 
 .abiturient__list__item {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
-    color: #7676A7;
+    color: #7676a7;
     max-width: 484px;
 }
 
 .abiturient__list__item__text {
-    color: #7676A7;
+    color: #7676a7;
     max-width: 522px;
 }
 
@@ -213,7 +268,7 @@
 }
 
 .bakalavr__title {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -227,7 +282,7 @@
 
 .bakalavr__inner {
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .bakalavr__list li {
@@ -240,17 +295,17 @@
 }
 
 .bakalavr__list__item {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
-    color: #7676A7;
+    color: #7676a7;
     max-width: 484px;
 }
 
 .bakalavr__list__item__text {
-    color: #7676A7;
+    color: #7676a7;
     max-width: 522px;
 }
 
@@ -262,7 +317,7 @@
 }
 
 .ask__suptitle {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -273,13 +328,24 @@
 }
 
 .ask__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    color: #7676A7;
+    color: #7676a7;
+    max-width: 846px;
+    margin: 0 auto;
+}
+
+.contact__text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #7676a7;
     max-width: 846px;
     margin: 0 auto;
 }
