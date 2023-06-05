@@ -522,8 +522,8 @@ const RulesPage = () => {
               </li>
               <p className="contact__text">
                 <Trans>
-                  Для персональної консультації можна заповнити «Анкету
-                  абітурієнта ХНУРЕ»: https://forms.gle/Pxe4SkWXQGb3N7Yh9
+                  For an individual consultation, you can fill out the 'NURE
+                  applicant questionnaire'
                 </Trans>
               </p>
             </ul>
