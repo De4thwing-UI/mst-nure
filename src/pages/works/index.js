@@ -109,7 +109,7 @@ const WorksPage = ({ data }) => {
     photo: data.allFile.edges[index].node.publicURL,
   }))
 
-  const limit = 9
+  const limit = 3
   const [displayWorks, setDisplayWorks] = useState(works.slice(0, limit))
 
   const handlePageChange = page => {

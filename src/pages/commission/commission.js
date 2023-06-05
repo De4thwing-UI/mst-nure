@@ -19,7 +19,6 @@ import TwoImg from "src/images/commission/12.png"
 import ThreeImg from "src/images/commission/13.png"
 import FourImg from "src/images/commission/14.png"
 
-
 const CommissionPage = () => {
   const commissions = [
     {
