@@ -403,6 +403,7 @@ const RulesPage = () => {
                     </Trans>
                   </span>
                 </li>
+                
                 <li className="storage__list__item">
                   <span className="storage__list__item__text">
                     <Trans>
