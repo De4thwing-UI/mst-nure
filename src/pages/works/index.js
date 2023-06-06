@@ -26,21 +26,6 @@ const WorksPage = ({ data }) => {
     {
       name: "Anton Gapich",
       position: "Illustration",
-    },
-    {
-      name: "Tatyana Isayenko",
-      position: "Illustration",
-    },
-    {
-      name: "Anna Muzychuk",
-      position: "Social poster",
-    },
-    {
-      name: "Anton Gapich",
-      position: "Mobile application",
-    },
-    {
-      name: "Anton Gapich",
       position: "Website",
     },
     {
