@@ -384,7 +384,7 @@ const DiplomaPage = () => {
       <div className="diploma">
         <div className="container">
           <div className="diploma__title">
-            <Trans>Supervisors of bachelor's theses.</Trans>
+            <Trans>Supervisors of bachelor's theses</Trans>
           </div>
           <div className="diploma__inner">
             <table className="diploma__table">

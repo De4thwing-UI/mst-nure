@@ -31,17 +31,18 @@ const Header = () => {
                 <Link to="/graduates" className="nav__dropdown__link">
                   <Trans>Our graduates</Trans>
                 </Link>
+                <a
+                  href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
+                  className="nav__dropdown__link"
+                  target="_blank"
+                >
+                  <Trans>Department Regulations</Trans>{" "}
+                </a>
               </div>
             </a>
             <a href="#" className="nav__link">
               <Trans>Educational process</Trans>
               <div className="nav__dropdown">
-                <Link
-                  to="/commission/commission"
-                  className="nav__dropdown__link"
-                >
-                  <Trans>UMR Standing Committee</Trans>
-                </Link>
                 <a
                   href="https://nure.ua/wp-content/uploads/Main_Docs_NURE/polozhennja-pro-organizaciju-osvitnogo-procesu-v-hnure.pdf"
                   className="nav__dropdown__link"
@@ -77,6 +78,12 @@ const Header = () => {
                 >
                   <Trans>Training schedules</Trans>{" "}
                 </a>{" "}
+                <Link
+                  to="/commission/commission"
+                  className="nav__dropdown__link"
+                >
+                  <Trans>UMR Standing Committee</Trans>
+                </Link>
               </div>
             </a>
             <a href="#" className="nav__link">
@@ -85,12 +92,16 @@ const Header = () => {
                 <Link to="/directions" className="nav__dropdown__link">
                   <Trans>Scientific directions</Trans>
                 </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Scientific Conferences</Trans>
+                </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Scientific Journals</Trans>
+                </Link>
                 <Link to="/studentscience" className="nav__dropdown__link">
                   <Trans>Student science</Trans>
                 </Link>
-                <Link to="/works" className="nav__dropdown__link">
-                  <Trans>Students' works</Trans>
-                </Link>
+
                 <Link to="/sections" className="nav__dropdown__link">
                   <Trans>Circles of the department</Trans>
                 </Link>
@@ -126,6 +137,9 @@ const Header = () => {
                 <Link to="/resources" className="nav__dropdown__link">
                   <Trans>Resource</Trans>
                 </Link>
+                <Link to="/works" className="nav__dropdown__link">
+                  <Trans>Students' works</Trans>
+                </Link>
                 <Link to="/student-life" className="nav__dropdown__link">
                   <Trans>Student`s life</Trans>
                 </Link>
@@ -152,6 +166,26 @@ const Header = () => {
             <Link to="/contact" className="nav__link">
               <Trans>Contacts</Trans>
             </Link>
+            <a href="#" className="nav__link">
+              <Trans>Quality Assurance in Education</Trans>
+              <div className="nav__dropdown">
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Project Teams</Trans>
+                </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Departmental Resource Provision</Trans>
+                </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Mutual Class Visits</Trans>
+                </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Academic Integrity</Trans>
+                </Link>
+                <Link to="#" className="nav__dropdown__link">
+                  <Trans>Employer Surveys</Trans>
+                </Link>
+              </div>
+            </a>
           </nav>
           <div className="mod-languages">
             <ul className="lang-inline">

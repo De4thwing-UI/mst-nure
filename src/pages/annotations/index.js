@@ -18,7 +18,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>Free Choice Bachelor.</Trans>{" "}
+            <Trans>Free Choice Bachelor</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -28,7 +28,7 @@ const AnnotationsPage = () => {
                   className="annotations__link"
                   target="_blank"
                 >
-                  <Trans>Animation Technologies.</Trans>
+                  <Trans>Animation Technologies</Trans>
                 </a>
               </li>
               <li className="annotations__list__item">
@@ -210,7 +210,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>Bachelor's Degree in University Selection.</Trans>{" "}
+            <Trans>Bachelor's Degree in University Selection</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -291,7 +291,7 @@ const AnnotationsPage = () => {
       <div className="annotations">
         <div className="container">
           <div className="annotations__title">
-            <Trans>Bachelor's Degree in Normative Sciences.</Trans>
+            <Trans>Bachelor's Degree in Normative Sciences</Trans>
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -425,7 +425,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>The Master of Normative Affairs.</Trans>{" "}
+            <Trans>The Master of Normative Affairs</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -479,7 +479,7 @@ const AnnotationsPage = () => {
           <div className="annotations__title">
             {" "}
             <Trans>
-              Bachelor's in Computer Science and Software Engineering.
+              Bachelor's in Computer Science and Software Engineering
             </Trans>{" "}
           </div>
           <div className="annotations__inner">
@@ -534,7 +534,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>Master's KTSVPV.</Trans>{" "}
+            <Trans>Master's KTSVPV</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -694,7 +694,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>Bachelor's in Business Administration.</Trans>{" "}
+            <Trans>Bachelor's in Business Administration</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -747,7 +747,7 @@ const AnnotationsPage = () => {
         <div className="container">
           <div className="annotations__title">
             {" "}
-            <Trans>Master's in Business Administration.</Trans>{" "}
+            <Trans>Master's in Business Administration</Trans>{" "}
           </div>
           <div className="annotations__inner">
             <ul className="annotations__list">
@@ -960,7 +960,7 @@ const AnnotationsPage = () => {
           <div className="annotations__title">
             {" "}
             <Trans>
-              Master's degree in Media Engineering and Multimedia Technologies.
+              Master's degree in Media Engineering and Multimedia Technologies
             </Trans>{" "}
           </div>
           <div className="annotations__inner">
